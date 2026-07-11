@@ -11,3 +11,4 @@ Many of us have heard of at least one or two Apollo missions, including the very
 
 In the image above, the upper-most stage of the main Saturn V rocket, the S-IVB, falls away from the Lunar Module. Meanwhile, Commander James A. McDivitt and Russel L. Schweickart prepare to fly the Lunar Module “Spider” for the very first time. David R. Scott humbly stayed behind in the Command Module. Although he did not know it at the time, he would fly a Lunar Module to the Moon’s surface about 2 years after this photo was taken, becoming the seventh person to set foot on The Moon.
 
+>https://nathanhoffman.me/astronomy/apollo-9
