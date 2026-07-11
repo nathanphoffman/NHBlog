@@ -1,3 +1,7 @@
+<!-- Blog of Nathan Hoffman -->
+<!-- [Blog of Nathan Hoffman](main.md) -->
+<!-- themes: glacier -->
+
 <!-- date posted: 2014-07-07 -->
 # A Monster Lurks in Galaxy M106
 

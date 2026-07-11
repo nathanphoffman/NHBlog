@@ -1,3 +1,7 @@
+<!-- Blog of Nathan Hoffman -->
+<!-- [Blog of Nathan Hoffman](main.md) -->
+<!-- themes: glacier -->
+
 <!-- date posted: 2017-03-25 -->
 # Zelda: Breath of the Wild — Wonderfully simple, yet beautifully complex
 

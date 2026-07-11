@@ -1,3 +1,7 @@
+<!-- Blog of Nathan Hoffman -->
+<!-- [Blog of Nathan Hoffman](main.md) -->
+<!-- themes: glacier -->
+
 # Ranking System Part III
 
 It is poetic then I come back full circle to this blog with some thoughts on a program I have made that scrapes the biggest board game site (Board Game Geek) in an effort to make a better list of board games. BGG’s (Board Game Geek’s) own ranking can be found [here.](https://boardgamegeek.com/browse/boardgame)

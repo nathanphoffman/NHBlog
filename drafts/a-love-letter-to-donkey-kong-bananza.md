@@ -1,3 +1,7 @@
+<!-- Blog of Nathan Hoffman -->
+<!-- [Blog of Nathan Hoffman](main.md) -->
+<!-- themes: glacier -->
+
 # A Love Letter to Donkey Kong Bananza
 
 When I first picked up DK I was (best buy story)

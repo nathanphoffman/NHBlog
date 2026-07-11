@@ -1,3 +1,7 @@
+<!-- Blog of Nathan Hoffman -->
+<!-- [Blog of Nathan Hoffman](main.md) -->
+<!-- themes: glacier -->
+
 <!-- date posted: 2017-07-03 -->
 # Stars are Mindbogglingly Bright
 

@@ -1,3 +1,7 @@
+<!-- Blog of Nathan Hoffman -->
+<!-- [Blog of Nathan Hoffman](main.md) -->
+<!-- themes: glacier -->
+
 # What I learned in attempting to develop my first RPG System
 
 **If you don’t want to read this whole thing, this is my conclusion:** D&D 5e and other systems of its ilk are so well tested, supported, and accepted that attempting to create my own system was effectively dead before I even began. The best I was able to do was try and use different systems, some more unique than others (action systems, using custom dice, changing up skills, or using 2D6 for everything from damage to to-hit to skill-checks) in an attempt to differentiate my system from D&D and others, but while such an attempt can be unique, it is not necessarily better. D&D may have its faults, but its flexibility of using polyhedral dice that anyone can buy, pencils, and character sheets (and optionally miniatures and maps) allows for such insane variability, adaptability, house-rule alteration, and pure imagination that no other system that attempts to be more restrictive or custom can ever match its scale, supporting materials, customization, or appeal to the general public.

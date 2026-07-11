@@ -1,3 +1,7 @@
+<!-- Blog of Nathan Hoffman -->
+<!-- [Blog of Nathan Hoffman](main.md) -->
+<!-- themes: glacier -->
+
 # Ordering Items By Weights
 
 Something I like doing in my spare time is creating lists, I have come up with a list system where you order items by different weighted categories. It goes something like this:

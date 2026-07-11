@@ -1,3 +1,7 @@
+<!-- Blog of Nathan Hoffman -->
+<!-- [Blog of Nathan Hoffman](main.md) -->
+<!-- themes: glacier -->
+
 # The Binary Solution to a Strange Interview Question
 
 ![](/images/0-GA6ckcDtfDWwddzF.png)

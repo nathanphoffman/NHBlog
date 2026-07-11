@@ -1,3 +1,7 @@
+<!-- Blog of Nathan Hoffman -->
+<!-- [Blog of Nathan Hoffman](main.md) -->
+<!-- themes: glacier -->
+
 # My Preference for the Silmarillion
 
 It was no secret that Tolkien’s true love was in the Silmarillion, specifically the Ainundale, years of the lamps, trees, and the first age. He plead with his publisher to publish it, threatened to leave them, and actually did just to find his new publisher let him out to dry leading to him coming back with his tail between his legs. Given the success of the Hobbit, Tolkien was only able to publish its intended sequel, Lord of the Rings.

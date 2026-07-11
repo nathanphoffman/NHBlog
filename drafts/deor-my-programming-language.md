@@ -1,3 +1,7 @@
+<!-- Blog of Nathan Hoffman -->
+<!-- [Blog of Nathan Hoffman](main.md) -->
+<!-- themes: glacier -->
+
 # Deor — My Programming Language
 
 ![](/images/0-iY8Hz-qPvcL1dS8r.png)

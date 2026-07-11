@@ -1,3 +1,7 @@
+<!-- Blog of Nathan Hoffman -->
+<!-- [Blog of Nathan Hoffman](main.md) -->
+<!-- themes: glacier -->
+
 # Personal Projects
 
 I have been working on so many fun projects over the last 4 weeks that I felt I needed to catalog them and prioritize my time on them.

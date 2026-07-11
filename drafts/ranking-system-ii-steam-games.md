@@ -1,3 +1,7 @@
+<!-- Blog of Nathan Hoffman -->
+<!-- [Blog of Nathan Hoffman](main.md) -->
+<!-- themes: glacier -->
+
 # Ranking System II: Steam Games
 
 Below is my chicken scratch JS code that runs on scroll events on a [steam store search results](https://store.steampowered.com/search/?term=) (if you launch it in the console) to resort games. (I recommend holding page down for a while to populate a bunch of games since it only sorts and ranks what it can see in HTML).

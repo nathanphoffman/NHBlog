@@ -1,3 +1,7 @@
+<!-- Blog of Nathan Hoffman -->
+<!-- [Blog of Nathan Hoffman](main.md) -->
+<!-- themes: glacier -->
+
 # Experimenting with Mojo (and Go)
 
 Mojo is a programming language that bridges Python with some Rust sensibilities. I discovered it just a couple weeks back as I was enormously frustrated with trying to fully digest Rust, my 3rd attempt to really get comfortable with it. My problem now isn’t so much with the syntax (such as borrowing/ownership, or the lack of nulls) but the extreme wordiness of everything, which I find almost makes it unreadable to an extent at a glance. Yet, I can’t stop thinking about Rust, I know what it is doing is quite genius, but it doesn’t mean it is pleasant.

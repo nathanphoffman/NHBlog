@@ -1,3 +1,7 @@
+<!-- Blog of Nathan Hoffman -->
+<!-- [Blog of Nathan Hoffman](main.md) -->
+<!-- themes: glacier -->
+
 # Usefulness of Bitwise Operations (JavaScript)
 
 I feel a bit like bit-wise operations are the dark, back ally of programming. The few people that remember they exist generally prefer not to deal with them, and most folks seem to be happy to ignore their existence altogether. Bitwise, operations aren’t really necessary to concern ourselves with in the higher-level language world, and they can introduce confusion into a code base, so it is best to discuss their use before implementing them, but that doesn’t mean there aren’t some interesting use cases.

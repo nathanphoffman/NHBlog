@@ -1,3 +1,7 @@
+<!-- Blog of Nathan Hoffman -->
+<!-- [Blog of Nathan Hoffman](main.md) -->
+<!-- themes: glacier -->
+
 # The Perfect 3 x 10 Schedule
 
 It is Monday, your alarm wakes you up as you look at the time: 6:30am. You think “I just need 5 more minutes” hit snooze and it goes off again. You aren’t feeling it; you are exhausted; yesterday you were moving your friend into their new home and were out till 12am.

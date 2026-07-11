@@ -1,3 +1,7 @@
+<!-- Blog of Nathan Hoffman -->
+<!-- [Blog of Nathan Hoffman](main.md) -->
+<!-- themes: glacier -->
+
 # The P/NP Problem
 
 One of the things I have been doing in my spare time is revisiting mathematics, a previous childhood love of mine that was originally my declared degree when I had been pursuing college.

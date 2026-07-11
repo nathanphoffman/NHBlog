@@ -1,3 +1,7 @@
+<!-- Blog of Nathan Hoffman -->
+<!-- [Blog of Nathan Hoffman](main.md) -->
+<!-- themes: glacier -->
+
 # How much of coding is experience?
 
 Something I always wanted to do was improve myself, to constantly reach for the stars, but in the process of doing so I have also discovered conflicting views on best practices, some folks going back to their roots “don’t fix what aint broke” and I myself have gone from loving ultra short clever array manipulations to sometimes just wanting things spelled out for simplicity. I remember at one of my jobs a fellow senior developer telling me not to use declarative function syntax in JavaScript because “that is not the new way of doing it” he was referring to named const-lambda functions vs declarative functions. He did not provide me with any real justification such as hoisting vs non-hoisting. In truth, even the debate is a bit silly as either works in 99% of cases. His approach was that different/newer is better.
