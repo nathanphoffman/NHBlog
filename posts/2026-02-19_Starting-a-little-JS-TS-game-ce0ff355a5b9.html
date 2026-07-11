@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Starting a little JS/TS game</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Starting a little JS/TS game</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+For the last couple weeks I have been working on a small game project that may become larger depending on how far I get. Before I get too…
+</section>
+<section data-field="body" class="e-content">
+<section name="9f1b" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="de04" id="de04" class="graf graf--h3 graf--leading graf--title">Starting a little JS/TS game</h3><figure name="124b" id="124b" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*lR1rl1iX99N2LlnKGGBdJw.png" data-width="931" data-height="662" src="https://cdn-images-1.medium.com/max/800/1*lR1rl1iX99N2LlnKGGBdJw.png"><figcaption class="imageCaption">An image from my game, right now clicking around will move the character and there is some basic collision setup for the trees.</figcaption></figure><p name="07c7" id="07c7" class="graf graf--p graf-after--figure">For the last couple weeks I have been working on a small game project that may become larger depending on how far I get. Before I get too far into it I wanted to comment on my process so this can serve as a design journal and I figure it might help others who are interested in doing the same thing.</p><p name="7173" id="7173" class="graf graf--p graf-after--p">For the game concept I am trying to create a very basic fantasy CRPG like game in the spirit of games like Baldurs Gate but MUCH simpler, with retro 8-bit style graphics and a chess-like board for making movement easier. I am also using community assets to help with this.</p><p name="5598" id="5598" class="graf graf--p graf-after--p">While I have used web engines in the past like PhaserJS, my goal here is to create the engine from scratch using canvases and JavaScript. The approach I settled on is to use different canvas layers that are overlaid on top of one another so that one canvas being rerendered does not impact any other canvas. The canvases will each have JS logic associated with them and that independent logic will communicate with a basic event system I put together. The events will be fired based on user inputs, but also based on a NEXT_FRAME event that instructs the layers whenever a new frame should render:</p><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="javascript" name="d14b" id="d14b" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content">  <span class="hljs-keyword">const</span> <span class="hljs-title function_">gameLoop</span> = (<span class="hljs-params"></span>) =&gt; {<br /><br />    <span class="hljs-title function_">selectEvent</span>(<span class="hljs-string">&quot;NEXT_FRAME&quot;</span>).<span class="hljs-title function_">executeEvent</span>({});<br /><br />    <span class="hljs-comment">// start the game at approximately 4fps</span><br />    <span class="hljs-title function_">requestAnimationFrame</span>(<span class="hljs-function">() =&gt;</span> <span class="hljs-built_in">setTimeout</span>(gameLoop, <span class="hljs-number">250</span>));<br />  }<br /><br />  <span class="hljs-title function_">gameLoop</span>();</span></pre><p name="88d7" id="88d7" class="graf graf--p graf-after--pre">The event system this refers to is something I threw together:</p><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="typescript" name="adb0" id="adb0" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content"><span class="hljs-keyword">export</span> <span class="hljs-keyword">type</span> <span class="hljs-title class_">Listener</span>&lt;T <span class="hljs-keyword">extends</span> <span class="hljs-built_in">object</span>&gt; = <span class="hljs-function">(<span class="hljs-params">signature: T</span>) =&gt;</span> <span class="hljs-built_in">void</span>;<br /><br /><span class="hljs-keyword">type</span> <span class="hljs-title class_">EventRegistry</span> = { [key <span class="hljs-keyword">in</span> <span class="hljs-title class_">EventName</span>]?: [<span class="hljs-title class_">Listener</span>&lt;<span class="hljs-built_in">any</span>&gt;] };<br /><span class="hljs-keyword">let</span> <span class="hljs-attr">EVENT_REGISTRY</span>: <span class="hljs-title class_">EventRegistry</span> = {};<br /><br /><span class="hljs-keyword">export</span> <span class="hljs-keyword">function</span> selectEvent&lt;T <span class="hljs-keyword">extends</span> <span class="hljs-built_in">object</span>&gt;(<span class="hljs-attr">eventName</span>: <span class="hljs-title class_">EventName</span>) {<br /><br />    <span class="hljs-keyword">const</span> event = <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">keys</span>(<span class="hljs-variable constant_">EVENT_REGISTRY</span>).<span class="hljs-title function_">find</span>(<span class="hljs-function">(<span class="hljs-params">_eventName</span>) =&gt;</span> _eventName === eventName);<br /><br />    <span class="hljs-keyword">return</span> {<br />        <span class="hljs-title function_">onEvent</span>(<span class="hljs-params">listener: Listener&lt;T&gt;</span>) {<br /><br />            <span class="hljs-keyword">if</span> (!event) {<br />                <span class="hljs-variable constant_">EVENT_REGISTRY</span>[eventName] = [listener];<br />            }<br />            <span class="hljs-keyword">else</span> {<br />                <span class="hljs-variable constant_">EVENT_REGISTRY</span>[eventName]?.<span class="hljs-title function_">push</span>(listener);<br />            }<br />        },<br /><br />        <span class="hljs-title function_">executeEvent</span>(<span class="hljs-params">obj: <span class="hljs-built_in">object</span></span>) {<br />            <span class="hljs-keyword">if</span> (!event) <span class="hljs-keyword">throw</span> <span class="hljs-string">`Event <span class="hljs-subst">${event}</span> is not being listened to`</span>;<br /><br />            <span class="hljs-keyword">const</span> events = <span class="hljs-variable constant_">EVENT_REGISTRY</span>[event <span class="hljs-keyword">as</span> <span class="hljs-title class_">EventName</span>];<br />            <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> events?.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">event</span> =&gt;</span> <span class="hljs-title function_">event</span>(obj)), <span class="hljs-number">1</span>);<br />        }<br />    }</span></pre><p name="888e" id="888e" class="graf graf--p graf-after--pre">So far these are the different canvases that are layered on top of one another (in order from top to bottom):</p><ul class="postList"><li name="deda" id="deda" class="graf graf--li graf-after--p"><strong class="markup--strong markup--li-strong">Grid Layer</strong> — a chess like grid that having the highest z-index registers click events</li><li name="78ab" id="78ab" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Player</strong> <strong class="markup--strong markup--li-strong">Layer</strong> — a layer that renders player sprite(s) mainly in response to events from clicks from the grid layer. This also includes rendering related to movement like a red box that indicates invalid moves.</li><li name="59fd" id="59fd" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Doodads Layer</strong> — this is a term I stole from other game map editors I used a couple decade ago as a teenager. It is a layer that houses trees, grass, houses, etc. anything that is static that is not a player and it can also contain collidable surfaces that prevent movement by the player. This collision information is outputted by the setup function of the doodads layer.</li><li name="57b4" id="57b4" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Background Layer</strong> — this is (for now) just a flat background color, but it will likely include tiling in the future and perhaps other features, it is pretty plain as it sits just behind the more interesting doodad layer.</li></ul><p name="70ca" id="70ca" class="graf graf--p graf-after--li">I will post more about future layers but I am thinking I will want an NPC layer, a fog-of-war layer, and perhaps a weather layer between the player and grid layers.</p><p name="99d9" id="99d9" class="graf graf--p graf-after--p">For the UI (beyond the canvases and terminal) I am thinking about playing with SvelteJS and if I get far enough possible using React for the login / account piece.</p><p name="9620" id="9620" class="graf graf--p graf-after--p">I am using XTerminal for the terminal piece, which will listen in to events and display information about what is going on, perhaps dispatching them with commands going forward. I am thinking about using Python to handle certain facets of terminal interactions, for now I am using Pyodide in browser for this, though I will likely want to build it in web assembly for production as the interpreter is several MB in size.</p><p name="7a67" id="7a67" class="graf graf--p graf-after--p graf--trailing">All of these details could probably use their own posts, but I will save that for future, I am going to try and keep these updates short. More to come!</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@nathanphoffman" class="p-author h-card">Nathan P. Hoffman</a> on <a href="https://medium.com/p/ce0ff355a5b9"><time class="dt-published" datetime="2026-02-19T21:03:42.267Z">February 19, 2026</time></a>.</p><p><a href="https://medium.com/@nathanphoffman/starting-a-little-js-ts-game-ce0ff355a5b9" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on July 11, 2026.</p></footer></article></body></html>

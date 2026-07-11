@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Experimenting with Claude</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Experimenting with Claude</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+I began manually creating a weather terminal app last year in Typescript, it simply pulls in weather data from NOAA and greatly simplifies…
+</section>
+<section data-field="body" class="e-content">
+<section name="00f1" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="ce0b" id="ce0b" class="graf graf--h3 graf--leading graf--title">Experimenting with Claude</h3><figure name="3b6e" id="3b6e" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="0*pp_a2Qn5YY8ReQ5y" data-width="256" data-height="256" src="https://cdn-images-1.medium.com/max/800/0*pp_a2Qn5YY8ReQ5y"></figure><p name="ebd3" id="ebd3" class="graf graf--p graf-after--figure">I began manually creating a <a href="https://github.com/nathanphoffman/Weather" data-href="https://github.com/nathanphoffman/Weather" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">weather terminal app</a> last year in Typescript, it simply pulls in weather data from NOAA and greatly simplifies the weather data by showing three hour intervals by combining multiple factors into a real-feel temperature, a composite of precipitation, clouds, wind, etc (into “storm rating”) and letter and emoji flags for relevant info like wind, humidity, and freezing temperatures. The idea was to quickly see what the weather was for a week at a glance.</p><p name="4d2e" id="4d2e" class="graf graf--p graf-after--p">Just a few weeks back I started to put the code into a <a href="https://github.com/nathanphoffman/WeatherSite" data-href="https://github.com/nathanphoffman/WeatherSite" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">NextJS web app</a> so I could see the weather from anywhere on a personal site, and I realized it might be a good project to try out Claude which I have been hearing about pretty much everywhere. It was an interesting experiment as I also had less knowledge of Next but have plenty of knowledge of Typescript and some React experience so it was a way to both see how useful AI could be as a teaching tool but also how good it was at the things I knew well.</p><p name="34ad" id="34ad" class="graf graf--p graf-after--p">You can find the current site here <a href="http://weather.nathanhoffman.me" data-href="http://weather.nathanhoffman.me" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">weather.nathanhoffman.me</a></p><p name="781c" id="781c" class="graf graf--p graf-after--p">I will say my overall experience has been quite positive, but it hasn’t been entirely perfect either. I will highlight a few takeaways I have had that highlight both my positives and negatives with this process:</p><p name="3327" id="3327" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">The NOAA API:</strong> At one point the agent suggested I rewire the data from a scraper into NOAA’s public API. I hadn’t even asked it this and I had no idea they had a public facing API and had been scraping their HTML since I started using the terminal app. I was skeptical at first, and I allowed it to wire it up all on its own. Shockingly, the data worked right out of the box, it was able to figure out the API structure on its own and I saw no issues. But when I went to review the code, it wasn’t all perfect. Rather than replace some of the scraper logic it actually formatted the data with additional conversion code to make it more like the display friendly format the scraper took in, and then passed it into the original scraper scaffolding which effectively removed this formatting data anyway. It also bypassed a candidate-style domain model I had where data would be validated in a more structured way.</p><p name="3639" id="3639" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">The Charts</strong>: The UI for the charts was effectively vibe coded, I let AI do whatever it wanted to render that data, and to my shock it looked extremely good visually and in general the code was mostly good. Going back through it I had to restructure some of it though like separating out the extremely large main chart component into several smaller ones that broke up AxisLabels, ThresholdLines (the horizontal dashed lines), simplified log-scales (it had both an enable flag and a log-strength there was little point for both) and break out the Line and MultiLine graphs into their own components.</p><p name="1ae0" id="1ae0" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Removing Comments</strong>: I would frequently post comments in the code-base that would then suddenly go missing as previous changes made by Claude, sometimes totally unrelated, would remove them as if they were inconsequential to the project.</p><p name="5b61" id="5b61" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Component Folder Structure</strong>: I generally like deeply nesting component structures within folders to follow the way in which it is used in React/Next so children are subdirectoried within parents. However, it isn’t worth doing this if a subcomponent is extremely small and has no children of its own and I sometimes keep these with their parent on the same folder level. What was interesting to me, is Claude rarely made new directories for components when I had it add them. It could be because my occasional exceptions to my own rule confused it, but I thought it was strange it never proposed or added new directories following my structure or prompted me with questions.</p><p name="36e3" id="36e3" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Other UI Stuff:</strong> In general the AI did a tremendous job with tailwind, I am not the most knowledgeable with it but have used it in the past, but everytime I questioned its decisions and did some Googling of my own it appeared to have made the right call. It also at one point came up with a somewhat obvious solution I was missing — which was to add an invisible layer to obscure the credits link to Simple Maps to prevent accidental clicks while using the dropdown, it did this very elegantly with just a couple tailwind classes. Unfortunately, the one issue I did see with CSS is it randomly removed a font I was using and then did not reapply it with Tailwind, it was one of the oddest hallucinations I have seen thus far as I did not request it.</p><p name="517c" id="517c" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Validation</strong>: As part of my model validation with my candidates I have a series of function checks like “isGreaterThan0” that get passed into arrays that define each property incoming from the API. This existed early on before I used the AI, but interestingly while the AI ignored these at first, it eventually started improving them for me. It realized, for example, that I had missed a few checks like making sure wind speed was non-negative, and it pointed out that I had messed up my check that temperature should be greater than absolute zero. It went further and suggested I make it a “sensible temperature” as it is unlikely the Earth would ever go that low in temp.</p><p name="6ff4" id="6ff4" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Unit Tests</strong>: It was extremely good at creating unit tests for my validators, partly because they are well structured and named so it likely had a lot of context to go on, but weirdly it didn’t suggest unit tests for anything else and never since has suggested unit testing anything else in my code base (even the agent I added explicitly to look for unit tests to add)</p><p name="a70b" id="a70b" class="graf graf--p graf-after--p">There are plenty more examples, but I think this gets the point across I found it a generally very useful tool but also not without faults. I have found its usefulness almost more in the back and forth I can have with it, similar to the back and forth one can have in pair programming where I can bounce ideas off of it and it ideas off of me.</p><p name="4c80" id="4c80" class="graf graf--p graf-after--p">I have since changed my workflow with Claude and found using agents with well defined markdown files greatly improves my results. I have some thoughts on how to best use this optimally which I might post about in the future, but I don’t want every post to be about AI so I will probably do another pure coding post next time!</p><p name="fa33" id="fa33" class="graf graf--p graf-after--p graf--trailing">Note: I am publishing this post now but it is a bit older at this point, I have since had a bit more experience with agents and have started another project and have more thoughts on Claude in the future I will post about.</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@nathanphoffman" class="p-author h-card">Nathan P. Hoffman</a> on <a href="https://medium.com/p/de8b9e3aafb9"><time class="dt-published" datetime="2026-03-31T11:15:27.946Z">March 31, 2026</time></a>.</p><p><a href="https://medium.com/@nathanphoffman/experimenting-with-claude-de8b9e3aafb9" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on July 11, 2026.</p></footer></article></body></html>

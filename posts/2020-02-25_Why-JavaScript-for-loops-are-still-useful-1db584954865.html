@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Why JavaScript for-loops are still useful</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Why JavaScript for-loops are still useful</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+I feel like more and more, for loops are becoming despised, and while some scratch their heads and wonder why, others are looking at the…
+</section>
+<section data-field="body" class="e-content">
+<section name="f6a9" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="731e" id="731e" class="graf graf--h3 graf--leading graf--title">Why JavaScript for-loops are still useful</h3><p name="1ca2" id="1ca2" class="graf graf--p graf-after--h3">I feel like more and more, for loops are becoming despised, and while some scratch their heads and wonder why, others are looking at the mere usage of a for loop as a sign of a green and inexperienced developers who do not know how to use Array methods. I have fallen into this trap on many occasions often feeling like I was doing something wrong when I plugged in a `for` rather than a map or a reduce, but while there are reasons why Array methods are usually better, they aren’t <strong class="markup--strong markup--p-strong">always</strong> better.</p><p name="cb54" id="cb54" class="graf graf--p graf-after--p">Before I argue the cases in favor of for-loops, I want to mention that there are many cases where Array methods are far superior:</p><ul class="postList"><li name="03f0" id="03f0" class="graf graf--li graf-after--p">+ If you have source data, you can map and filter the data without manually keeping track of indexes.</li><li name="0bea" id="0bea" class="graf graf--li graf-after--li">+ Rather than capturing a variable using the index of the for loop, you are provided it as a parameter of your anonymous function.</li><li name="a9df" id="a9df" class="graf graf--li graf-after--li">+ You do not need to mutate data as you do with a for loop, you simply return it.</li><li name="4a69" id="4a69" class="graf graf--li graf-after--li">+ Using Array methods enforces a more encapsulated coding approach since everything is usually wrapped in smaller batches of work and smaller functions.</li><li name="9208" id="9208" class="graf graf--li graf-after--li">+ For multiple reasons above, it is easier to know what is going on inside each Array method, whereas For loops generally encourage large unwieldy code that mutates the function block the for loop is inside of.</li></ul><blockquote name="e187" id="e187" class="graf graf--blockquote graf-after--li"><strong class="markup--strong markup--blockquote-strong">But! </strong>we aren’t here to make the case for using Array methods, we are trying to find those exceptions where they don’t quite work.</blockquote><p name="e0a5" id="e0a5" class="graf graf--p graf-after--blockquote"><strong class="markup--strong markup--p-strong">The cases against using Array Methods:</strong></p><ul class="postList"><li name="281e" id="281e" class="graf graf--li graf-after--p">— In the case of not having source data, you must generate the Array you are iterating over. In rarer cases, this can be very convoluted and even — impossible.</li><li name="ec1b" id="ec1b" class="graf graf--li graf-after--li">— You cannot break out of a map, reduce, or a filter; this can cause performance problems for large iterations, though in certain cases Array.find can supplant this.</li><li name="4f4f" id="4f4f" class="graf graf--li graf-after--li">— The this context is lost when using arrow functions, unless you also use bind(this) or the more wordy “function”</li></ul><p name="0924" id="0924" class="graf graf--p graf-after--li"><em class="markup--em markup--p-em">The this context is a minor point in comparison to the first two, so we shall ignore it and focus on: not having source data &amp; performance.</em></p><p name="feaa" id="feaa" class="graf graf--p graf-after--p">So let us start with a usual textbook case that I think shows where Array methods are better. If you have source data (classmates) and performance/control doesn’t matter (getting any classmate in an array) then you will want to use Array methods over a for loop.</p><pre name="4219" id="4219" class="graf graf--pre graf-after--p">let matches = classmates<br>  .filter(classmate=&gt;classmate.name === ‘John’)</pre><pre name="55f0" id="55f0" class="graf graf--pre graf-after--pre">// vs</pre><pre name="447f" id="447f" class="graf graf--pre graf-after--pre">let matches = [];</pre><pre name="4c5e" id="4c5e" class="graf graf--pre graf-after--pre">for(let i = 0; i &lt; classmates.length; i++) <br>{<br>  if(classmates[i].name === ‘John’) <br>    matches.push(classmates[i])<br>}</pre><p name="b167" id="b167" class="graf graf--p graf-after--pre">But, this can get convoluted if the array is huge, it is sorted, and we want to exit for performance reasons. Here we have to abuse Array.find, and mutate outside of our Array method — now for loops aren’t looking so bad:</p><pre name="43cf" id="43cf" class="graf graf--pre graf-after--p">let arr = []<br>let matches = classmates.find(classmate =&gt; {<br>  if(classmate.name &gt; &#39;John&#39;) return arr<br>  else if(classmate.name === &#39;John&#39;) arr.push(classmate)<br>})</pre><pre name="875b" id="875b" class="graf graf--pre graf-after--pre">// vs</pre><pre name="024f" id="024f" class="graf graf--pre graf-after--pre">let matches = [];<br>for(let i = 0; i &lt; classmates.length; i++) <br>{<br>  if(classmates[i].name === &#39;John&#39;) matches.push(classmates[i])<br>  else if(classmates[i].name &gt; &#39;John&#39;) break<br>}</pre><p name="555d" id="555d" class="graf graf--p graf-after--pre">But things really start to breakdown if we don’t have an Array/dataset to work with. Sure, for simple arrays such as looping through the numbers 0–9, we can do this easily enough:</p><pre name="755b" id="755b" class="graf graf--pre graf-after--p">let arr = [...Array(10).keys()]</pre><p name="c6c6" id="c6c6" class="graf graf--p graf-after--pre">But what if the Array relied on the contents of the loop itself? What if we iterated a for loop over a calculation for Pi that got ever-increasingly more accurate? What if we wanted to stop when the calculation was within 1% accuracy? We don’t know how many attempts or iterations this should take, should it take n, where n is 1–1000 or n where n is 1–100,000? or n where n is 1–1,000,000? We have to keep looping until the condition is satisfied. The only way outside of a for loop (and outside of while/recursive functions) is to generate an absurdly large array based on a guess and exit out early with find logic, mutating an external array. Look at this monstrosity:</p><pre name="110d" id="110d" class="graf graf--pre graf-after--p">// guessing this will take a million iterations?<br>// this is going to be a huge array!<br>let rangeArr = [...Array(1000000).keys()]<br>let pi = 0<br>let matches = rangeArr.find(n=&gt; {<br>  if(isAccurate(pi)) return pi<br>  else pi += nextPi(n+1) // + 1 since our array starts at 0<br>})</pre><pre name="4a1a" id="4a1a" class="graf graf--pre graf-after--pre"><br>// vs</pre><pre name="58f0" id="58f0" class="graf graf--pre graf-after--pre">let pi = 0;<br>for(let n= 1; !isAccurate(pi); n++) pi += nextPi(n)<br><br></pre><p name="50ce" id="50ce" class="graf graf--p graf-after--pre">And the top sample doesn’t even satisfy our problem! What if it takes 1,000,001 calculations? Sure we could add some recursion into this, but now we have to worry about more code and possible stack-overflow issues. We could also use a generator function but that would require a loop or recursion, (see former).</p><p name="f7ca" id="f7ca" class="graf graf--p graf-after--p">As a general rule for myself, I created this diagram. This is very opinion based since in many ways code is as much about art and theory as it is form and logic.</p><ul class="postList"><li name="d650" id="d650" class="graf graf--li graf-after--p">Green =&gt; Array methods are probably better for this</li><li name="55aa" id="55aa" class="graf graf--li graf-after--li">White =&gt; Use your best judgement</li><li name="9de7" id="9de7" class="graf graf--li graf-after--li">Blue =&gt; For loops might be better for this</li></ul><figure name="ca6e" id="ca6e" class="graf graf--figure graf-after--li"><img class="graf-image" data-image-id="1*RDa9ZeScfRqtd2VBIBkABg.png" data-width="726" data-height="357" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*RDa9ZeScfRqtd2VBIBkABg.png"></figure><p name="d7aa" id="d7aa" class="graf graf--p graf-after--figure"><strong class="markup--strong markup--p-strong">Key:</strong></p><ul class="postList"><li name="4066" id="4066" class="graf graf--li graf-after--p">Existing Dataset = &gt; We have an Array</li><li name="71ec" id="71ec" class="graf graf--li graf-after--li">Calculated Dataset =&gt; We have what we need to easily form the Array/range</li><li name="4f48" id="4f48" class="graf graf--li graf-after--li">Dependent Dataset =&gt; We can’t form the array/range properly until we know the output of each iteration: it depends on the iteration.</li><li name="5664" id="5664" class="graf graf--li graf-after--li">(The control column represents how much control is needed over a loop, such as breaking, typically for performance reasons)</li></ul><h3 name="625c" id="625c" class="graf graf--h3 graf-after--li">Conclusion</h3><p name="82ab" id="82ab" class="graf graf--p graf-after--h3">I think the biggest thing that concerns me is the absolute-mentality. “Never-ever use x” or “x is always better than y” Perhaps x is often better than y, but being so absolute narrows your perspective and (in my opinion) stifles good code.</p><p name="be72" id="be72" class="graf graf--p graf-after--p">If I were to make an analogy to the whole “Array vs for” debate, it would be comparing a flat-head to a Phillips screw driver in a world where most screws and screw-drivers are now moving towards flat-heads. If I only had one tool in this world I guess I would be willing to try to get by with a flat-head (Array Methods) but it still might make certain unusual Phillip screws I encounter more difficult (or near-impossible) to deal with, so I shouldn’t be embarrassed about dusting off my old Phillips-head once in a while. Also, tossing your old screw driver away just because you discovered flat heads can be shoved into a Phillips socket , may be a bit …</p><p name="c30d" id="c30d" class="graf graf--p graf-after--p graf--trailing">wait for it…screwy!</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@nathanphoffman" class="p-author h-card">Nathan P. Hoffman</a> on <a href="https://medium.com/p/1db584954865"><time class="dt-published" datetime="2020-02-25T20:15:43.621Z">February 25, 2020</time></a>.</p><p><a href="https://medium.com/@nathanphoffman/why-javascript-for-loops-are-still-useful-1db584954865" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on July 11, 2026.</p></footer></article></body></html>

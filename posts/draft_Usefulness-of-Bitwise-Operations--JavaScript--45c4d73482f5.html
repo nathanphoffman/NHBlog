@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Usefulness of Bitwise Operations (JavaScript)</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Usefulness of Bitwise Operations (JavaScript)</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+I feel a bit like bit-wise operations are the dark, back ally of programming. The few people that remember they exist generally prefer not…
+</section>
+<section data-field="body" class="e-content">
+<section name="4040" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="736d" id="736d" class="graf graf--h3 graf--leading graf--title">Usefulness of Bitwise Operations (JavaScript)</h3><p name="fbdd" id="fbdd" class="graf graf--p graf-after--h3">I feel a bit like bit-wise operations are the dark, back ally of programming. The few people that remember they exist generally prefer not to deal with them, and most folks seem to be happy to ignore their existence altogether. Bitwise, operations aren’t really necessary to concern ourselves with in the higher-level language world, and they can introduce confusion into a code base, so it is best to discuss their use before implementing them, but that doesn’t mean there aren’t some interesting use cases.</p><h4 name="7213" id="7213" class="graf graf--h4 graf-after--p"><strong class="markup--strong markup--h4-strong">As an Integer conversion &amp; Math.floor / rounding method</strong></h4><p name="bf06" id="bf06" class="graf graf--p graf-after--h4">Anytime a bitwise operation is performed, the value is converted into an integer, this involves dropping the digits to the right of the decimal. This means that if we perform any kind of bitwise operation that would not modify a value, the value will be rounded down. There are many ways to keep the original value, but some examples are: x or 0 (x|0), x and x (x&amp;x) or not not x (~~x). These cases would be almost the same as Math.floor(Number(x)), although some atypical values of x like NaN deviates from this.</p><pre name="9cb9" id="9cb9" class="graf graf--pre graf-after--p">5.1 | 0 === 5   // OR takes any 1 bit values, 0 has no 1s<br>3.6 &amp; 3.6 === 3  // AND is true where 1s align, itself will align<br>~~7.1 === 7  // NOT NOT just inverses the bits twice</pre><p name="37bb" id="37bb" class="graf graf--p graf-after--pre">Because of this conversion process strings are also converted to Numbers, and various non-integer values are also cast to 0 like: Infinity &amp; null.</p><pre name="c064" id="c064" class="graf graf--pre graf--startsWithDoubleQuote graf-after--p">“3” | 0 === 3<br>null | 0 === 0<br>Infinity | 0 === 0</pre><h4 name="2e7e" id="2e7e" class="graf graf--h4 graf-after--pre">As a Toggle</h4><p name="c8c0" id="c8c0" class="graf graf--p graf-after--h4">The Xor operator returns 1s in positions in all cases except where there are 1s in both positions. (so a 1 where the bits are different) This means that 0 ^ 1 = 1 and 1 ^ 1 = 0. This behavior can be used as a toggle where xor’ing a 1 will always flip our binary value.</p><pre name="ee90" id="ee90" class="graf graf--pre graf-after--p">let isClicked = 0;<br>const clickButton = ()=&gt;isClicked^=1;</pre><pre name="1bf6" id="1bf6" class="graf graf--pre graf-after--pre">// value of isClicked starts at 0<br>clickButton(); // value is now 1<br>clickButton(); // value is now 0<br>clickButton(); // value is now 1<br>// ... etc.</pre><h4 name="b1b8" id="b1b8" class="graf graf--h4 graf-after--pre"><strong class="markup--strong markup--h4-strong">Parsing Hexidecimal Color Values</strong></h4><p name="fe7e" id="fe7e" class="graf graf--p graf-after--h4">Hexidecimal colors have three positions red/green/blue, generally recommended in hexidecimal. Bitwise allows us to shift these values, effectively chopping off …. (see color extracting bottom article)</p><pre name="6ade" id="6ade" class="graf graf--pre graf-after--p"><code class="markup--code markup--pre-code">var hex = &#39;ffaadd&#39;;<br>var rgb = parseInt(hex, 16);<br><br><br>var red   = (rgb &gt;&gt; 16) &amp; 0xFF; // returns 255<br>var green = (rgb &gt;&gt; 8) &amp; 0xFF;  // 170<br>var blue  = rgb &amp; 0xFF;     // 221</code></pre><h4 name="9516" id="9516" class="graf graf--h4 graf-after--pre">Determining odd / even</h4><p name="db08" id="db08" class="graf graf--p graf-after--h4">Personally I like using modulus for this, but if we use x&amp;1 this would be true only where there is a 1 bit in the 1s place, this will only ever be true for an odd number.</p><pre name="202c" id="202c" class="graf graf--pre graf-after--p">const isOdd3 = x=&gt;{return x&amp;1;};</pre><pre name="145c" id="145c" class="graf graf--pre graf-after--pre">isOdd(1) === 1<br>isOdd(2) === 0<br>isOdd(432) === 0<br>isOff(531) === 1</pre><h4 name="18a8" id="18a8" class="graf graf--h4 graf-after--pre">Bitmasking</h4><p name="e782" id="e782" class="graf graf--p graf-after--h4">Bitmasking is the </p><h4 name="689c" id="689c" class="graf graf--h4 graf-after--p">Sources</h4><p name="9039" id="9039" class="graf graf--p graf-after--h4">To give credit where it is due, I pulled some of these ideas from these sources:</p><div name="9726" id="9726" class="graf graf--mixtapeEmbed graf-after--p"><a href="https://stackoverflow.com/questions/654057/where-would-i-use-a-bitwise-operator-in-javascript" data-href="https://stackoverflow.com/questions/654057/where-would-i-use-a-bitwise-operator-in-javascript" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://stackoverflow.com/questions/654057/where-would-i-use-a-bitwise-operator-in-javascript"><strong class="markup--strong markup--mixtapeEmbed-strong">Where would I use a bitwise operator in JavaScript?</strong><br><em class="markup--em markup--mixtapeEmbed-em">I heavily use bitwise operators for numerical convertions in production scripts, because sometimes they&#39;re much faster…</em>stackoverflow.com</a><a href="https://stackoverflow.com/questions/654057/where-would-i-use-a-bitwise-operator-in-javascript" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="c8c036e9c27ba96d32f2a6b8f924d4ba" data-thumbnail-img-id="0*GF1cmfNDkvIGZkET" style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*GF1cmfNDkvIGZkET);"></a></div><p name="ab59" id="ab59" class="graf graf--p graf-after--mixtapeEmbed"><a href="https://blog.logrocket.com/interesting-use-cases-for-javascript-bitwise-operators/" data-href="https://blog.logrocket.com/interesting-use-cases-for-javascript-bitwise-operators/" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">https://blog.logrocket.com/interesting-use-cases-for-javascript-bitwise-operators/</a></p><p name="be02" id="be02" class="graf graf--p graf--empty graf-after--p graf--trailing"><br></p></div></div></section>
+</section>
+<footer><p><a href="https://medium.com/p/45c4d73482f5">View original.</a></p><p>Exported from <a href="https://medium.com">Medium</a> on July 11, 2026.</p></footer></article></body></html>

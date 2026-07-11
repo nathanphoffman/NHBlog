@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Making a Simpler Web</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Making a Simpler Web</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+I have always been intrigued by people like Richard Stallman who make entire websites using nothing but html (no JS). In his case, it is…
+</section>
+<section data-field="body" class="e-content">
+<section name="84f8" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="45c8" id="45c8" class="graf graf--h3 graf--leading graf--title">Making a Simpler Web</h3><figure name="7789" id="7789" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*__JsZRMVO-NCVA6opDb_Xg.png" data-width="1170" data-height="980" data-focus-x="50" data-focus-y="2" src="https://cdn-images-1.medium.com/max/800/1*__JsZRMVO-NCVA6opDb_Xg.png"><figcaption class="imageCaption">A real early version of my prototype (the bar at the top is the “browser in a browser” settings)</figcaption></figure><p name="2cdd" id="2cdd" class="graf graf--p graf-after--figure">I have always been intrigued by people like Richard Stallman who make <a href="https://stallman.org/" data-href="https://stallman.org/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">entire websites</a> using nothing but html (no JS). In his case, it is freedom respecting, and while I respect Stallman tremendously I feel like my own frustration with the web is less the language being freedom respecting, even less the language being hard to write — I after-all love web programming. No, it is far more implementations on the web being frustrating to use, way overthought, and far too over-engineered — or as the old adage goes, sometimes a cigar is just a cigar.</p><p name="f841" id="f841" class="graf graf--p graf-after--p">I got to thinking if you were to re-architect the web to make it simpler, would you go back to the 90s and form submits? Would you do what Stallman does and just refuse to use interactive web components? Would you do what the Gemini team did and construct an entirely new protocol that by definition closes it off from browsers and thereby most people?</p><p name="c2e0" id="c2e0" class="graf graf--p graf-after--p">But to not get ahead of myself, I think it is important to also ask “why” who on Earth would want a new type of web? Well, the way I see it is the web is already being supplanted by mobile; right now most people engage with platforms through apps not through websites. Furthermore, the apps most used tend to be very large platforms (think Facebook, Instagram, etc.) These platforms relish over-complication and large complex UIs, which sometimes even are more complicated than they are worth and just hard to use, not to mention not always the most privacy respecting.</p><p name="bbf4" id="bbf4" class="graf graf--p graf-after--p">The final nail in the coffin I feel for the current web work (outside of app-driven work) is that AI now will make it easy to create websites, even sophisticated looking ones, so the “sexiness” of fanciful web will also likely die along with it. Similar to how people are obsessing over vinyl after streaming made it too complex and simultaneously convenient — and film cameras which contrasted with smartphones in much the same way — it almost seems like a response to over-convenience. To intentionally go back to your roots, go back in time, and value the substance over the method.</p><p name="497d" id="497d" class="graf graf--p graf-after--p">I considered perhaps the best way to design a “new web” looks something like this:</p><ul class="postList"><li name="df22" id="df22" class="graf graf--li graf-after--p"><strong class="markup--strong markup--li-strong">Base it on markdown not HTML</strong> - Right now it is all the rage with AI, documentation, and blogs, so it would seem a logical choice and is less wordy than HTML. Plus, as an added benefit is it is hard to over-complicate with no positional logic or css built into it.</li><li name="a859" id="a859" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Keep familiar web techs</strong>— the HTTP/REST Protocols aren’t broken, so keep them. Also CSS and HTML are fine under the hood, but should only be for the final output done by the engine, and to make it compatible with screen readers, never directly outputted by the server. This would also allow Electron to be used to develop a simple future “new-web” browser that is based soley on the new standard.</li><li name="3a3a" id="3a3a" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Theming exists with the user</strong> —Because everything is in markdown (think data — not interactivity), any themeing would be configurable by the end user. The website might suggest a theme, but it can easily be swapped on the fly by the end-user: the end-user chooses the site appearance the site merely provides the data in md format.</li><li name="577a" id="577a" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Create a web wrapper </strong>—This “NewWeb” would be based on markdown but use (at least initially) a web renderer that wrapped the logic. It would be effectively a small JS + WASM engine. The JS piece would expose the “web browser” features (think themeing, routing, security, etc.) and the WASM piece would handle the parsing of md -&gt; html using something like Rust for a small runtime.</li><li name="62e7" id="62e7" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Put the web wrapper in a browser </strong>— The web wrapper would support web browsers (at least with a small amount of extra scaffolding provided by the framework). This is once again essential to adoption. At a later date an Electron app (a web desktop framework) implementation might be created, made easier by the web output under the hood.</li><li name="d2d6" id="d2d6" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Link Markdown to WASM</strong>— This is where the magic really happens. For all interactivity, links are used to tell a dev-defined wasm binary what the user wants to do, so an add to cart button doesn’t need to post to the server or communicate via a JS/React event, it just hits a client side WASM file: [Add Item to Cart](add_to_cart.wasm). The parser (the engines I mentioned earlier) will generate this link as an html link and then handle the call to the wasm binary, executing its main function. The binary then runs whatever the logic is for add_to_cart (in any WASM language you so choose). It will have access to JS features like fetch(), and also expose just 4 ways to communicate to the site: redirect(), error(), info(), and more(). Any one of these called will communicate back to the site (only one can be called) after that the WASM engine is taken down by the JS engine — meaning that WASM cannot run in the background — ever solving a host of current web issues.</li><li name="fbb3" id="fbb3" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Info / Error Communicate to the Site</strong> — Both of these provide bubbles that appear and disappear and can be reopened by the user in a log. Info might be “Item successfully added to cart” Error might be “A problem was encountered while adding the item to the cart.” The only difference is error exposes some better feedback (like red highlighting) that something has gone wrong and will also strikeout the link with an x near it letting the user know something is up with that link (they can try it again — part of the freedom of the platform) but at least know something is up with it.</li><li name="e730" id="e730" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Redirect </strong>— This is just what it sounds like, it will redirect the user to the requested markdown file. It can also redirect to HTTP (for the web implementation but if I ever develop a browser this will likely have to open an external app). If it redirects outside of the domain it will provide the user a 3 second countdown and allow the cancelling of the request. Extending the cart analogy from earlier, this might be used to redirect to a cart receipt markdown file composed by some say Go or Rust functions in WASM (communicating back server side).</li><li name="24c1" id="24c1" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">More</strong> — This is just a modal, think more info, or confirmation. The cool thing about more is it doesn’t need to be programmatically composed from WASM it can be directly linked like: [Learn more about Aluminum](more:details/aluminum_detailed.md). This allows people who want to make simple sites to still do some very easy organization of data.</li><li name="5c3a" id="5c3a" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Inputs</strong> — Finally, inputs are driven by links with a comment indicating fields (examples below). A modal driven by the new-web engine (and future browser) would appear entirely system driven, requesting the fields from the comments from the end user, and then passed along to the wasm binary. The wildcard below ${} is something I am trialing as a way to pass in data into a markdown template, using the server to fill it in before rendering to the user such as that hardcoded item_id so it can later be communicated back.</li></ul><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="xml" name="05bf" id="05bf" class="graf graf--pre graf-after--li graf--preV2"><span class="pre--content"><span class="hljs-comment">&lt;!-- fields: Username, Password* --&gt;</span><br />[Login to Site](login_user.wasm)<br /><br /><span class="hljs-comment">&lt;!-- fields: Quantity# --&gt;</span><br />[Enter Quantity](change_item_quantity#${item_id}.wasm)<br /><br /><span class="hljs-comment">&lt;!-- fields: Street Address, Zip Code#, State_, Country_ --&gt;</span><br />[Confirm Address](confirm_address.wasm)</span></pre><p name="72af" id="72af" class="graf graf--p graf-after--pre">A lot of this is subject to change, and some of it still needs to be worked out (does one provide default values for fields or does the browser/engine handle that?) I have already scaffolded some of this out with Claude and am currently cleaning up and reviewing the code, I will likely have a demo up soon and may post more about it then. One important takeaway is that while this sounds complicated note that for most people: you can just write markdown and make a site. All of the WASM stuff is truly for more interactive sites, carts, etc. For a personal website you likely don’t need any of that, and need only the knowledge of markdown (which you can learn in 15 minutes) to start creating a site once this is up.</p><p name="d250" id="d250" class="graf graf--p graf-after--p graf--trailing"><em class="markup--em markup--p-em">Note: This post is slightly older and was created a couple weeks ago, I have since made tremendous progress on this project and it will soon be available.</em></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@nathanphoffman" class="p-author h-card">Nathan P. Hoffman</a> on <a href="https://medium.com/p/6b130d4e0e5f"><time class="dt-published" datetime="2026-07-11T14:46:00.806Z">July 11, 2026</time></a>.</p><p><a href="https://medium.com/@nathanphoffman/making-a-simpler-web-6b130d4e0e5f" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on July 11, 2026.</p></footer></article></body></html>

@@ -1,0 +1,32 @@
+date posted: 2025-11-13
+# Small and Understandable
+
+![](https://cdn-images-1.medium.com/max/800/0*qsL-zGthzHwUQr5D)
+
+*A series that was neither small nor understandable and whose books remain unfinished and whose show became infamous after being unable to satisfactorily conclude the numerous plot lines*
+
+It is amazing to me that if you open a style guide there will be huge amounts of information on proper naming conventions, OOP vs functional approaches, what level of documentation should be kept, etc. Yet often there is little (sometimes no) mention of the two most important concepts in all of programming: keep it small, keep it understandable.
+
+This post idea started when I was walking in the woods with my dad who recently retired from around 40+ years as a programmer and system administrator. I don’t remember all the details of the conversation but I do remember him saying something to the effect of “The most helpful thing to debugging and understanding someone’s code is if they use small and understandable functions.”
+
+It is something I have absolutely prioritized recently more than anything, and it is something that really resonated with me, but I didn’t always hold this view: not too long ago, I was obsessed much more with how “cool” the code looked not how readable or simple it was. It was only until I had to start doing PR reviews and understand other code that I realized just because something is cool and small doesn’t make it good: mainly because it should also be understandable.
+
+## **Small**
+
+If I had to choose between small and understandable, I would still choose small (as I had in my younger coding days). While not ideal, I would rather read an illegible single line of regular expressions or a chain of functions using the brand new syntax from the latest ECMAScript release than a couple coding files that are 5000 lines long each, but that is only because of the ludicrousness of being that wordy. The best would be an approach using a dozen lines or so but keeping it well written and named so that the code block remains understandable, readable, and more debugable as a result. Keeping the code small and intentional then also leads to it being easier to keep those functions small and understandable. With any luck, this thinking will also lead to larger projects, services, and sites being split into smaller ones to greatly aid with maintainability into the future so that one code base does not become excessively large and unwieldy.
+
+When I think about the benefits of smaller things I can’t help but think about TV shows which so often go on for too many seasons that they fall apart, write themselves into a hole or end up having issues with actors and killing them off or swapping them. Often they rehash character relationships or romances or are forced to create unrealistic and unbelievable. All because of one simple thing: they decided to make it too long. This contrasts with episodic shows like the Twilight Zone which can reset the entire story, plot, actors, etc. so they have a much easier time of writing something believable, engaging, enjoyable, and not messy.
+
+On a final thought about keeping code, functions, and projects small, consider the Miller’s Number, often called the magic number. It is a number around 5–9 (likely 7) which represents the number of things a human can easily comprehend and hold in their short term memory without much effort. When you think about it, this is a shockingly small amount of data. In a way, humans have to effectively “page” like a computer does to hard drive space as soon as we exceed 7 pieces of information, this is a much slower process as we have to try to group like concepts in our head, and even those groupings likely can’t exceed that Miller’s number until we have committed what we are looking at to long term memory which takes even longer. Since most code lines must do at least one basic thing be definition, then a max of 7 lines of code is likely the best we can really easily grasp at a time. While this might not be an issue for experts of a project that have been working on the same code for years committing it to long term memory, it poses a challenge to newcomers, and even experts who are code reviewing added code they have not seen before.
+
+One last interesting and more speculative to think about is the maximum scale of procedures we can conceive of as a single time; a number that is likely about 7x7 or 49. This is because we can imagine 7 groups of things easily (Millers number) and perhaps 7 things in those 7 groups, but it is doubtful we could go much further than that. So if your code base has say more than 49 files (and this is assuming each file has **one highly focused** easy to understand purpose) it will likely start to become something that is difficult for newcomers to even understand what the heck the project does without serious documentation, hand-holding, or years of work on the project.
+
+## Understandable
+
+This is my central point of disagreement with my past self, and I feel like it is a hole a lot of passionate studious mid-level developers fall into. It is easy to get hyped at the latest features of a language or concise syntax, but if no one else can read it, it isn’t actually all that helpful. Worse, I found that because I had been looking into so many other languages and features I would sometimes come back to the same code years later being unable to read it because I couldn’t remember exactly what mentality I had when I put it together.
+
+That sophisticated array operation with some chaining functions or that really neat unwinding Mongo query still makes my heart sing, but the reality is provided performance does not take a hit, it is still better just to write things out a bit unless what you are doing truly is easy to understand and debug already, in that case keep it! Because then it is both small and understandable!
+
+One last point is that understandability is not just naming and syntax, it is also the intent of those functions. Do those functions have simple goals? Simple inputs? Simple outputs? Are they pure whenever they can be? Those should be even more important points as it makes your code even more understandable not just to read but also to understand the impact of things downstream.
+
+P.S. I have more thoughts on this subject, specifically on OOP vs Functional approaches and how it ties into trying to keep things small and understandable, more on that in the future!
