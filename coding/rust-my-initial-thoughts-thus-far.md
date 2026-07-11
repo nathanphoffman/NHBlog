@@ -1,5 +1,7 @@
-date posted: 2022-04-18
+<!-- date posted: 2022-04-18 -->
 # Rust, my initial thoughts thus far
+
+Posted on Medium: 2022-04-18
 
 ![](/images/0-JeMe_UqbU6Ti8TCA.png)
 
@@ -280,3 +282,4 @@ The compiler in Rust provides a large number of warnings and errors to make sure
 Rust has been quite “hyped” and so I was expecting to be disappointed, but I gained a great deal of respect for the language. This isn’t to say Rust is entirely without its faults: I don’t love the handling of extracting values from enums (though I love the idea), a little of the syntax takes some getting used to, and sometimes the low-level aspects of needing to use references gets annoying, but everything they did makes sense; Jan Reimer said it best: *“…they have a clear vision of the language and carefully choose what to add to the language and what to rework”* ([source](https://stackoverflow.blog/2020/06/05/why-the-developers-who-use-rust-love-it-so-much/)) As I have said countless times in this post: everything Rust does is intentional and clean; the developers really knew what they were doing.
 
 I am not sure if Rust will actually dethrone other languages out there on a huge scale, but it likely will (and already has) challenged preconceptions that a low-level language can’t break the mold of C/C++. Until then, I will keep enjoying my tinkering and raise a glass to this most beloved of languages and be one among many voices to shout some love for it at the next Stack Overflow survey.
+

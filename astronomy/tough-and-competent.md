@@ -1,5 +1,9 @@
-date posted: 2016-12-30
-# 9/3/2016 Archives: Tough and Competent
+<!-- date posted: 2016-09-03 -->
+# Tough and Competent
+
+Posted on Wordpress: 2016-09-03
+
+Posted on Medium: 2016-12-30
 
 This was posted to codingastronomer.com on 9/3/2016.
 

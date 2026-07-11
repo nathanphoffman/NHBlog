@@ -1,5 +1,9 @@
-date posted: 2017-02-03
-# 10/24/2015 Archives: The DataTables Plugin for JQuery
+<!-- date posted: 2015-10-24 -->
+# The DataTables Plugin for JQuery
+
+Posted on Wordpress: 2015-10-24
+
+Posted on Medium: 2017-02-03
 
 This was posted to codingastronomer.com on 10/24/2015.
 
@@ -18,3 +22,4 @@ This may look simple, but that does not mean it lacks configuration. DataTables 
 If I had to complain about DataTables, I would say the biggest issue is how the extensions play together, as well as some confusion as to where each extension is contained as revisions are made, depreciating some extensions, as well as merging extensions. In previous versions of some of the extensions, I had trouble with ColReorder (a column reorder extension) and Colvis (a column visibility extension). I posted about it on [StackOverflow](http://stackoverflow.com/questions/28698605/colvis-column-grouping-not-working-with-colreorder).
 
 If you are using Bootstrap, make sure to use their [Bootstrap styles for DataTables](https://www.datatables.net/examples/styling/bootstrap.html). It doesn’t get much easier than Bootstrap + DataTables.
+

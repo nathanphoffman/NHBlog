@@ -1,5 +1,7 @@
-date posted: 2022-10-13
+<!-- date posted: 2022-10-13 -->
 # The Time Estimate System I Love
+
+Posted on Medium: 2022-10-13
 
 Back when I was working at a REIT company, I was developing a system for Revenue Management to price storage units. While the system was being developed, the revenue team was excited to start using it as it was being actively developed (effectively an alpha). The problem was, they had many wish-list items they wanted implemented quickly so that they could perform their job functions more efficiently. These requests were filed into Asana and were submitted in large numbers extremely rapidly. This led to a problem: how to estimate the time of these tasks and prioritize them.
 
@@ -59,3 +61,4 @@ Obviously not all tasks are created equal but employees can’t routinely just g
 ## **Final Thoughts**
 
 This system is not for everyone or for every organization, but I do find it useful even in an environment where single estimates are needed. I have found myself in the past asking “what would this be back at my old company” [2x3], I perform the average of best and worst in my head ((2+6)/2 = 4) and put 4 hours on the task. However, it has likely been most useful in giving an initial-rough estimate on a large number of tasks while working on large products.
+

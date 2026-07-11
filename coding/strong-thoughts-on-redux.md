@@ -1,5 +1,7 @@
-date posted: 2026-06-27
+<!-- date posted: 2026-06-27 -->
 # Strong Thoughts on Redux
+
+Posted on Medium: 2026-06-27
 
 When I first started using React it was quite an underground tech, and Redux was in its infancy having just been presented as Flux with some third party efforts at work to better handle state.
 
@@ -32,3 +34,4 @@ This I find an odd strength, on a cursory read it feels like a good take, but I 
 Ever since programming began: large scale codebases have never been a good thing. The larger codebases are the harder they are to debug, maintain, understand, etc. Additionally, AI now will consume far more tokens if codebases and modules are large than if they are small as they add more to context and thereby token cost. So both for humans an AI keeping things smaller is better, so for me having a system to help with large scales is actually in and of itself a downside as it encourages those very large scales.
 
 Anyway, I am not saying Redux is horrible for everyone, it is just not my preferred way of using React if there is any chance of avoiding it.
+

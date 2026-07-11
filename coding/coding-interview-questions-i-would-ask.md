@@ -1,5 +1,7 @@
-date posted: 2022-06-03
+<!-- date posted: 2022-06-03 -->
 # Coding Interview Questions I would Ask
+
+Posted on Medium: 2022-06-03
 
 ![](/images/0-BsOc9B8Cl2un6V6L.jpg)
 
@@ -34,3 +36,4 @@ Pay close attention to:
 ## Conclusion
 
 At the end of the day, it is impossible to conduct the perfect interview (or be the recipient of the perfect interview). These questions are not the end-all-be-all either, I would far rather have someone who knew little about code but was easy to work with and willing to learn, than someone who was horrible to work with and was an expert in coding.
+

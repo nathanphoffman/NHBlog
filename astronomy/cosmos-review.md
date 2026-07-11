@@ -1,5 +1,9 @@
-date posted: 2017-03-24
-# 6/5/2014 Archives: Cosmos Review
+<!-- date posted: 2014-06-05 -->
+# Cosmos Review
+
+Posted on Wordpress: 2014-06-05
+
+Posted on Medium: 2017-03-24
 
 ![](/images/1-AbPErMwkctnL4-Xg6iCCfg.jpeg)
 
@@ -14,3 +18,4 @@ If I were to be extremely critical, I could find a few faults with the new serie
 Overall, Cosmos has delivered on what it set out to do. It has explained the cosmos with stunning visuals and scripts that personally connect with the audience. It has delivered an accurate scientific and historical balance of astronomical facts, and it has paid tribute to Carl Sagan and his original series, Cosmos.
 
 The Cosmos is now on blu-ray. The quality is quite impressive, and extras are included on the disc. The extras include an entertaining Comic-Con visit by Neil, an interesting making of, and a touching tribute to Carl Sagan.
+

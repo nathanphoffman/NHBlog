@@ -1,5 +1,9 @@
-date posted: 2017-06-23
-# 3/8/2013 Archives: The Pale Blue Dot
+<!-- date posted: 2013-03-08 -->
+# The Pale Blue Dot
+
+Posted on Wordpress: 2013-03-08
+
+Posted on Medium: 2017-06-23
 
 In what is often considered one of Carl Sagan’s most philosophical speeches, he talks about a simple photo taken from Saturn where the Earth appears as merely a “pale blue dot” I have always loved this speech and the accompanying video below is so far one of the better ones I have found. The narration is that of Carl Sagan.
 
@@ -12,3 +16,4 @@ In what is often considered one of Carl Sagan’s most philosophical speeches, h
 > The Earth is the only world known, so far, to harbor life. There is nowhere else, at least in the near future, to which our species could migrate. Visit, yes. Settle, not yet. Like it or not, for the moment, the Earth is where we make our stand. It has been said that astronomy is a humbling and character-building experience. There is perhaps no better demonstration of the folly of human conceits than this distant image of our tiny world. To me, it underscores our responsibility to deal more kindly with one another and to preserve and cherish the pale blue dot, the only home we’ve ever known.
 
 > **–Carl Sagan**, astronomer, astophysicist, and popularizer of science. Originally written in one of his books and incorporated into speeches.
+

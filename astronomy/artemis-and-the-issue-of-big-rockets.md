@@ -1,5 +1,7 @@
-date posted: 2026-04-20
+<!-- date posted: 2026-04-20 -->
 # Artemis and the issue of big rockets
+
+Posted on Medium: 2026-04-20
 
 ![](/images/0-9UMacE9SlTfXTZBN.jpg)
 
@@ -43,3 +45,4 @@ Yet, people (including politicians) will be quick to point out “its too simila
 At the end of the day, you can’t change physics, material science, or chemistry. Computers don’t run rockets: fuel, engines and materials do; computers merely help in design and optimization. Physics, chemistry, and material have not changed since the 60s and engines are basically the same.
 
 So where do we go from here? Well, I for one do not want to kill astronauts, and reusing the 1st stage of rockets is much more logical than upper stages, so limiting it to 2 in the name of both (and choosing whether or not to reuse the 2nd) makes sense. I also am pragmatic though, will we land on the Moon before 2030 as Artemis suggests? No, absolutely 100% not. If I had a million dollars, I would certainly bet on it not happening. Infact, I think these problems are so large that I would be shocked if we landed on the moon even before 2040. The most likely fate of Artemis program is maybe a few more test missions similar to this one, with likely paired back objectives, and all of which delayed into the 2030s (possibly even with some experimental lander in low earth orbit). Then long before we get to the Moon it will get cancelled after we realize we simply can’t do a more ambitious mission than Apollo within any kind of time frame. Just remember, its not that we can’t do Apollo again its that it simply doesn’t make sense in this day and age (for so many reasons we discussed) to do so.
+

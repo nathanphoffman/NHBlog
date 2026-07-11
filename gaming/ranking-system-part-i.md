@@ -1,5 +1,7 @@
-date posted: 2025-11-19
+<!-- date posted: 2025-11-19 -->
 # Ranking System Part I
+
+Posted on Medium: 2025-11-19
 
 I have a perpetual obsession with ranking things, I don’t know why but it is tremendously fun, it likely began with my entry into the Board Game hobby in 2013 with lists like [Board Game Geek’s top 100 ranking](https://boardgamegeek.com/browse/boardgame).
 
@@ -50,3 +52,4 @@ I ran this system for many many products like Amazon, Steam listings, and Board 
 For long term projections, I ran it for Agricola (a well established and beloved farming board game) over several years of data and while it grew at launch (as expected) it stabilized quite well around a 3. I ran that data looking back at a year or so ago, and it is at present a 3.01. Starfield which I tracked was beloved at first and actually hit over 3 but then fell back down as people criticized it. It turns out that this rating system, while unbounded, still bounds itself as the bigger something becomes the more critical people become of it.
 
 More posts will be forthcoming on ranking steam games and board games with some code.
+

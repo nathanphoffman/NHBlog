@@ -1,5 +1,7 @@
-date posted: 2017-02-25
+<!-- date posted: 2017-02-25 -->
 # 7 Exoplanets and Unlimited Hype
+
+Posted on Medium: 2017-02-25
 
 Sometimes news in the astronomy world boggles my mind. When Curiosity landed for the first time, literally an advanced car with an extremely [sophisticated landing system](https://www.youtube.com/watch?v=Ki_Af_o9Q9s) on another planet, perhaps one of the greatest space accomplishments in my lifetime, it seemed to be somewhat ignored. When we visited Vesta, the [second largest asteroid](https://en.wikipedia.org/wiki/4_Vesta) in the asteroid belt it went completely ignored. Even when we visited a comet with a lander in tow, the only reason anyone talked about it was because of [cute videos](https://www.youtube.com/watch?v=trljrwTbr4w&list=PLbyvawxScNbui_Ncl9uQ_fXLOjS4sNSd8) that ESA put out.
 
@@ -16,3 +18,4 @@ It is not surprising at all that there are “potentially habitable” exoplanet
 This means a habitable planet might just be a rock in space like The Moon. I would not call the Moon habitable, yet by these definitions it would be a potentially habitable body. Mars would definitely classify as “potentially habitable” planet by the way, and so would Venus. Venus! A planet that literally rains acid, is lead melting hot and has an atmosphere so thick it would crush you like a tin can.
 
 I don’t mean this all to sound negative, I love news coverage of space stuff. But there is something really weird about having seen some pretty amazing astronomy stuff and having no one know what I am talking about, and then being bombarded and even made fun of by not knowing about more exoplanets being discovered by people who are just reading click-bait headings at face value. Again to iterate one final time: these are just 7 rocks floating in space so far as we know, and three of them happen to fall within a certain distance from their star.
+

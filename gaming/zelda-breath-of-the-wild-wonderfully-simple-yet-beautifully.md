@@ -1,5 +1,7 @@
-date posted: 2017-03-25
+<!-- date posted: 2017-03-25 -->
 # Zelda: Breath of the Wild — Wonderfully simple, yet beautifully complex
+
+Posted on Medium: 2017-03-25
 
 ![](/images/0-QShzrKwG-aVcvVFH.jpg)
 
@@ -39,3 +41,4 @@ Perhaps the best line to sum this game up is wonderfully simple yet beautifully 
 ## 10/10
 
 ![](/images/1-pkr7krf6Ao5KRMIIlz3zRQ.png)
+

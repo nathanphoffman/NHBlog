@@ -1,5 +1,9 @@
-date posted: 2017-05-05
-# 9/7/2013 Archives: LADEE Heads for the Moon!
+<!-- date posted: 2013-09-07 -->
+# LADEE Heads for the Moon!
+
+Posted on Wordpress: 2013-09-07
+
+Posted on Medium: 2017-05-05
 
 ![](/images/1-tIpQm7bu4aHT63C7tJi32g.jpeg)
 
@@ -30,3 +34,4 @@ date posted: 2017-05-05
 Last night I decided to travel nearly 4 hours hours to Chincoteaugue, VA for the 11:27pm launch of LADEE, a lunar satellite bound for the Moon. When I finally got to the viewing area, on the bridge between Assateague and Chincoteague, I saw hundreds (possibly thousands of other people). I only had about 10 minutes, so I set my camera to take 10 shots in succession. When the rocket took off, I found myself taken aback by the brightness of the rocket. As the rocket launched upwards, it began to level and eventually headed directly over the viewing area. It was not until it was above us that the sound from Wallops Island finally reached us and we could hear the low powerful rumble of the rocket. As the rocket ascended through the blue atmosphere, the flames/thrust began to look blue and the first staging was clearly visible. After a couple of minutes, it faded from sight.
 
 In addition to the unedited 10 shots I took (shown in the gallery below). I also compiled [this GIF](http://webiota.files.wordpress.com/2013/09/8yqsfm1378570507.gif) and one of my friends managed to get [this much more “zoomed in” shot](http://31.media.tumblr.com/452b45f6a82527bdffa4d4c90b08d691/tumblr_msrk5lsHNC1r052nlo1_1280.jpg).
+

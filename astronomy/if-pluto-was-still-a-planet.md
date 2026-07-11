@@ -1,5 +1,9 @@
-date posted: 2017-04-14
-# 3/24/2014 Archives: If Pluto was still a Planet
+<!-- date posted: 2014-03-24 -->
+# If Pluto was still a Planet
+
+Posted on Wordpress: 2014-03-24
+
+Posted on Medium: 2017-04-14
 
 ![](/images/1-SuD1Vj_7Mml7jbObekAdUA.jpeg)
 
@@ -18,3 +22,4 @@ It has been more than 7 years since Pluto was demoted from planetary status, but
 - Only 2/3 of the continental US would be needed to wrap the entire surface of the smallest newly added planet.
 - Ganymede, the largest moon, would have twice the surface area as all 5 new planets combined!
 - At least two asteroids in the asteroid belt would be planets. (Vesta and Ceres)
+

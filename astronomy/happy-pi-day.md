@@ -1,5 +1,9 @@
-date posted: 2017-06-16
-# 3/14/2013 Archives: Happy Pi Day
+<!-- date posted: 2013-03-14 -->
+# Happy Pi Day
+
+Posted on Wordpress: 2013-03-14
+
+Posted on Medium: 2017-06-16
 
 ![](/images/1-RQpqhXpNagWDN6NQ1nyVDA.jpeg)
 
@@ -22,3 +26,4 @@ The lunar module pilot of Apollo 10, and the last man to set foot on the moon, [
 [Thrymr](http://en.wikipedia.org/wiki/Thrymr_%28moon%29), a small moon of Saturn, has a semi-major axis (longest orbital radii) of 23,**314**,335km
 
 [Jupiter](http://en.wikipedia.org/wiki/Jupiter) orbits the sun once every 11 years, **314** days.
+

@@ -1,5 +1,7 @@
-date posted: 2020-12-24
+<!-- date posted: 2020-12-24 -->
 # Commercializing human spaceflight?
+
+Posted on Medium: 2020-12-24
 
 ![](/images/0-UuoLfFWHpRPJLN1C.jpg)
 
@@ -36,3 +38,4 @@ So when we go to Mars, will we go as a statement of the accomplishments of human
 While people like Elon may have the interests of their companies in mind when they land on the Moon (or Mars) I also know that there is hope: those same people may remember the importance of space flight. And perhaps of all people, Elon may remember this best given how much he cares about history:
 
 [Video](https://www.youtube.com/embed/8P8UKBAOfGo?feature=oembed)
+

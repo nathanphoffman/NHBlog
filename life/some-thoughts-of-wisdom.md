@@ -1,5 +1,7 @@
-date posted: 2026-05-26
+<!-- date posted: 2026-05-26 -->
 # Some thoughts of wisdom
+
+Posted on Medium: 2026-05-26
 
 ![](/images/1-zDxA0pM5iEz3Msa-uDiySA.png)
 
@@ -18,3 +20,4 @@ I worked a little with some existing quotations, some suggestions from AI, a few
 8. The universe has survived for 14 billion years, whatever happens Tuesday is not going to break it.
 9. Clouds don’t grieve when changing shape, nor when they change to rain — why do you?
 10. Before enlightenment go to the gym — after enlightenment go to the gym, but it still costs 20 dollars per month.
+

@@ -1,5 +1,9 @@
-date posted: 2017-07-21
-# 11/11/2012 Archives: Astronomy 10 Must See Objects/Phenomena
+<!-- date posted: 2012-11-11 -->
+# Astronomy 10 Must See Objects/Phenomena
+
+Posted on Wordpress: 2012-11-11
+
+Posted on Medium: 2017-07-21
 
 **1) A Total Solar Eclipse** (No aid necessary during totality, otherwise: solar glasses, binoculars with filters, telescopes with filters)
 
@@ -82,3 +86,4 @@ The Andromeda Galaxy is the largest galaxy in our local group, surpassing even T
 ![](/images/1-9n4lcO72tovvxYsU4RAX1Q.jpeg)
 
 *Credit: Adam Evans*
+

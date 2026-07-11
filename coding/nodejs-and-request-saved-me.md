@@ -1,5 +1,7 @@
-date posted: 2017-03-25
+<!-- date posted: 2017-03-25 -->
 # NodeJS and Request Saved Me
+
+Posted on Medium: 2017-03-25
 
 ![](/images/1-jIvt68aHWSFeysbb7pNdqQ.png)
 
@@ -20,3 +22,4 @@ The whole setup was extremely simple, simpler than anything we were doing alread
 I know many people hate the JS Community, and honestly I sometimes join in. The number of libraries can be stupid, the amount of dependencies baffling, and the disagreement over what bests what aggravating. But when push comes to shove, the strength of JS’s community is that niche scenarios like this can be resolved instantly, whereas C# ends up having you fumbling with docs, & outdated libraries, and it often times leaves you nowhere to turn.
 
 I think the most important thing when coding is simplicity. While it is possible I may have found an easier C# solution than those I came across, this NodeJS/ExpressJS/Request setup was perhaps the simplest web app I have ever setup, and took me less time to setup than it took me Googling my first steps with C#.
+

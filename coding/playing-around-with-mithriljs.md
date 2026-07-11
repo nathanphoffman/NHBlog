@@ -1,5 +1,7 @@
-date posted: 2019-06-11
+<!-- date posted: 2019-06-11 -->
 # Playing around with MithrilJS
+
+Posted on Medium: 2019-06-11
 
 I have been playing around with a non-transpiled build of Mithril for a non-profit website I am working on. I like how simple the syntax is and the fact it includes a built-in router that has very similar syntax to lightweight routers like: [routie](http://projects.jga.me/routie/)
 
@@ -33,3 +35,4 @@ m(comp,{prop:'the prop I am setting'})
 Overall it seems really lightweight and easy to use. Data storage appears to be up to you to bind the data to the component object you create, there are no hard-set rules with Mithril, but they do have suggested things to avoid, particularly with the usage of their lifecycle methods.[**Lifecycle methods** *Components and virtual DOM nodes can have lifecycle methods, also known as hooks, which are called at various points…*mithril.js.org](https://mithril.js.org/lifecycle-methods.html)
 
 I will continue to update as I find things I enjoy with Mithril.
+

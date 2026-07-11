@@ -1,5 +1,9 @@
-date posted: 2017-07-14
-# 2/10/2013 Archives: The Galilean Moons of Jupiter
+<!-- date posted: 2013-02-10 -->
+# The Galilean Moons of Jupiter
+
+Posted on Wordpress: 2013-02-10
+
+Posted on Medium: 2017-07-14
 
 ![](/images/1-dC38EeSuQQukJSOILMlNDA.jpeg)
 
@@ -8,3 +12,4 @@ In many ways Jupiter and its moons are like a mini-solar-system. Jupiter itself 
 Galileo was the first human to observe Jupiter’s four largest moons, and he was the first to see objects orbiting another body (other than the Earth and Sun) Even scientists outside of the astronomy community have become excited about these moons. Geologists study the super-active surface/volcanoes of Io and Biologists study the potential for life living in tidally-warmed seas underneath the ice on Europa.
 
 Above is a photo I snapped last night of Jupiter and its four Galilean moons which I have labeled. The exposure was set from my Orion (M42) photo so Jupiter ended up blowing out its surface details.
+

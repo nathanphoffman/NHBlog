@@ -1,5 +1,7 @@
-date posted: 2025-11-09
+<!-- date posted: 2025-11-09 -->
 # I’m Back!
+
+Posted on Medium: 2025-11-09
 
 ![](/images/1-oiP5GtH1gq-svtlExmDXxw.png)
 
@@ -46,3 +48,4 @@ The good news is the negative impulse is vanishing, and the more I push through,
 Something that has helped me get through all of this is Wu-Wei. In very loose translation this means “To Go with the Flow” but I think Alan Watts describes this better as being in a sailboat and guiding your sails with purpose but without forcing them. So if you see an island you really want to visit but the winds keep blowing you away, consider taking the long way around, and if the long way still doesn’t get you to that island, maybe it wasn’t the place for you to go all along. And who knows during your journey you might discover new places of happiness and new things about yourself. Life isn’t about forcing yourself into something you envision but listening to the changing universe and allowing it to shape you and enjoying the shaping in the way wind or water shapes stone into something much more beautiful than its coarse state.
 
 Right now my ship has found itself back on the shore of programming, how long it will be here I do not know, maybe it will take off again and I will finally give up on it altogether, or perhaps I will continue to venture inland for many years to come, discovering the secrets of this place that sparked my child-imagination more than anything so many years ago.
+

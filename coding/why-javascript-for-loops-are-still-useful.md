@@ -1,5 +1,7 @@
-date posted: 2020-02-25
+<!-- date posted: 2020-02-25 -->
 # Why JavaScript for-loops are still useful
+
+Posted on Medium: 2020-02-25
 
 I feel like more and more, for loops are becoming despised, and while some scratch their heads and wonder why, others are looking at the mere usage of a for loop as a sign of a green and inexperienced developers who do not know how to use Array methods. I have fallen into this trap on many occasions often feeling like I was doing something wrong when I plugged in a `for` rather than a map or a reduce, but while there are reasons why Array methods are usually better, they aren’t **always** better.
 
@@ -94,3 +96,4 @@ I think the biggest thing that concerns me is the absolute-mentality. “Never-e
 If I were to make an analogy to the whole “Array vs for” debate, it would be comparing a flat-head to a Phillips screw driver in a world where most screws and screw-drivers are now moving towards flat-heads. If I only had one tool in this world I guess I would be willing to try to get by with a flat-head (Array Methods) but it still might make certain unusual Phillip screws I encounter more difficult (or near-impossible) to deal with, so I shouldn’t be embarrassed about dusting off my old Phillips-head once in a while. Also, tossing your old screw driver away just because you discovered flat heads can be shoved into a Phillips socket , may be a bit …
 
 wait for it…screwy!
+

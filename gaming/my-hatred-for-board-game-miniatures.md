@@ -1,5 +1,7 @@
-date posted: 2017-02-15
+<!-- date posted: 2017-02-15 -->
 # My hatred for board game miniatures
+
+Posted on Medium: 2017-02-15
 
 More and more board games seem to be coming out with large miniatures instead of small plastic game pieces. Miniatures have been seen a lot on Kickstarter since the massive successes of miniature games like Kingdom Death Monster and Blood Rage.
 
@@ -24,3 +26,4 @@ On a final note, let’s talk about how confusing unpainted minis make things. B
 I have heard the argument “you just have to paint them and they will look great!” This always makes no sense to me, it is like sending someone card stock and saying “Those are my games cards, you just have to print them”. Full blown wargames like warhammer 40k can perhaps get away with the “you do it” logic since 50%+ of the reason people play that game is building, painting, and showing off minis. Typical board game players do not want to paint their minis and independent commissions tend to cost far more since they aren’t part of the mass production of the game.
 
 In the end, I really feel that miniature heavy games are unattractive and unnecessary. I look at them and think “oh boy, I get to pay a premium for an unfinished looking game which is hard to store and box” Whenever I see an unpainted and/or unassembled/unfinished miniatures game I always force myself to ask “Do I really want this that badly?”
+

@@ -1,5 +1,7 @@
-date posted: 2022-11-05
+<!-- date posted: 2022-11-05 -->
 # The Beauty of Empathy & A Tale of Five Captains
+
+Posted on Medium: 2022-11-05
 
 ![](/images/0-cvZUynqhAyWd9aYo.jpg)
 
@@ -45,3 +47,4 @@ It may be said that it is not always possible to be an empathetic person (a Good
 Being silent on the behalf of the attacked party is not an attack you yourself are making, and it should be noted that even in the darkest of situations where you feel you need to debate the person, encouraging people and empathizing with them is still the better approach.
 
 [Video](https://www.youtube.com/embed/ESqfW_kyZq8?feature=oembed)
+

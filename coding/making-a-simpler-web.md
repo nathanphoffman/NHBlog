@@ -1,5 +1,7 @@
-date posted: 2026-07-11
+<!-- date posted: 2026-07-11 -->
 # Making a Simpler Web
+
+Posted on Medium: 2026-07-11
 
 ![](/images/1-__JsZRMVO-NCVA6opDb_Xg.png)
 
@@ -39,3 +41,4 @@ I considered perhaps the best way to design a “new web” looks something like
 A lot of this is subject to change, and some of it still needs to be worked out (does one provide default values for fields or does the browser/engine handle that?) I have already scaffolded some of this out with Claude and am currently cleaning up and reviewing the code, I will likely have a demo up soon and may post more about it then. One important takeaway is that while this sounds complicated note that for most people: you can just write markdown and make a site. All of the WASM stuff is truly for more interactive sites, carts, etc. For a personal website you likely don’t need any of that, and need only the knowledge of markdown (which you can learn in 15 minutes) to start creating a site once this is up.
 
 *Note: This post is slightly older and was created a couple weeks ago, I have since made tremendous progress on this project and it will soon be available.*
+

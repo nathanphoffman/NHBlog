@@ -1,5 +1,7 @@
-date posted: 2020-02-17
+<!-- date posted: 2020-02-17 -->
 # The Moon in Poetry — Emily Dickinson
+
+Posted on Medium: 2020-02-17
 
 It has been a while since I have posted on my blog, so I figured I would come back on with one post per week, every-other will relate to astronomy/space in someway, the other will relate to my journey’s in code. I figured it might be fun to start with a poem about space.
 
@@ -62,3 +64,4 @@ Her Bonnet is the Firmament —  The Universe — Her Shoe —  The Stars — th
 *The last point of interest is “Trinkets at Her Belt.” I may be reaching here, but for me I always associate “Belt” with Orion’s Belt, easily one of the most recognizable things in the night sky, much of its light coming from young blue giants that could rightfully be called trinkets or jewels. Perhaps when she follows with Dimities of Blue she is ending the poem with a statement that the Moon is so beautiful it is deserving of such a gown / dress / trinkets of the beautiful blue found in Orion?*
 
 I am definitely a large fan of Emily Dickinson, but as an astronomy fan, this poem really describes what it feels like to see the Moon in all its glory and phases. But I think what impresses me most, is that Emily obviously paid attention to the details of nature and the night-sky, so much so that it holds up even in our age of science if you take the more antiquated details (see: firmament) as artistic license instead of reality.
+

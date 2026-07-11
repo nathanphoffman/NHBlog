@@ -1,5 +1,7 @@
-date posted: 2026-03-31
+<!-- date posted: 2026-03-31 -->
 # Experimenting with Claude
+
+Posted on Medium: 2026-03-31
 
 ![](/images/0-pp_a2Qn5YY8ReQ5y.png)
 
@@ -30,3 +32,4 @@ There are plenty more examples, but I think this gets the point across I found i
 I have since changed my workflow with Claude and found using agents with well defined markdown files greatly improves my results. I have some thoughts on how to best use this optimally which I might post about in the future, but I don’t want every post to be about AI so I will probably do another pure coding post next time!
 
 Note: I am publishing this post now but it is a bit older at this point, I have since had a bit more experience with agents and have started another project and have more thoughts on Claude in the future I will post about.
+

@@ -1,5 +1,9 @@
-date posted: 2017-01-27
-# 11/10/2015 Archives: Collecting the Elements (Bismuth)
+<!-- date posted: 2015-11-10 -->
+# Collecting the Elements (Bismuth)
+
+Posted on Wordpress: 2015-11-10
+
+Posted on Medium: 2017-01-27
 
 This was posted to codingastronomer.com on 11/10/2015.
 
@@ -20,3 +24,4 @@ I started collecting samples of elements just a few weeks ago. My main inspirati
 - It is relatively easy to work with, flake, and shape, and can be melted at around 520.7 F, 271.5 F this makes it possible to melt on your stove-top if you can get it hot enough (I am not suggesting you do this)
 
 **Summary:** It is hard to find a neater metal than one which is nice to look at, nice to work with, feels nice, and will not harm you. [Periodic Video](https://www.youtube.com/watch?v=vyIo-c7VmIM).
+

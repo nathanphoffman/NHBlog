@@ -1,5 +1,9 @@
-date posted: 2017-01-20
-# 11/21/2015 Archives: Working with JSX
+<!-- date posted: 2015-11-21 -->
+# Working with JSX
+
+Posted on Wordpress: 2015-11-21
+
+Posted on Medium: 2017-01-20
 
 This was posted to codingastronomer.com on 11/21/2015.
 
@@ -62,3 +66,4 @@ After I restarted Atom, JSX was properly highlighted and auto-formatted! Unfortu
 I still haven’t figured out why the extra new lines occur, but I have noticed that if you add additional tags within the return it will not autoformat oddly. This is replicable across many of my react components that return only one element.
 
 In summary, using Atom with the react addon seems is the best way to work with React that I have found, but it still appears to have some problems of its own. If you have suggestions for me (I am still new to React and JSX world) feel free to post them in the comments.
+

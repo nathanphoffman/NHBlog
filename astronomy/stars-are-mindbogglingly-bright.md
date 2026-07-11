@@ -1,5 +1,7 @@
-date posted: 2017-07-03
+<!-- date posted: 2017-07-03 -->
 # Stars are Mindbogglingly Bright
+
+Posted on Medium: 2017-07-03
 
 Recently Cody’s Lab a science Youtuber posted a nice video on how distant the nearest stars are to Earth. For me it isn’t the distance that is surprising, it is thinking about how energetic stars must be to see from so far away. Before continuing you may want to watch this video where he shows just how far away some of the nearest stars to us are:
 
@@ -26,3 +28,4 @@ Now consider the sun, it would take us 146 years to get there yet so intense, bu
 If all of this wasn’t enough to blow your mind, the other fact making this more astonishing is that light decreases by the square law because surface area (a sphere) is one power higher than a single dimension (diameter) so each time you double your distance you 1/4 the light’s power. I literally am speechless when I think of all of this. Let us end by checking out a cool clip of the sun casually emitting a plasma loop many times the size of the earth:
 
 [Video](https://www.youtube.com/embed/HFT7ATLQQx8?feature=oembed)
+

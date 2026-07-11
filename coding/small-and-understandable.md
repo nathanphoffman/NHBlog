@@ -1,5 +1,7 @@
-date posted: 2025-11-13
+<!-- date posted: 2025-11-13 -->
 # Small and Understandable
+
+Posted on Medium: 2025-11-13
 
 ![](/images/0-qsL-zGthzHwUQr5D.jpg)
 
@@ -30,3 +32,4 @@ That sophisticated array operation with some chaining functions or that really n
 One last point is that understandability is not just naming and syntax, it is also the intent of those functions. Do those functions have simple goals? Simple inputs? Simple outputs? Are they pure whenever they can be? Those should be even more important points as it makes your code even more understandable not just to read but also to understand the impact of things downstream.
 
 P.S. I have more thoughts on this subject, specifically on OOP vs Functional approaches and how it ties into trying to keep things small and understandable, more on that in the future!
+

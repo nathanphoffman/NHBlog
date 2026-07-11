@@ -1,5 +1,9 @@
-date posted: 2017-06-30
-# 3/7/2013 Archives: Apollo 11 Mission Insignia
+<!-- date posted: 2013-03-07 -->
+# Apollo 11 Mission Insignia
+
+Posted on Wordpress: 2013-03-07
+
+Posted on Medium: 2017-06-30
 
 ![](/images/1-8V-rhGyOr1s3fV40Wpvwqg.png)
 
@@ -14,3 +18,4 @@ Likely as part of the insignia design, the crew of Apollo 11 assigned *Eagle* as
 > Tranquility base here. The Eagle has landed.
 
 > *–Neil Armstrong. July 20th, 1969*
+

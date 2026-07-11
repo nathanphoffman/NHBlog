@@ -1,5 +1,7 @@
-date posted: 2026-05-05
+<!-- date posted: 2026-05-05 -->
 # AI is likely to make code knowledge more useful
+
+Posted on Medium: 2026-05-05
 
 ![](/images/0-S7kQJB6S4E56wIYB.png)
 
@@ -22,3 +24,4 @@ I have found the more broad general purpose models really are only good at basic
 It is still shocking to me how often people will claim that AI will soon become conscious and we will have walking robots that are indescribable from humans; we are so far away (likely infinitely far) from that future, that it is likely not happening in any lifetime of those who read this (if even possible at all). As a tool sure its useful, just like a calculator is super useful, but as some miracle technology that will change the world — I think you need to look to the past at all the other predictions like that made — sure some became somewhat true like the usefulness of computers, the internet, the smartphone, but even those aren’t perfect, often took longer to mature than expected, didn’t go as far as predictions (people said computers not AI or mechanical servos would make humanoid robots possible), and ironically there is a movement today to move away from screens more and more which might make those technologies be less used by future generations anyhow.
 
 For now I will keep enjoying AI as a learning tool for basic information and using it as a code companion, but I am far far far from ever relying on it for anything even remotely complex without heavy auditing of its internal logic — which calls into question if AI APIs are a bit over-hyped — as the risk of getting something wrong for your customer seems to me to be worse than limiting the functionality a bit. Though I suppose there might be some highly limited use-cases out there like a customer being able to ask questions about your product in an FAQ section.
+

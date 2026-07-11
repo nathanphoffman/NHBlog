@@ -1,5 +1,7 @@
-date posted: 2026-04-25
+<!-- date posted: 2026-04-25 -->
 # Entropy with AI (and Humans) in Code Systems
+
+Posted on Medium: 2026-04-25
 
 ![](/images/1-U37B7r0Ms3jzE2S61wkkjQ.png)
 
@@ -131,3 +133,4 @@ function computeQuality({samples = 1000, ...params}) {
   console.log(result*100);
 }
 ```
+

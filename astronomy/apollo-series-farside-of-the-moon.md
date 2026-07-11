@@ -1,5 +1,9 @@
-date posted: 2017-05-19
-# 6/20/2013 Archives: Apollo Series: Farside of The Moon
+<!-- date posted: 2013-06-20 -->
+# Apollo Series: Farside of The Moon
+
+Posted on Wordpress: 2013-06-20
+
+Posted on Medium: 2017-05-19
 
 ![](/images/1-CWZkVuZu0GOgp-k6WuO1GQ.jpeg)
 
@@ -8,3 +12,4 @@ As Apollo 8 rounded the Moon for the first time, the astronauts aboard became th
 Jim Lovell, the famed commander of Apollo 13, was the only man among them who returned on a later flight.
 
 Apollo Archives Photo: AS8–13–2225
+

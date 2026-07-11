@@ -1,5 +1,9 @@
-date posted: 2017-02-10
-# 9/27/2015 Archives: Multithreading and Asynchronous Calls in JavaScript
+<!-- date posted: 2015-09-27 -->
+# Multithreading and Asynchronous Calls in JavaScript
+
+Posted on Wordpress: 2015-09-27
+
+Posted on Medium: 2017-02-10
 
 This was posted to codingastronomer.com on 9/27/2015.
 
@@ -21,3 +25,4 @@ While synchronous calls run in order of execution, asynchronous run based on som
 The good news is web workers really do work, and they work fast once initialized. Additionally, there are some user created libraries, like [multithread.js](http://keithwhor.github.io/multithread.js/) which makes web workers easier to use.
 
 You can read more about Web Workers on [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers).
+

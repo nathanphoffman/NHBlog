@@ -1,5 +1,7 @@
-date posted: 2022-04-26
+<!-- date posted: 2022-04-26 -->
 # Stack overflow surveys, and what they say about language trends
+
+Posted on Medium: 2022-04-26
 
 Since the 2022 Stack Overflow Survey is coming up, I thought it would be nice to look at the trends of past languages.
 
@@ -58,3 +60,4 @@ I never loved the “what language is better” debate as every technology, prin
 *Notice that languages with higher spreads are more volatile. With orange-dots on the top of the spread representing positive growth and orange dots on bottom indicating growth is trending negative. C++ is a great example of stability with barely any change.*
 
 *The next developer survey is coming up for 2022! Once this data is in, I will do an update to this post.*
+

@@ -1,5 +1,7 @@
-date posted: 2026-02-19
+<!-- date posted: 2026-02-19 -->
 # Starting a little JS/TS game
+
+Posted on Medium: 2026-02-19
 
 ![](/images/1-lR1rl1iX99N2LlnKGGBdJw.png)
 
@@ -68,3 +70,4 @@ For the UI (beyond the canvases and terminal) I am thinking about playing with S
 I am using XTerminal for the terminal piece, which will listen in to events and display information about what is going on, perhaps dispatching them with commands going forward. I am thinking about using Python to handle certain facets of terminal interactions, for now I am using Pyodide in browser for this, though I will likely want to build it in web assembly for production as the interpreter is several MB in size.
 
 All of these details could probably use their own posts, but I will save that for future, I am going to try and keep these updates short. More to come!
+

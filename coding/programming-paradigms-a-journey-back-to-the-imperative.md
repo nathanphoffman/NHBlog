@@ -1,5 +1,7 @@
-date posted: 2026-07-09
+<!-- date posted: 2026-07-09 -->
 # Programming Paradigms — A Journey Back to the Imperative
+
+Posted on Medium: 2026-07-09
 
 ![](/images/1-BTFTiskn2oKbIOuEaY58uw.png)
 
@@ -42,3 +44,4 @@ We have also seen an explosion of languages that, while not ditching objects and
 Not only this, it doesn’t seem to me that pure functional or OOP paradigms have ever done well (except for one burst of OOP’s success with JAVA). People might have heard of LISP, maybe even Clojure, F#, R, Simula. But has anyone seriously used them for a large Enterprise application? And how about C#? While it isn’t collapsing, it also isn’t exactly growing — and yet Java *has* been collapsing, and most languages that have any OOP presence these days are either perfectly multi-paradigm or more procedural in nature — even C# seems like it is pulling the plug a bit on pure OOP design now allowing root-level code instead of classes. I would say things are headed to a 20/40/15/15 split of imperative : procedural : func : oop - ratio, which I am happy to see even if I am more a 50/35/5/10 ratio myself.
 
 The future will be interesting, and it is interesting to me to see the old times return — as has happened in so many fields. From streaming->vinyl, phone cameras -> film cameras, from SQL -> Blob -> SQL Again — the old is coming back. Maybe before long the imperative will get even more love and we will see even heavier macro use, and although (not entirely my thing), it would be hilarious to see GOTO make a return after all these years — even if it makes us hate each other — boy oh boy do I look at those little `label` and `goto` guys — a sort of “your cute” … but “ugly” kind of love. ❤
+

@@ -1,5 +1,7 @@
-date posted: 2022-04-28
+<!-- date posted: 2022-04-28 -->
 # My Problem with Space Force
+
+Posted on Medium: 2022-04-28
 
 ![](/images/0-qwxeXSVpngvNlXp7.jpg)
 
@@ -40,3 +42,4 @@ Talking brought down the Berlin wall, talking avoided Nuclear annihilation in th
 NASA is a civilian arm, the hand of us, the people. Space Force is a military arm, the hand of the military & the president. I understand the purpose of a military here on Earth, but a military in space only makes a statement that we want to bring warfare into the future so that our children and their children can continue to fight one another.
 
 Please, as we are setting out into space and bumping into each other in new territories; let us shake the hand of our adversaries with the warm hands of civil servants, not with the closed fists of war.
+

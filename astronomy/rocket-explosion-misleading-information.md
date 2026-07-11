@@ -1,5 +1,9 @@
-date posted: 2017-02-24
-# 10/30/2014 Archives: Rocket Explosion: Misleading Information
+<!-- date posted: 2014-10-30 -->
+# Rocket Explosion: Misleading Information
+
+Posted on Wordpress: 2014-10-30
+
+Posted on Medium: 2017-02-24
 
 As many of you have probably heard, Orbital Sciences lost an Antares rocket on Tuesday. I was watching live on the NASA feed when it occured, and I was stunned to see the rocket explode. Many news sources have been ripping apart Orbital, citing past launch failures, a loss of 300 million dollars, and the “irresponsible” usage of an old 1960’s engine. These statements are all misleading, and I really must clarify these statements.
 
@@ -10,3 +14,4 @@ The news stations also state that NASA lost 300 million dollars due to the explo
 The silliest criticism is that the Antares uses old, outdated 1960s engines from Russia. While it is true, that the AJ-26 engines are slightly modified versions of the NK-33 engines created for the Soviet Moon rocket (the N1), they are still incredible engines. Until SpaceX’s latest, cutting-edge redesign of their Merlin engine, the NK-33 and the RD-276 were the most efficient engines in the world. Today, it is still ranked #3 for engine efficiency. Think about that, for 40 freaking years, these engines sat collecting dust, like a marathon runner taking a 40 year nap, and yet they were still better than most of the other engines manufactured during that time. Again, summarizing these engines as “outdated 1960s engines” is like saying Albert Einstein: “Some old dude in the 20th century” or Michael Jordan: “some ok basketball player from the 90s”. If we are still using the NK-33 for another 40 years, then yes, please complain, but until then, these things are still solid engines. As I once heard before, 1/2 a legend is still a legend.
 
 Remember, the news only reports firsts and failures in rocketry. The vast majority of launches are neither, **they are true 100% successes.**
+

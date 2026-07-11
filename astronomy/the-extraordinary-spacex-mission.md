@@ -1,5 +1,7 @@
-date posted: 2017-03-16
+<!-- date posted: 2017-03-16 -->
 # The Extraordinary SpaceX Mission
+
+Posted on Medium: 2017-03-16
 
 ![](/images/1-GdbBF0YdvwWyr4WaMIiKAQ.jpeg)
 
@@ -28,3 +30,4 @@ I can only hope that while there may be some setbacks, they continue forward and
 [Video](https://www.youtube.com/embed/4Ca6x4QbpoM?feature=oembed)
 
 **This number comes from dividing the Shuttle program cost ($196 billion in 2011 dollars) by the number of Shuttle launches (135). If you do not include staff/buildings/overhead it is more like $500 million, but for the sake of a commercial company comparison, where they must pay for their buildings, staff and other costs, I think this is a fair way to calculate the price.*
+

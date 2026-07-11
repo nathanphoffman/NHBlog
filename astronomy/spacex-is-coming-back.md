@@ -1,5 +1,9 @@
-date posted: 2017-01-13
-# 12/3/2015 Archives: SpaceX is Coming Back
+<!-- date posted: 2015-12-03 -->
+# SpaceX is Coming Back
+
+Posted on Wordpress: 2015-12-03
+
+Posted on Medium: 2017-01-13
 
 This was posted to codingastronomer.com on 12/3/2015.
 
@@ -30,3 +34,4 @@ SpaceX plans to use boosters on the side of the capsule to propel it upwards as 
 The shuttles did have ejection seats for a time, but because the astronauts did not ride inside a capsule that could easily be flung free from the craft, odds of survival was much lower. If the Challenger had an escape system like SpaceX’s below, things might have been very different.
 
 [Video](https://www.youtube.com/embed/1_FXVjf46T8?feature=oembed)
+
