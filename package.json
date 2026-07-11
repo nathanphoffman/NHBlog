@@ -5,7 +5,6 @@
   "type": "module",
   "scripts": {
     "start": "bun server.js",
-    "update": "node update.js",
-    "build": "node scripts/inject-meta.js"
+    "update": "node update.js"
   }
 }
