@@ -45,7 +45,7 @@ You might be thinking “hey wait a second, if a 100 million people review somet
 
 I ran this system for many many products like Amazon, Steam listings, and Board Game reviews, and this table effectively is what I discovered using my ranking system:
 
-![](https://cdn-images-1.medium.com/max/800/1*yGqnmU63v6ERKwsiQn-sAw.png)
+![](/images/1-yGqnmU63v6ERKwsiQn-sAw.png)
 
 For long term projections, I ran it for Agricola (a well established and beloved farming board game) over several years of data and while it grew at launch (as expected) it stabilized quite well around a 3. I ran that data looking back at a year or so ago, and it is at present a 3.01. Starfield which I tracked was beloved at first and actually hit over 3 but then fell back down as people criticized it. It turns out that this rating system, while unbounded, still bounds itself as the bigger something becomes the more critical people become of it.
 

@@ -1,7 +1,7 @@
 date posted: 2017-06-30
 # 3/7/2013 Archives: Apollo 11 Mission Insignia
 
-![](https://cdn-images-1.medium.com/max/800/1*8V-rhGyOr1s3fV40Wpvwqg.png)
+![](/images/1-8V-rhGyOr1s3fV40Wpvwqg.png)
 
 The mission insignia for Apollo 11 was designed by Michael Collins, the command module pilot for the first moon landing. It is unlike any of the other Apollo mission insignia as it does not feature any of the astronaut names. Jim Lovell, the backup commander for the mission (and future veteran commander of Apollo 13) suggested that eagles be used to represent the United States, and Tom Wilson, a computer simulator expert proposed that an olive branch be used as an extension of peace. Ultimately Michael Collins put the ideas together, traced an eagle he found out of a National Geographic magazine, and put an olive branch in the Eagle’s mouth. Collins submitted it for approval, but the design was shutdown by Washington because the eagle appeared too menacing. Collins corrected the issue by placing the olive branch in the claws of the eagle, and Washington finally approved the design.
 

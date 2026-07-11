@@ -1,7 +1,7 @@
 date posted: 2026-03-31
 # Experimenting with Claude
 
-![](https://cdn-images-1.medium.com/max/800/0*pp_a2Qn5YY8ReQ5y)
+![](/images/0-pp_a2Qn5YY8ReQ5y.png)
 
 I began manually creating a [weather terminal app](https://github.com/nathanphoffman/Weather) last year in Typescript, it simply pulls in weather data from NOAA and greatly simplifies the weather data by showing three hour intervals by combining multiple factors into a real-feel temperature, a composite of precipitation, clouds, wind, etc (into “storm rating”) and letter and emoji flags for relevant info like wind, humidity, and freezing temperatures. The idea was to quickly see what the weather was for a week at a glance.
 

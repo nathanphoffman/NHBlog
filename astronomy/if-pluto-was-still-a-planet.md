@@ -1,7 +1,7 @@
 date posted: 2017-04-14
 # 3/24/2014 Archives: If Pluto was still a Planet
 
-![](https://cdn-images-1.medium.com/max/800/1*SuD1Vj_7Mml7jbObekAdUA.jpeg)
+![](/images/1-SuD1Vj_7Mml7jbObekAdUA.jpeg)
 
 *Best image we currently have of Pluto (Credit: Hubble/NASA)*
 

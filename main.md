@@ -1,8 +1,5 @@
-# Personal Blog
-
-The Blog of Nathan Hoffman
-
-*A journey through code, the universe, and random thoughts* 
+*The personal blog of **Nathan Hoffman**, a journey through code, the universe, and random thoughts. You can see 
+my coding work at [codingastronomer.dev](https://codingastronomer.dev)*
 
 <!-- include: astronomy.md, books.md, coding.md, gaming.md, life.md, sort: "date posted:", sort_dir: desc, limit_to: 10 -->
 

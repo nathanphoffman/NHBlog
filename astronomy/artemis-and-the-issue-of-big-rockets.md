@@ -1,7 +1,7 @@
 date posted: 2026-04-20
 # Artemis and the issue of big rockets
 
-![](https://cdn-images-1.medium.com/max/800/0*9UMacE9SlTfXTZBN)
+![](/images/0-9UMacE9SlTfXTZBN.jpg)
 
 I watched Artemis II along with many people earlier this month, infact Buzz Aldrin himself apparently watched it and it got his 96 year old-self excited.
 
@@ -22,7 +22,7 @@ But this is not even close to the biggest problem. The problem lies in what thes
 
 You (probably) can’t. At least not with one rocket.
 
-![](https://cdn-images-1.medium.com/max/800/0*hNyxyDpN2JO_V8fb)
+![](/images/0-hNyxyDpN2JO_V8fb.jpg)
 
 The problem we face is that rockets tend to work best when they can afford to lose an engine (or two) and when they don’t have so many engines that the risk of a catastrophic failure becomes too high, it tends to be something like 4–12 engines, the number isn’t exactly set some will say 5 is the minimum, others might extend the upper bound close to 20 or so, but for sure ~30ish seems to be beyond if not what is possible, at least beyond what is reliable. This is about the number of engines that Elon Musk is using in Starship (quite often unsuccessfully) and it is also the number of engines used in the N-1 which infamously failed all of its 4 flights. The problem is that with increasing engines, you also increase the engine failure rate and if the failure is catastrophic, then you lose the whole rocket (and possibly crew).
 

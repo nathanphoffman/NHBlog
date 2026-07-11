@@ -1,7 +1,7 @@
 date posted: 2026-04-25
 # Entropy with AI (and Humans) in Code Systems
 
-![](https://cdn-images-1.medium.com/max/800/1*U37B7r0Ms3jzE2S61wkkjQ.png)
+![](/images/1-U37B7r0Ms3jzE2S61wkkjQ.png)
 
 *The code quality (or inverse entropy) calculation I came up with over the last few days*
 
@@ -13,7 +13,7 @@ It turns out that if you have a system, even a 100% stable one and you introduce
 
 As an experiment I had AI graph this relationship:
 
-![](https://cdn-images-1.medium.com/max/800/1*jiaHiPMUHyz1CADJwi8ZYg.png)
+![](/images/1-jiaHiPMUHyz1CADJwi8ZYg.png)
 
 While the state it reached at 2300 steps was 62.9% it actually would have decayed to 0 stability (100% entropy) given enough time.
 
@@ -21,31 +21,31 @@ Even more interestingly, this relationship still decreases even when Cp (Correct
 
 AI helped me a bit express this in mathematical notation
 
-![](https://cdn-images-1.medium.com/max/800/1*wGMqDhuZcQNb0EOywOzfSQ.png)
+![](/images/1-wGMqDhuZcQNb0EOywOzfSQ.png)
 
 Delta Q here represents the change in quality for each step (or commit in our case), Dp and Cp we have already discussed. Ci represents the commit impact (the percentage of the codebase the commit represents). Ep or the probability of error (which as we will discuss later is better defined as entropy) is what determines if Degradation (Dp) should be applied, and correction is the inverse of this (whenever degradation does not occur). Now it might seem like fair criticism that the opposite of entropy (or non ideal code including errors) is not the same thing as correction: but it is. If code is not disordered, then by the very definition of entropy: it’s ordered. And this is why entropy is a much better term for what I am trying to figure out here. I don’t care about just bugs, or just readability, or just code smell: I care about a hypothetical “disorder” vs “order” which relates to all these things and more. *The role of U (unguidedness) and the role of the exponent 1 to e (as in 2.7…) will be covered further down in this post.*
 
 What is important to note is that balancing these two factors determines the ultimate end state of the system over a certain number of steps (or commits in coding terms). The real question is how are Cp, Dp, and Ep related? My hypothesis is that in actuality they are heavily correlated (with Ep and Dp being effectively equivalent and Cp being the inverse (correction increases as entropy drops).
 
-![](https://cdn-images-1.medium.com/max/800/1*HsHylImve_Y77CrdpUCMLA.png)
+![](/images/1-HsHylImve_Y77CrdpUCMLA.png)
 
 The idea is that a developer who fails a PR 10% of the time is not 100% wrong 10% of the time. Remember, entropy here is disorder or degradation. It is chaos, not necessarily “hey one bug in 100 lines means the whole commit is meaningless, toss it out.” Obviously the line that introduced the bug is degradation, but all of the other lines might be just fine. And so it wasn’t a 10% chance they introduced 100% entropy it was a maximum of a X% chance they introduced a maximum of X% entropy. And this is key, its one thing that should be noted: if Ep and Dp are equal, and we want to represent the *maximum* entropy in a system (not the average), then Ep and Dp must assume the maximal possible value either could result in degradation in a commit and the amount of that degradation. So in actuality if it was proven the developer actually pushed 20% sloppy code 15% of the time, then Ep = Dp = 0.20 not 0.15. And the correction: Cp = 1–0.20 = 0.80 (as anything not entropy = correction/order).
 
 This is the foundation of the entire work, but there were additional things that needed to be introduced to make it more analogous to entropy and more applicable to coding.
 
-![](https://cdn-images-1.medium.com/max/800/1*mUxCO9YymrMXKDMagdvMaA.png)
+![](/images/1-mUxCO9YymrMXKDMagdvMaA.png)
 
 *Calculating unguidedness from intuition: it’s just the inverse scaled from 0–1*
 
 **Intuition/Unguidedness (I/U) —** The exponent (U) you see in the top notation assumes unguidedness (a result from 1 to e). In otherwords the amount of a lack of intuition or a random distribution of priority. AI tools do not possess out-of-context knowledge like the meeting, the angry person who stormed up to your desk, or the emotions you have driving you. They weigh everything equally. A human on the other-hand must have intuition. We ask too many questions, come with a preset of stubborn ideas, are present in the original project meetings, and likely will refuse to work on a project until we have at some understanding. But a human still has flaws, and so their intuition (which I scaled from 0–1 as it is easier to work with) is likely to be below 1 (which computes to an unguidedness: U > 1) and in some cases if not well informed could be almost as bad as AI’s “intuition” as a result of no instruction. (which is I=0 or a max unguidedness of e). The reason unguidedness maxes at the natural number (e) is because e often shows up in unordered states, or doing something without order or purpose: maximally unguided. *It is my opinion that this is what people really should talk about when they talk about why vibe coding doesn’t work. Its not that error is the issue, its that the AI is not given enough insight into how something should work, and likely never will and so the human will always have superior intuition as to how to do something as it relates to the team, project, and structure. I cannot emphasize how important this is, if you play around with the graph at the end you will see just how much intuition matters.*
 
-![](https://cdn-images-1.medium.com/max/800/1*SOynqvXJVaBy-1v3ZjC-IQ.png)
+![](/images/1-SOynqvXJVaBy-1v3ZjC-IQ.png)
 
 *Potential entropy of the commit n (Ec) is equal to the entropy(commits + e)*
 
 **Potential Entropy of the Commit (Ec) —** We know that the entropy in the universe at any given moment is represented by log(W) where log is the natural log (ln) and W is the current state of the system. Here we base it on commits: Cb is the base number of commits that came before, n is the number of commits afterwards up to and including this one, and e is there as E(c) must be *at least 1* as that is the baseline for the product that comes later (ln(e) = 1 guarantees Ec ≥ 1). It should be noted that this implementation of entropy represents the maximum disorder not the actual present disorder as, unlike the universe, coders introduce intelligent order changes. In our code terms, using this calculation would represent the resultant disorder if degradation is 100% this cycle. Deciding on the simplest unit to “order” was difficult, as we do not push code in lines yet they are one of the smallest parts (sometimes indivisible). I used commits merely because commits are the way code is integrated, moved, reviewed, and judged for problems, and it makes everything else so much easier, and most of the time, most dev shops will force commits of similar sizes, but it should be noted that if your commits are wildly different in sizes, it could impact this model as it assumes that any two commits are proportional in their impacts.
 
-![](https://cdn-images-1.medium.com/max/800/1*YuKybf9bumhUF0mCryKtUQ.png)
+![](/images/1-YuKybf9bumhUF0mCryKtUQ.png)
 
 *Fragility is the linear inverse of Quality*
 
@@ -53,13 +53,13 @@ This is the foundation of the entire work, but there were additional things that
 
 Now we plug in the potential entropy of the commit (Ec) and fragility (F) to get Ep(n) or the overall entropy probability/amount at step n (since we decided entropy probability and amount are one and the same earlier). Eb here represents the base rate of entropy. This is where you would put in your “I add 10% entropy 10% of the time” factor (in that example 0.10).
 
-![](https://cdn-images-1.medium.com/max/800/1*sgcoTk-gdRf_TNHSY9_XHg.png)
+![](/images/1-sgcoTk-gdRf_TNHSY9_XHg.png)
 
 *Final calculation we need*
 
 Now that we have everything we need, we compute everything by taking our first equation, calculating the quality (Q) over n iterations (commits) and taking advantage of our hypothesis that Ep~Dp~(1-Cp) allowing us to replace Cp and Dp using a unified Ep for everything:
 
-![](https://cdn-images-1.medium.com/max/800/1*MW5d9lUk9IhvnN90HiBYQg.png)
+![](/images/1-MW5d9lUk9IhvnN90HiBYQg.png)
 
 The last thing is Ci, which represents “Commit impact” it is the % of the codebase that the commit will touch, and therefore scales down the amount of degradation or correction (as it has an impact relative to the size of the change*). This exposes the very final assumption we make: that the size of commits will scale with the code size to keep the resultant percentage the same. **One thing I should note as a result of fragility and natural entropy is it is possible to impose entropy well beyond the base entropy, this is intentional: it is because code touches more than itself, it interacts and can break code elsewhere (this is why it is called base entropy and not the entropy rate, that is decided by the whole entropy term seen in the top line above with probability Ep(n)).*
 

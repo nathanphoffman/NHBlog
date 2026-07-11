@@ -1,7 +1,7 @@
 date posted: 2022-11-05
 # The Beauty of Empathy & A Tale of Five Captains
 
-![](https://cdn-images-1.medium.com/max/800/0*cvZUynqhAyWd9aYo)
+![](/images/0-cvZUynqhAyWd9aYo.jpg)
 
 Empathy and “acknowledging feelings” is more important than you know.
 

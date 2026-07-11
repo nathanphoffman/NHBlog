@@ -1,7 +1,7 @@
 date posted: 2017-05-12
 # 6/23/2013 Archives: Beautiful when Understood
 
-![](https://cdn-images-1.medium.com/max/800/1*gapZiizqnFYOSHgcGYUCVw.jpeg)
+![](/images/1-gapZiizqnFYOSHgcGYUCVw.jpeg)
 
 *Credit: NASA: Hubble Telescope*
 

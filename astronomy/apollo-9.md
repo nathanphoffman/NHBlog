@@ -1,7 +1,7 @@
 date posted: 2017-03-10
 # 8/1/2014 Archives: Apollo 9
 
-![](https://cdn-images-1.medium.com/max/800/1*T2L1U3gt9-mV5mdPHGNFbQ.jpeg)
+![](/images/1-T2L1U3gt9-mV5mdPHGNFbQ.jpeg)
 
 Many of us have heard of at least one or two Apollo missions, including the very famous Apollo 11 mission which landed Neil Armstrong and Buzz Aldrin on The Moon. There were some Apollo missions, however, which got little or no attention. While Apollo 9 was quite successful, it was a test mission that did not accomplish any “huge-firsts” in the public’s mind. Regardless, it was still the first time the Lunar Module was flown, only the second time docking occurred between two manned spacecraft, and it also had two successful EVAs. Perhaps more importantly, Apollo 9 paved the way for Apollo 11 to land humans on The Moon.
 

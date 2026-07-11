@@ -1,7 +1,7 @@
 date posted: 2017-03-25
 # NodeJS and Request Saved Me
 
-![](https://cdn-images-1.medium.com/max/800/1*jIvt68aHWSFeysbb7pNdqQ.png)
+![](/images/1-jIvt68aHWSFeysbb7pNdqQ.png)
 
 ***Unrelated:** We need to make the rocket turtle the official [Node mascot](https://github.com/node-forward/discussions/issues/33)*
 

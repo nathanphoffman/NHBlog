@@ -1,6 +1,6 @@
 # The Binary Solution to a Strange Interview Question
 
-![](https://cdn-images-1.medium.com/max/800/0*GA6ckcDtfDWwddzF.png)
+![](/images/0-GA6ckcDtfDWwddzF.png)
 
 Note: this was actually originally written a couple years ago, but I recently wrapped it up and am now publishing it!
 

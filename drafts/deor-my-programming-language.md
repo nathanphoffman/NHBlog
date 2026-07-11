@@ -1,6 +1,6 @@
 # Deor — My Programming Language
 
-![](https://cdn-images-1.medium.com/max/800/0*iY8Hz-qPvcL1dS8r.png)
+![](/images/0-iY8Hz-qPvcL1dS8r.png)
 
 *Little Deer Mascot*
 

@@ -1,7 +1,7 @@
 date posted: 2025-11-13
 # Small and Understandable
 
-![](https://cdn-images-1.medium.com/max/800/0*qsL-zGthzHwUQr5D)
+![](/images/0-qsL-zGthzHwUQr5D.jpg)
 
 *A series that was neither small nor understandable and whose books remain unfinished and whose show became infamous after being unable to satisfactorily conclude the numerous plot lines*
 

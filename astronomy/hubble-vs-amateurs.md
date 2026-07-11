@@ -1,7 +1,7 @@
 date posted: 2017-07-28
 # 6/26/2012: Archives: Hubble vs Amateurs
 
-![](https://cdn-images-1.medium.com/max/800/1*_4AbX7vNia7heEaEwoAYhA.jpeg)
+![](/images/1-_4AbX7vNia7heEaEwoAYhA.jpeg)
 
 *Taken with Hubble, Credit: NASA*
 

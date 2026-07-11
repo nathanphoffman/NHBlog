@@ -1,7 +1,7 @@
 date posted: 2026-07-09
 # Programming Paradigms — A Journey Back to the Imperative
 
-![](https://cdn-images-1.medium.com/max/800/1*BTFTiskn2oKbIOuEaY58uw.png)
+![](/images/1-BTFTiskn2oKbIOuEaY58uw.png)
 
 *A Rexx Pi Generator, an older language which is very procedural*
 

@@ -1,29 +1,29 @@
 date posted: 2017-05-05
 # 9/7/2013 Archives: LADEE Heads for the Moon!
 
-![](https://cdn-images-1.medium.com/max/400/1*tIpQm7bu4aHT63C7tJi32g.jpeg)
+![](/images/1-tIpQm7bu4aHT63C7tJi32g.jpeg)
 
-![](https://cdn-images-1.medium.com/max/400/1*ZyPsG-7t7kAO2BA48WVqSA.jpeg)
+![](/images/1-ZyPsG-7t7kAO2BA48WVqSA.jpeg)
 
-![](https://cdn-images-1.medium.com/max/400/1*A-GU3Fc2T5NMwTbzUrCYng.jpeg)
+![](/images/1-A-GU3Fc2T5NMwTbzUrCYng.jpeg)
 
-![](https://cdn-images-1.medium.com/max/400/1*V70rfFenkIwVGv_NnCB0Pw.jpeg)
+![](/images/1-V70rfFenkIwVGv_NnCB0Pw.jpeg)
 
-![](https://cdn-images-1.medium.com/max/400/1*KfrSqhsJoMg8U2QJKgyXkg.jpeg)
+![](/images/1-KfrSqhsJoMg8U2QJKgyXkg.jpeg)
 
-![](https://cdn-images-1.medium.com/max/400/1*24x40JfRIwT55eUOA-qUeg.jpeg)
+![](/images/1-24x40JfRIwT55eUOA-qUeg.jpeg)
 
-![](https://cdn-images-1.medium.com/max/600/1*-lCS9RROaVIiBmI7OJzelw.jpeg)
+![](/images/1--lCS9RROaVIiBmI7OJzelw.jpeg)
 
-![](https://cdn-images-1.medium.com/max/600/1*8j_UoOUT2w0QIKw7g81ZQw.jpeg)
+![](/images/1-8j_UoOUT2w0QIKw7g81ZQw.jpeg)
 
-![](https://cdn-images-1.medium.com/max/600/1*ydwVJG04dL_aQVxAYPc-EA.jpeg)
+![](/images/1-ydwVJG04dL_aQVxAYPc-EA.jpeg)
 
-![](https://cdn-images-1.medium.com/max/600/1*DnfrjfjcADHmu9kXU2ijDw.jpeg)
+![](/images/1-DnfrjfjcADHmu9kXU2ijDw.jpeg)
 
 *LADEE heads for The Moon*
 
-![](https://cdn-images-1.medium.com/max/800/1*O7GTLDmsX8r2kIZf_sKT8Q.gif)
+![](/images/1-O7GTLDmsX8r2kIZf_sKT8Q.gif)
 
 *A GIF I put together with the images I took above*
 

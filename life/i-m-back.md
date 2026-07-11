@@ -1,7 +1,7 @@
 date posted: 2025-11-09
 # I’m Back!
 
-![](https://cdn-images-1.medium.com/max/800/1*oiP5GtH1gq-svtlExmDXxw.png)
+![](/images/1-oiP5GtH1gq-svtlExmDXxw.png)
 
 I have been away from my blog for sometime, a lot has happened in the last few years: I have lost around 100lbs. I have gone to the gym nearly every day curing my back pain, completely changed my diet going plant-based as part of my weight loss strategy, lowered my cholesterol 80-90 points, dropped my blood pressure 40 points, I have completely changed my outlook on life (more on that later), worked on a few projects of passion like a story I am working on and several TTRPG designs (tabletop role-playing games); I also worked on a few fun coding projects (more on those in future posts), but most relevant for this blog: I also began to question my career (spoiler: I am not questioning it any longer and expect more upcoming blog posts).
 

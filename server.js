@@ -10,6 +10,11 @@ const MIME = {
   '.wasm': 'application/wasm',
   '.md':   'text/plain',
   '.svg':  'image/svg+xml',
+  '.jpg':  'image/jpeg',
+  '.jpeg': 'image/jpeg',
+  '.png':  'image/png',
+  '.gif':  'image/gif',
+  '.webp': 'image/webp',
 };
 
 // true for a real top-level browser navigation (address bar, link click, refresh) —

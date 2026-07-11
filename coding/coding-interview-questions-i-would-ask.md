@@ -1,7 +1,7 @@
 date posted: 2022-06-03
 # Coding Interview Questions I would Ask
 
-![](https://cdn-images-1.medium.com/max/800/0*BsOc9B8Cl2un6V6L.jpg)
+![](/images/0-BsOc9B8Cl2un6V6L.jpg)
 
 I have thought long and hard about interview questions I might ask if I was on the opposite side of the table; specific questions are problematic: “What does X thing do” as it suggests every programmer should know any feature of any language or technology you might be hiring for, which is just not the reality of the programming world right now.
 

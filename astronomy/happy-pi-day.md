@@ -1,7 +1,7 @@
 date posted: 2017-06-16
 # 3/14/2013 Archives: Happy Pi Day
 
-![](https://cdn-images-1.medium.com/max/800/1*RQpqhXpNagWDN6NQ1nyVDA.jpeg)
+![](/images/1-RQpqhXpNagWDN6NQ1nyVDA.jpeg)
 
 To celebrate [Pi day](http://en.wikipedia.org/wiki/Pi_Day), I have listed a number of random astronomy facts associated with the number 314:
 

@@ -1,7 +1,7 @@
 date posted: 2022-04-28
 # My Problem with Space Force
 
-![](https://cdn-images-1.medium.com/max/800/0*qwxeXSVpngvNlXp7)
+![](/images/0-qwxeXSVpngvNlXp7.jpg)
 
 *The Apollo-Soyuz program, a collaboration between The United States and The Soviet Union*
 
@@ -13,7 +13,7 @@ To help understand why I have problems with Space Force, we need to go back in t
 - A memorial bag containing a gold olive branch (a symbol of peace)
 - A silicon statement containing goodwill messages from several US presidents and messages from the leaders of 73 other countries.
 
-![](https://cdn-images-1.medium.com/max/800/0*TjN0QAUPQp_wL-rS)
+![](/images/0-TjN0QAUPQp_wL-rS.png)
 
 The Apollo 11 crew was also the only Apollo mission not to show their names on their patches. When asked about it, Michael Collins stated “We wanted to keep our three names off it because we wanted it to be representative of everyone who worked toward a lunar landing.” An olive branch was even added to the Eagle’s claws to represent a peaceful expedition, based on a suggestion from Tom Wilson, a computer expert at one of the simulators.
 
@@ -25,7 +25,7 @@ Yet 30 years after the Apollo-Soyuz success, the cracks started to show when the
 
 The cracks became even wider with the talk of a “Space Force,” a military organization, the closed fist of NASA’s other hand. Worse, they used symbolism oddly similar to that of the fictional Star Trek Federation badges, a show which famously attempted to show the better side of humanity; a symbol which the Chinese space agency has already repurposed for themselves.
 
-![](https://cdn-images-1.medium.com/max/800/1*RylId1oDWJGMBBvryks5rg.png)
+![](/images/1-RylId1oDWJGMBBvryks5rg.png)
 
 *United States Space Force (Left), Star Trek (Middle), China National Space Administration (Right)*
 

@@ -1,7 +1,11 @@
-date posted: 2017-02-17
-# 3/15/2015 Archives: Where is the edge of the Solar System?
+<!-- date posted: 2015-03-15 -->
+# Where is the edge of the Solar System?
 
-![](https://cdn-images-1.medium.com/max/800/1*0NiL2v7Lezh3lM7Y20CPmg.jpeg)
+Posted on Wordpress: 2015-03-15
+
+Posted on Medium: 2017-02-17
+
+![](/images/1-0NiL2v7Lezh3lM7Y20CPmg.jpeg)
 
 **Voyager Spacecraft, launched in 1977 (Credit: NASA)**
 

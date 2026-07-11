@@ -1,7 +1,7 @@
 date posted: 2026-05-05
 # AI is likely to make code knowledge more useful
 
-![](https://cdn-images-1.medium.com/max/800/0*S7kQJB6S4E56wIYB.png)
+![](/images/0-S7kQJB6S4E56wIYB.png)
 
 *A graph from my previous post on [AI Entropy](https://medium.com/@nathanphoffman/entropy-with-ai-and-humans-in-code-systems-1ebdcff9642f) which shows how systems naturally decay even if they correct by the same amount they introduce error by*
 

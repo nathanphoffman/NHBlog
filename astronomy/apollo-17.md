@@ -1,7 +1,7 @@
 date posted: 2017-08-18
 # 6/10/2012 Archives: Apollo 17
 
-![](https://cdn-images-1.medium.com/max/800/1*ndkS3ak5Ta3wmugnLAmtjQ.jpeg)
+![](/images/1-ndkS3ak5Ta3wmugnLAmtjQ.jpeg)
 
 *Schmitt*
 

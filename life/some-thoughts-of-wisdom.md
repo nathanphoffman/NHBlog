@@ -1,7 +1,7 @@
 date posted: 2026-05-26
 # Some thoughts of wisdom
 
-![](https://cdn-images-1.medium.com/max/800/1*zDxA0pM5iEz3Msa-uDiySA.png)
+![](/images/1-zDxA0pM5iEz3Msa-uDiySA.png)
 
 *Photo of Pluto from New Horizon’s flyby. Credit: NASA*
 

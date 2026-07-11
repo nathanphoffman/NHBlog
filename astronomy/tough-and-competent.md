@@ -5,7 +5,7 @@ This was posted to codingastronomer.com on 9/3/2016.
 
 *The archives were created to preserve my writings from various blog sites which I have used over the years. Most come from my wordpress blogs nathanphoffman.com and codingastronomer.com. I hope to make medium.com my new home.*
 
-![](https://cdn-images-1.medium.com/max/800/1*i1NmWr_IlKT09fvhXO2_PA.jpeg)
+![](/images/1-i1NmWr_IlKT09fvhXO2_PA.jpeg)
 
 **Flight Director Gene Krantz**
 

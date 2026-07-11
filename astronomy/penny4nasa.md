@@ -1,7 +1,7 @@
 date posted: 2017-08-04
 # 6/12/2012 Archives: Penny4NASA
 
-![](https://cdn-images-1.medium.com/max/800/1*yin1ujBCwHdrIwwh5XRN2A.jpeg)
+![](/images/1-yin1ujBCwHdrIwwh5XRN2A.jpeg)
 
 *Saturn V, The Largest Rocket Ever Made, and The Last to send humans to the Moon. Taken in 1972. Credit: NASA*
 

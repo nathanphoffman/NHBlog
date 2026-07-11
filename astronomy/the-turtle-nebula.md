@@ -1,7 +1,7 @@
 date posted: 2017-03-31
 # 6/7/2014 Archives: The Turtle Nebula
 
-![](https://cdn-images-1.medium.com/max/800/1*gmsWXLi0hNr-8CZW5C39og.jpeg)
+![](/images/1-gmsWXLi0hNr-8CZW5C39og.jpeg)
 
 *The Turtle Nebula (Central Region) Credit: NASA*
 

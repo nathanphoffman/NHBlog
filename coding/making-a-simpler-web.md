@@ -1,7 +1,7 @@
 date posted: 2026-07-11
 # Making a Simpler Web
 
-![](https://cdn-images-1.medium.com/max/800/1*__JsZRMVO-NCVA6opDb_Xg.png)
+![](/images/1-__JsZRMVO-NCVA6opDb_Xg.png)
 
 *A real early version of my prototype (the bar at the top is the “browser in a browser” settings)*
 

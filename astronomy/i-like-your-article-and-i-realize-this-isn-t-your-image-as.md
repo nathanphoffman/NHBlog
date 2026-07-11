@@ -1,4 +1,0 @@
-date posted: 2022-05-11
-# I like your article, and I realize this isn't your image as it comes from ESO, but I wanted to…
-
-I like your article, and I realize this isn't your image as it comes from ESO, but I wanted to mention that this image treats Hubble a little unfairly. While mirror size is important to resolution, atmosphere limits it even more, to such a degree that even small amateur scopes can be limited by it. While adaptive optics (like the listed VLT+AO) can help with this problem, it never completely removes it and will never make atmosphere distortion as small of a factor as it is for Hubble. While adaptive optics has started to level the playing field, because it has gotten so much better, it is only until recently that it has gotten good enough to start competing with HST's complete lack of atmosphere.

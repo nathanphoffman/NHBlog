@@ -1,7 +1,7 @@
 date posted: 2017-03-24
 # 6/5/2014 Archives: Cosmos Review
 
-![](https://cdn-images-1.medium.com/max/800/1*AbPErMwkctnL4-Xg6iCCfg.jpeg)
+![](/images/1-AbPErMwkctnL4-Xg6iCCfg.jpeg)
 
 When I first saw the trailers for the Cosmos reboot series, A Spacetime Odyssey, I was very worried it would be a mindless cgi-packed documentary with none of the original’s intellectual value or awe-inspiring content. I was also deeply concerned about the use of animation, and feared it would take the place of actual photos and scientifically simulations.
 

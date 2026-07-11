@@ -1,7 +1,7 @@
 date posted: 2020-12-24
 # Commercializing human spaceflight?
 
-![](https://cdn-images-1.medium.com/max/800/0*UuoLfFWHpRPJLN1C)
+![](/images/0-UuoLfFWHpRPJLN1C.jpg)
 
 SpaceX recently conducted another test of their Starship vehicle dubbed SN8. I am extremely happy for SpaceX, as they continue improving their technology and get closer to a flight to Mars, but it got me to thinking, how long have I been waiting for someone to step on Mars or even go back to the Moon? I also have found myself lost in thought, what does human spaceflight even mean today, more than 50 years after we already set foot on the moon?
 

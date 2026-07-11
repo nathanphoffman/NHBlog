@@ -1,7 +1,7 @@
 date posted: 2017-06-02
 # 3/23/2013 Archives: Apollo Series: Florida
 
-![](https://cdn-images-1.medium.com/max/800/1*0bNwvlYYnbqZK8H778Rv_Q.jpeg)
+![](/images/1-0bNwvlYYnbqZK8H778Rv_Q.jpeg)
 
 This is a photo taken of the sun and the Florida Peninsula from Apollo 7.
 

@@ -1,7 +1,7 @@
 date posted: 2017-03-17
 # 7/7/2014 Archives: A Monster Lurks in Galaxy M106
 
-![](https://cdn-images-1.medium.com/max/800/1*LiuOJrCmpAlOj_wwTmFlaw.jpeg)
+![](/images/1-LiuOJrCmpAlOj_wwTmFlaw.jpeg)
 
 *Credit NASA and the Chandra X-ray Observatory (which is awesome)*
 

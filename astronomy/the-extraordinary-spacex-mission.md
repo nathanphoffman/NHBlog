@@ -1,7 +1,7 @@
 date posted: 2017-03-16
 # The Extraordinary SpaceX Mission
 
-![](https://cdn-images-1.medium.com/max/800/1*GdbBF0YdvwWyr4WaMIiKAQ.jpeg)
+![](/images/1-GdbBF0YdvwWyr4WaMIiKAQ.jpeg)
 
 *Falcon Heavy Visualization, Credit: SpaceX*
 
@@ -11,7 +11,7 @@ This is very different from the Apollo missions. Don’t get me wrong, the Space
 
 This mission, however, is being driven by tourism and exploration. They are funding this because they want to go to this place. It is not driven by military or political motivations. Honestly, if you told me NASA was going to Mars with people, and in the same year SpaceX was launching people to The Moon, I would be equally as excited about both. This mission is that important for the future of manned spaceflight. Seriously take a look at how far they have to go in this image.
 
-![](https://cdn-images-1.medium.com/max/800/0*MkyIcj8jT3esrw8c.jpg)
+![](/images/0-MkyIcj8jT3esrw8c.jpg)
 
 *It is more impressive than you think*
 

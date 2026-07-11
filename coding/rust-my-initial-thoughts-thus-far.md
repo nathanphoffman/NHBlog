@@ -1,11 +1,11 @@
 date posted: 2022-04-18
 # Rust, my initial thoughts thus far
 
-![](https://cdn-images-1.medium.com/max/800/0*JeMe_UqbU6Ti8TCA.png)
+![](/images/0-JeMe_UqbU6Ti8TCA.png)
 
 The Rust programming language has topped the most loved language in all of the Stack Overflow development surveys since 2016 and first appeared as one of the most popular languages in 2019, since then it has only become more popular and more loved. The popularity of the Rust language was up to 7% of all respondents in 2021. (+29% growth in popularity over one year).
 
-![](https://cdn-images-1.medium.com/max/800/1*Oelytm1nJ7Pf8hzS_5LlwA.png)
+![](/images/1-Oelytm1nJ7Pf8hzS_5LlwA.png)
 
 What is the purpose of Rust? According to Rust’s official documentation:
 
@@ -22,7 +22,7 @@ myNum += 1;
 println!("{}", myNum)
 ```
 
-![](https://cdn-images-1.medium.com/max/800/1*QLVxIeZs_DCvVTAn-GxsLA.png)
+![](/images/1-QLVxIeZs_DCvVTAn-GxsLA.png)
 
 ```
 // works and prints "3"
@@ -271,7 +271,7 @@ let someNumber = Option::Some(5)  // the type is: Option of an integer type
 
 ### Feature 11: The Compiler has Galaxy-Brain intelligence
 
-![](https://cdn-images-1.medium.com/max/800/0*ARYFHl7DxPcsixpL.png)
+![](/images/0-ARYFHl7DxPcsixpL.png)
 
 The compiler in Rust provides a large number of warnings and errors to make sure code is written as efficiently as it knows how and to make sure that the proper disposal of memory / intended behavior works as expected. Any good compiler will do this, but I find myself drawn to the number of things Rust warns of and protects from. I also would like to go more into how memory disposal is handled (as the logic for disposing of memory is handled at compile time) rather than using a garbage collector, but I will need a bit more time playing with Rust to get that far.
 

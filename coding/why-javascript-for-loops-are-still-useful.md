@@ -79,7 +79,7 @@ As a general rule for myself, I created this diagram. This is very opinion based
 - White => Use your best judgement
 - Blue => For loops might be better for this
 
-![](https://cdn-images-1.medium.com/max/800/1*RDa9ZeScfRqtd2VBIBkABg.png)
+![](/images/1-RDa9ZeScfRqtd2VBIBkABg.png)
 
 **Key:**
 - Existing Dataset = > We have an Array

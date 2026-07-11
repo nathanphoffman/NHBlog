@@ -9,7 +9,7 @@ For me, the primary reason is because I don’t buy board games for the minis; I
 
 In the below photo the blue figure with a bent spear and bent horses legs was how it came in my War of The Ring box, deformed by other minis pressed on it in a plastic bag. The mini barely stands upright any more without falling over.
 
-![](https://cdn-images-1.medium.com/max/800/1*fGF_K_wPrZzbTg9BhX4zWw.jpeg)
+![](/images/1-fGF_K_wPrZzbTg9BhX4zWw.jpeg)
 
 *From left to right: Rebellion hero piece, Rebellion game piece, War of the Ring game piece, X-Wing Model*
 
@@ -19,7 +19,7 @@ If publishers are just looking for a thematic and artistic feel then do what Reb
 
 On a final note, let’s talk about how confusing unpainted minis make things. Below are 3 advanced units from War of The Ring from three different nations, can you easily tell the difference? Now imagine dozens of these laid out on a board where some factions are able to move, some aren’t. Some can attack, some can’t.
 
-![](https://cdn-images-1.medium.com/max/800/1*518nnkZhwFQ6pKKVXg5kaA.jpeg)
+![](/images/1-518nnkZhwFQ6pKKVXg5kaA.jpeg)
 
 I have heard the argument “you just have to paint them and they will look great!” This always makes no sense to me, it is like sending someone card stock and saying “Those are my games cards, you just have to print them”. Full blown wargames like warhammer 40k can perhaps get away with the “you do it” logic since 50%+ of the reason people play that game is building, painting, and showing off minis. Typical board game players do not want to paint their minis and independent commissions tend to cost far more since they aren’t part of the mass production of the game.
 

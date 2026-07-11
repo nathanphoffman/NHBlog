@@ -5,7 +5,7 @@ This was posted to codingastronomer.com on 11/10/2015.
 
 *The archives were created to preserve my writings from various blog sites which I have used over the years. Most come from my wordpress blogs nathanphoffman.com and codingastronomer.com. I hope to make medium.com my new home.*
 
-![](https://cdn-images-1.medium.com/max/800/1*05dCRl0rOArQdstRMnL5vQ.jpeg)
+![](/images/1-05dCRl0rOArQdstRMnL5vQ.jpeg)
 
 **Bismuth in its natural form (left) and Bismuth in its crystallized form, man-made crystals (right)**
 

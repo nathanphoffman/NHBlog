@@ -1,7 +1,7 @@
 date posted: 2026-02-19
 # Starting a little JS/TS game
 
-![](https://cdn-images-1.medium.com/max/800/1*lR1rl1iX99N2LlnKGGBdJw.png)
+![](/images/1-lR1rl1iX99N2LlnKGGBdJw.png)
 
 *An image from my game, right now clicking around will move the character and there is some basic collision setup for the trees.*
 

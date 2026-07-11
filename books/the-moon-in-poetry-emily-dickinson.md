@@ -3,7 +3,7 @@ date posted: 2020-02-17
 
 It has been a while since I have posted on my blog, so I figured I would come back on with one post per week, every-other will relate to astronomy/space in someway, the other will relate to my journey’s in code. I figured it might be fun to start with a poem about space.
 
-![](https://cdn-images-1.medium.com/max/800/1*UPaa0uWK057GCicJAjwYBw.jpeg)
+![](/images/1-UPaa0uWK057GCicJAjwYBw.jpeg)
 
 *The moon, taken by me several years back through my Cassegrain.*
 
@@ -37,7 +37,7 @@ Her Forehead is of Amplest Blonde —  Her Cheek — a Beryl hewn —  Her Eye u
 
 *I think this perfectly describes the more muted tones of the sky mixing with the foggy white of the Moon’s apparent color during daylight. This is further supported by the Beryl “hewing” the Moon, as if it is cutting into.*
 
-![](https://cdn-images-1.medium.com/max/800/0*07ZPamDfsX2zEYSy.jpg)
+![](/images/0-07ZPamDfsX2zEYSy.jpg)
 
 **Stanza 3**
 

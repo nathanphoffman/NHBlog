@@ -1,7 +1,9 @@
-date posted: 2017-01-30
+<!-- date posted: 2017-01-30 -->
 # An Image from Mars of Home
 
-![](https://cdn-images-1.medium.com/max/800/1*4vvr_XzGlxplrPlwBsXIaQ.jpeg)
+Posted on Medium: 2017-01-30
+
+![](/images/1-4vvr_XzGlxplrPlwBsXIaQ.jpeg)
 
 *Earth and the Moon from Mars (Credit: NASA/JPL)*
 

@@ -3,7 +3,7 @@ date posted: 2017-03-03
 
 ### 8/22/2014 Archives: Space Without The Space
 
-![](https://cdn-images-1.medium.com/max/800/1*NBKoRhr7W_odZ2shIbYIxA.png)
+![](/images/1-NBKoRhr7W_odZ2shIbYIxA.png)
 
 *xkcd — Space without the space — Creative Commons Attribution-NonCommercial 2.5 License.*
 
