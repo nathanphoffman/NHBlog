@@ -4,5 +4,8 @@ nixPkgs = ["bun"]
 [phases.install]
 cmds = ["bun install"]
 
+[phases.build]
+cmds = ["node scripts/inject-meta.js"]
+
 [start]
 cmd = "bun server.js"
