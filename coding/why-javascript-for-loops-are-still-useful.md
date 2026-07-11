@@ -97,3 +97,4 @@ If I were to make an analogy to the whole “Array vs for” debate, it would be
 
 wait for it…screwy!
 
+>https://nathanhoffman.me/coding/why-javascript-for-loops-are-still-useful

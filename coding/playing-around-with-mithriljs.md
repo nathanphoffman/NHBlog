@@ -36,3 +36,4 @@ Overall it seems really lightweight and easy to use. Data storage appears to be 
 
 I will continue to update as I find things I enjoy with Mithril.
 
+>https://nathanhoffman.me/coding/playing-around-with-mithriljs

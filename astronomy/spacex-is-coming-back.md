@@ -35,3 +35,4 @@ The shuttles did have ejection seats for a time, but because the astronauts did 
 
 [Video](https://www.youtube.com/embed/1_FXVjf46T8?feature=oembed)
 
+>https://nathanhoffman.me/astronomy/spacex-is-coming-back

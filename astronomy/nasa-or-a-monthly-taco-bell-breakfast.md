@@ -11,3 +11,4 @@ Many Americans believe that NASA costs a lot more than it actually does. In trut
 
 So next time you lazily slide that plastic card, mumble thanks, and bite into that waffle taco, just remember to buy an extra couple of tacos and save a seat for inspiration, education, satellites, spaceflight, GPS, weather monitoring systems, solar monitoring systems, documentaries (Aliens!), exoplanet discoveries, solar system exploration, telescopic observations, and beautiful Hubble wallpapers.
 
+>https://nathanhoffman.me/astronomy/nasa-or-a-monthly-taco-bell-breakfast

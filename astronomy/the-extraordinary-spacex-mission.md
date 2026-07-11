@@ -31,3 +31,4 @@ I can only hope that while there may be some setbacks, they continue forward and
 
 **This number comes from dividing the Shuttle program cost ($196 billion in 2011 dollars) by the number of Shuttle launches (135). If you do not include staff/buildings/overhead it is more like $500 million, but for the sake of a commercial company comparison, where they must pay for their buildings, staff and other costs, I think this is a fair way to calculate the price.*
 
+>https://nathanhoffman.me/astronomy/the-extraordinary-spacex-mission

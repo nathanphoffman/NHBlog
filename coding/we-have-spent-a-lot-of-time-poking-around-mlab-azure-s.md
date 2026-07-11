@@ -9,3 +9,4 @@ I am using their free tier right now for testing and even the free tier is great
 
 It seems like an absolute no brainier: cheap, fast, high availability, and made by the very guys who made Mongo in the first place, who could do it better?
 
+>https://nathanhoffman.me/coding/we-have-spent-a-lot-of-time-poking-around-mlab-azure-s

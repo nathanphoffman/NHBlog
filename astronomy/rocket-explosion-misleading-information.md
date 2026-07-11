@@ -15,3 +15,4 @@ The silliest criticism is that the Antares uses old, outdated 1960s engines from
 
 Remember, the news only reports firsts and failures in rocketry. The vast majority of launches are neither, **they are true 100% successes.**
 
+>https://nathanhoffman.me/astronomy/rocket-explosion-misleading-information

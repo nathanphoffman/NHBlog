@@ -71,3 +71,4 @@ I am using XTerminal for the terminal piece, which will listen in to events and 
 
 All of these details could probably use their own posts, but I will save that for future, I am going to try and keep these updates short. More to come!
 
+>https://nathanhoffman.me/coding/starting-a-little-js-ts-game

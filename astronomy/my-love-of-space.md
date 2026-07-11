@@ -9,3 +9,4 @@ As you may have noticed, it has been a while since my last photo. I have been sp
 
 To best explain this decision and my love for space, here are two videos, with incredible narration, from two of the best science-popularizes history has ever seen.
 
+>https://nathanhoffman.me/astronomy/my-love-of-space

@@ -13,3 +13,4 @@ Jim Lovell, the famed commander of Apollo 13, was the only man among them who re
 
 Apollo Archives Photo: AS8–13–2225
 
+>https://nathanhoffman.me/astronomy/apollo-series-farside-of-the-moon

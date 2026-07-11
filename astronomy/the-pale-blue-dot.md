@@ -17,3 +17,4 @@ In what is often considered one of Carl Sagan’s most philosophical speeches, h
 
 > **–Carl Sagan**, astronomer, astophysicist, and popularizer of science. Originally written in one of his books and incorporated into speeches.
 
+>https://nathanhoffman.me/astronomy/the-pale-blue-dot

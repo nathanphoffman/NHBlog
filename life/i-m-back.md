@@ -49,3 +49,4 @@ Something that has helped me get through all of this is Wu-Wei. In very loose tr
 
 Right now my ship has found itself back on the shore of programming, how long it will be here I do not know, maybe it will take off again and I will finally give up on it altogether, or perhaps I will continue to venture inland for many years to come, discovering the secrets of this place that sparked my child-imagination more than anything so many years ago.
 
+>https://nathanhoffman.me/life/i-m-back

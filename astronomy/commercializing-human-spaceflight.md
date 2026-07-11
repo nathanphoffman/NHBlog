@@ -39,3 +39,4 @@ While people like Elon may have the interests of their companies in mind when th
 
 [Video](https://www.youtube.com/embed/8P8UKBAOfGo?feature=oembed)
 
+>https://nathanhoffman.me/astronomy/commercializing-human-spaceflight

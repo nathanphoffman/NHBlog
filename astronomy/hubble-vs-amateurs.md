@@ -13,3 +13,4 @@ There is absolutely no doubt that Hubble destroys amateur ground based telescope
 
 That being said, Hubble is becoming nearly matched by ground based amateurs who use incredibly sensitive ccd cameras and sophisticated image processing software to capture typical deep sky objects (like those in the Messier’s Catalog) Below is an image of The Trifid Nebula (M22). Compare the image taken with Hubble (below) to [this one](http://astrobin.com/12911/) on Astrobin and tell me what you think!
 
+>https://nathanhoffman.me/astronomy/hubble-vs-amateurs

@@ -67,3 +67,4 @@ I still haven’t figured out why the extra new lines occur, but I have noticed 
 
 In summary, using Atom with the react addon seems is the best way to work with React that I have found, but it still appears to have some problems of its own. If you have suggestions for me (I am still new to React and JSX world) feel free to post them in the comments.
 
+>https://nathanhoffman.me/coding/working-with-jsx

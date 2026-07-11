@@ -13,3 +13,4 @@ Galileo was the first human to observe Jupiter’s four largest moons, and he wa
 
 Above is a photo I snapped last night of Jupiter and its four Galilean moons which I have labeled. The exposure was set from my Orion (M42) photo so Jupiter ended up blowing out its surface details.
 
+>https://nathanhoffman.me/astronomy/the-galilean-moons-of-jupiter

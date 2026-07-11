@@ -27,3 +27,4 @@ I have heard the argument “you just have to paint them and they will look grea
 
 In the end, I really feel that miniature heavy games are unattractive and unnecessary. I look at them and think “oh boy, I get to pay a premium for an unfinished looking game which is hard to store and box” Whenever I see an unpainted and/or unassembled/unfinished miniatures game I always force myself to ask “Do I really want this that badly?”
 
+>https://nathanhoffman.me/gaming/my-hatred-for-board-game-miniatures

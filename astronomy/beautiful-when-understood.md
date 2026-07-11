@@ -13,3 +13,4 @@ While this photo is not “aesthetically pleasing,” it is a beauty of an entir
 
 This Quasar is perhaps the furthest object visible to amateur astronomers. The object requires exceptionally dark skies and a telescope larger than most retailers provide: something of the order of 20″+. However, the rewards are enormous. If you see the Quasar, your eyes are picking up photons that have been travelling for **3 billion years longer than the entire age of our solar system.**
 
+>https://nathanhoffman.me/astronomy/beautiful-when-understood

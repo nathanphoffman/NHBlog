@@ -23,3 +23,4 @@ I know many people hate the JS Community, and honestly I sometimes join in. The 
 
 I think the most important thing when coding is simplicity. While it is possible I may have found an easier C# solution than those I came across, this NodeJS/ExpressJS/Request setup was perhaps the simplest web app I have ever setup, and took me less time to setup than it took me Googling my first steps with C#.
 
+>https://nathanhoffman.me/coding/nodejs-and-request-saved-me

@@ -26,3 +26,4 @@ The good news is web workers really do work, and they work fast once initialized
 
 You can read more about Web Workers on [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers).
 
+>https://nathanhoffman.me/coding/multithreading-and-asynchronous-calls-in-javascript

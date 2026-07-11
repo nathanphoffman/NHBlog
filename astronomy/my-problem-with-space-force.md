@@ -43,3 +43,4 @@ NASA is a civilian arm, the hand of us, the people. Space Force is a military ar
 
 Please, as we are setting out into space and bumping into each other in new territories; let us shake the hand of our adversaries with the warm hands of civil servants, not with the closed fists of war.
 
+>https://nathanhoffman.me/astronomy/my-problem-with-space-force

@@ -13,3 +13,4 @@ While most stars/galaxies emit large amounts of visible light, there are times t
 
 This x-ray photo was published to the public recently and can be seen without the visible light here: [http://photojournal.jpl.nasa.gov/jpegMod/PIA18462_modest.jpg](http://photojournal.jpl.nasa.gov/jpegMod/PIA18462_modest.jpg)
 
+>https://nathanhoffman.me/astronomy/a-monster-lurks-in-galaxy-m106

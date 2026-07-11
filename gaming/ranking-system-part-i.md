@@ -53,3 +53,4 @@ For long term projections, I ran it for Agricola (a well established and beloved
 
 More posts will be forthcoming on ranking steam games and board games with some code.
 
+>https://nathanhoffman.me/gaming/ranking-system-part-i

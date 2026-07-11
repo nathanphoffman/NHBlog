@@ -42,3 +42,4 @@ Perhaps the best line to sum this game up is wonderfully simple yet beautifully 
 
 ![](/images/1-pkr7krf6Ao5KRMIIlz3zRQ.png)
 
+>https://nathanhoffman.me/gaming/zelda-breath-of-the-wild-wonderfully-simple-yet-beautifully

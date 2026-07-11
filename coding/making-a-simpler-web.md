@@ -42,3 +42,4 @@ A lot of this is subject to change, and some of it still needs to be worked out 
 
 *Note: This post is slightly older and was created a couple weeks ago, I have since made tremendous progress on this project and it will soon be available.*
 
+>https://nathanhoffman.me/coding/making-a-simpler-web

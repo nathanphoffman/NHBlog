@@ -25,3 +25,4 @@ I started collecting samples of elements just a few weeks ago. My main inspirati
 
 **Summary:** It is hard to find a neater metal than one which is nice to look at, nice to work with, feels nice, and will not harm you. [Periodic Video](https://www.youtube.com/watch?v=vyIo-c7VmIM).
 
+>https://nathanhoffman.me/life/collecting-the-elements-bismuth

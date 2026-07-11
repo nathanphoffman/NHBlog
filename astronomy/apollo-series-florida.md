@@ -13,3 +13,4 @@ Apollo 7 was the first successful manned Apollo flight. The astronauts performed
 
 [**Apollo Archive:**](http://www.apolloarchive.com/apollo_gallery.html) AS7–8–1933
 
+>https://nathanhoffman.me/astronomy/apollo-series-florida

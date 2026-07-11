@@ -23,3 +23,4 @@ It has been more than 7 years since Pluto was demoted from planetary status, but
 - Ganymede, the largest moon, would have twice the surface area as all 5 new planets combined!
 - At least two asteroids in the asteroid belt would be planets. (Vesta and Ceres)
 
+>https://nathanhoffman.me/astronomy/if-pluto-was-still-a-planet

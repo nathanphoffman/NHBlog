@@ -35,3 +35,4 @@ Last night I decided to travel nearly 4 hours hours to Chincoteaugue, VA for the
 
 In addition to the unedited 10 shots I took (shown in the gallery below). I also compiled [this GIF](http://webiota.files.wordpress.com/2013/09/8yqsfm1378570507.gif) and one of my friends managed to get [this much more “zoomed in” shot](http://31.media.tumblr.com/452b45f6a82527bdffa4d4c90b08d691/tumblr_msrk5lsHNC1r052nlo1_1280.jpg).
 
+>https://nathanhoffman.me/astronomy/ladee-heads-for-the-moon

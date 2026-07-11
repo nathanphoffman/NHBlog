@@ -134,3 +134,4 @@ function computeQuality({samples = 1000, ...params}) {
 }
 ```
 
+>https://nathanhoffman.me/coding/entropy-with-ai-and-humans-in-code-systems

@@ -45,3 +45,4 @@ Not only this, it doesn’t seem to me that pure functional or OOP paradigms hav
 
 The future will be interesting, and it is interesting to me to see the old times return — as has happened in so many fields. From streaming->vinyl, phone cameras -> film cameras, from SQL -> Blob -> SQL Again — the old is coming back. Maybe before long the imperative will get even more love and we will see even heavier macro use, and although (not entirely my thing), it would be hilarious to see GOTO make a return after all these years — even if it makes us hate each other — boy oh boy do I look at those little `label` and `goto` guys — a sort of “your cute” … but “ugly” kind of love. ❤
 
+>https://nathanhoffman.me/coding/programming-paradigms-a-journey-back-to-the-imperative

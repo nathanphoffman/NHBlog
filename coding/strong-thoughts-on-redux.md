@@ -35,3 +35,4 @@ Ever since programming began: large scale codebases have never been a good thing
 
 Anyway, I am not saying Redux is horrible for everyone, it is just not my preferred way of using React if there is any chance of avoiding it.
 
+>https://nathanhoffman.me/coding/strong-thoughts-on-redux

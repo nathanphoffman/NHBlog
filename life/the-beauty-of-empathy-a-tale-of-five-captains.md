@@ -48,3 +48,4 @@ Being silent on the behalf of the attacked party is not an attack you yourself a
 
 [Video](https://www.youtube.com/embed/ESqfW_kyZq8?feature=oembed)
 
+>https://nathanhoffman.me/life/the-beauty-of-empathy-a-tale-of-five-captains

@@ -61,3 +61,4 @@ I never loved the “what language is better” debate as every technology, prin
 
 *The next developer survey is coming up for 2022! Once this data is in, I will do an update to this post.*
 
+>https://nathanhoffman.me/coding/stack-overflow-surveys-and-what-they-say-about-language

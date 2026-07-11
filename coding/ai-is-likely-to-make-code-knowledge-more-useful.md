@@ -25,3 +25,4 @@ It is still shocking to me how often people will claim that AI will soon become 
 
 For now I will keep enjoying AI as a learning tool for basic information and using it as a code companion, but I am far far far from ever relying on it for anything even remotely complex without heavy auditing of its internal logic — which calls into question if AI APIs are a bit over-hyped — as the risk of getting something wrong for your customer seems to me to be worse than limiting the functionality a bit. Though I suppose there might be some highly limited use-cases out there like a customer being able to ask questions about your product in an FAQ section.
 
+>https://nathanhoffman.me/coding/ai-is-likely-to-make-code-knowledge-more-useful

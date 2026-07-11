@@ -65,3 +65,4 @@ Her Bonnet is the Firmament —  The Universe — Her Shoe —  The Stars — th
 
 I am definitely a large fan of Emily Dickinson, but as an astronomy fan, this poem really describes what it feels like to see the Moon in all its glory and phases. But I think what impresses me most, is that Emily obviously paid attention to the details of nature and the night-sky, so much so that it holds up even in our age of science if you take the more antiquated details (see: firmament) as artistic license instead of reality.
 
+>https://nathanhoffman.me/books/the-moon-in-poetry-emily-dickinson

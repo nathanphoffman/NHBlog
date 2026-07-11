@@ -23,3 +23,4 @@ If I had to complain about DataTables, I would say the biggest issue is how the 
 
 If you are using Bootstrap, make sure to use their [Bootstrap styles for DataTables](https://www.datatables.net/examples/styling/bootstrap.html). It doesn’t get much easier than Bootstrap + DataTables.
 
+>https://nathanhoffman.me/coding/the-datatables-plugin-for-jquery

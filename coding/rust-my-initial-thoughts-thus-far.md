@@ -283,3 +283,4 @@ Rust has been quite “hyped” and so I was expecting to be disappointed, but I
 
 I am not sure if Rust will actually dethrone other languages out there on a huge scale, but it likely will (and already has) challenged preconceptions that a low-level language can’t break the mold of C/C++. Until then, I will keep enjoying my tinkering and raise a glass to this most beloved of languages and be one among many voices to shout some love for it at the next Stack Overflow survey.
 
+>https://nathanhoffman.me/coding/rust-my-initial-thoughts-thus-far

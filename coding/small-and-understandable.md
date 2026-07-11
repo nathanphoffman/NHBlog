@@ -33,3 +33,4 @@ One last point is that understandability is not just naming and syntax, it is al
 
 P.S. I have more thoughts on this subject, specifically on OOP vs Functional approaches and how it ties into trying to keep things small and understandable, more on that in the future!
 
+>https://nathanhoffman.me/coding/small-and-understandable

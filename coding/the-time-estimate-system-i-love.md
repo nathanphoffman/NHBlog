@@ -62,3 +62,4 @@ Obviously not all tasks are created equal but employees can’t routinely just g
 
 This system is not for everyone or for every organization, but I do find it useful even in an environment where single estimates are needed. I have found myself in the past asking “what would this be back at my old company” [2x3], I perform the average of best and worst in my head ((2+6)/2 = 4) and put 4 hours on the task. However, it has likely been most useful in giving an initial-rough estimate on a large number of tasks while working on large products.
 
+>https://nathanhoffman.me/coding/the-time-estimate-system-i-love

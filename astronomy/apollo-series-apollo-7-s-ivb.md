@@ -11,3 +11,4 @@ This is a photo of the S-IVB stage from Apollo 7. The stage was designated “S-
 
 Apollo 7 was the first successful manned Apollo flight. The astronauts performed testing in Earth orbit to prepare future Apollo missions for voyages to the moon.
 
+>https://nathanhoffman.me/astronomy/apollo-series-apollo-7-s-ivb

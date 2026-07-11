@@ -19,3 +19,4 @@ Likely as part of the insignia design, the crew of Apollo 11 assigned *Eagle* as
 
 > *–Neil Armstrong. July 20th, 1969*
 
+>https://nathanhoffman.me/astronomy/apollo-11-mission-insignia

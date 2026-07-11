@@ -29,3 +29,4 @@ If all of this wasn’t enough to blow your mind, the other fact making this mor
 
 [Video](https://www.youtube.com/embed/HFT7ATLQQx8?feature=oembed)
 
+>https://nathanhoffman.me/astronomy/stars-are-mindbogglingly-bright

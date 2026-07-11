@@ -25,3 +25,4 @@ Posted on Medium: 2017-02-26
 - Avoid dynamics/usage of weak types in languages that support strong types unless a very particular use-case requires it. There is really only one case I have encountered: When you are pulling in data you do not know the structure of, perhaps it is a web service that returns three different types of structures and in that structure is information you can use to deduce it. In this case you have to keep it dynamic, find the structure, then compose a strongly typed structure afterwards.
 - In languages like JavaScript where there are multiple ways of doing one thing, try and stick with one variation. As an example, if you use class in JavaScript, stay with class and try to avoid using functions as classes.
 
+>https://nathanhoffman.me/coding/coding-recommendations-i-live-by

@@ -21,3 +21,4 @@ I worked a little with some existing quotations, some suggestions from AI, a few
 9. Clouds don’t grieve when changing shape, nor when they change to rain — why do you?
 10. Before enlightenment go to the gym — after enlightenment go to the gym, but it still costs 20 dollars per month.
 
+>https://nathanhoffman.me/life/some-thoughts-of-wisdom

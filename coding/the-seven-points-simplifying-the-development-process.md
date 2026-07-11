@@ -21,3 +21,4 @@ Then if the number X. of these are satisfied (of any in the list) then:
 6. Good enough for an external product at a large company
 7. Good enough for going to Mars
 
+>https://nathanhoffman.me/coding/the-seven-points-simplifying-the-development-process

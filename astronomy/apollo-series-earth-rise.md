@@ -11,3 +11,4 @@ As Apollo 8 became the first manned-craft to orbit the Moon, the astronauts on b
 
 Apollo 8 was the second successful manned Apollo flight, the first manned Saturn V launch, and the first manned flight to leave low Earth orbit. Apollo 8 was originally intended to conduct testing in Earth orbit, but due to the fear that the Soviets would beat the United States to the Moon with a manned N1 mission, NASA flipped Apollo 8 and 9.
 
+>https://nathanhoffman.me/astronomy/apollo-series-earth-rise

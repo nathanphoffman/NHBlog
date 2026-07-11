@@ -11,3 +11,4 @@ Comet ISON began entering the field of SOHO’s [LASCO C3](http://sohowww.nascom
 
 [SOHO](http://sohowww.nascom.nasa.gov/), the Solar Dynamics Observatory, is a NASA space-telescope. It takes photos of the Sun multiple times every hour to provide a near-live view of the sun to scientists and the public. (You can click on the imager links in the paragraph above to see the current photos from both the LASCO C3 and LASCO C2)
 
+>https://nathanhoffman.me/astronomy/comet-ison-now-on-soho

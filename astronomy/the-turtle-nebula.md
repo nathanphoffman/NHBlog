@@ -17,3 +17,4 @@ Structurally it has several jets of gas extending from the main cloud and an act
 
 For a planetary nebula, it is fairly bright. It has a magnitude of 9.30 and a high surface brightness of 15.1Mag/arc-sec². This means it looks more like a star than a nebulous object when observed through small aperture, low magnification (fast f-ratio), telescopes. The nebula has been reported to be sky-blue in color when observed through amateur photos/equipment.
 
+>https://nathanhoffman.me/astronomy/the-turtle-nebula

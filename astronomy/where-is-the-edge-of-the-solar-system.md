@@ -26,3 +26,5 @@ While Pluto and most of the solar system objects are well within this boundary (
 So when you read something is “at the edge at” or “has left” the Solar System. Make sure you focus more on the actual distance and less the hype.
 
 *NOTE: 1 light year is often quoted as the size of the Oort Cloud but I sources say it might extend to 100,000 AU. If so, this makes the difference in scale between methods 1 and 2 even larger.*
+
+>https://nathanhoffman.me/astronomy/where-is-the-edge-of-the-solar-system

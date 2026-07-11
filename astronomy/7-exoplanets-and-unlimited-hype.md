@@ -19,3 +19,4 @@ This means a habitable planet might just be a rock in space like The Moon. I wou
 
 I don’t mean this all to sound negative, I love news coverage of space stuff. But there is something really weird about having seen some pretty amazing astronomy stuff and having no one know what I am talking about, and then being bombarded and even made fun of by not knowing about more exoplanets being discovered by people who are just reading click-bait headings at face value. Again to iterate one final time: these are just 7 rocks floating in space so far as we know, and three of them happen to fall within a certain distance from their star.
 
+>https://nathanhoffman.me/astronomy/7-exoplanets-and-unlimited-hype

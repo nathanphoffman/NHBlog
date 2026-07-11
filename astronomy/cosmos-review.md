@@ -19,3 +19,4 @@ Overall, Cosmos has delivered on what it set out to do. It has explained the cos
 
 The Cosmos is now on blu-ray. The quality is quite impressive, and extras are included on the disc. The extras include an entertaining Comic-Con visit by Neil, an interesting making of, and a touching tribute to Carl Sagan.
 
+>https://nathanhoffman.me/astronomy/cosmos-review
