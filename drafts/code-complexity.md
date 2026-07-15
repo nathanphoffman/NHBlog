@@ -24,16 +24,19 @@ of abstractions the human brain has to unwind to hold the codebase in memory, th
 difficulty = lines_of_code^(1/6)
 ```
 
-The 6 is used here (over any other number in the 5-9 range) due to two different ideas:
+6 is used here (over any other number in the 5-9 range) due to two different ideas:
 
-The first is that **dividing things makes concepts much easier to remember** (this is something I discovered when memorizing 
+The first is that 7-9 is likely a bit of an over-estimate. In 2001, Nelson Cowan found it was closer to 4+/-1 (3-5 items). The reason he disagreed was that Miller did not try to prevent 
+data which could be "chunked" which made the results of his tests allow people to group like items. Since code somewhat allows both (Imagine a for loop with a counter above it or a single computation line). 
+ The for loop is a miller-concept, the computation line a conway concept.  6 feels extremely natural to use, as it is the midpoint between both ranges.
+
+The second is that **dividing things makes concepts much easier to remember** (this is something I discovered when memorizing 
 pi in chunks of 3 digits when I was younger (except for the very first digit which everyone knows) -- 
 I still know 100 digits to this day -- 33x3 blocks + 3.x) 6 is extremely divisible given its small size, infact its cousin 60 
 is still used for time (carried over from the days of babylon's base-60) because of how divisible it is.
 
-The second is that 7-9 is likely a bit of an over-estimate. In 2001, Nelson Cowan found it was closer to 4+/-1 (3-5 items). The reason he disagreed was that Miller did not try to prevent 
-data which could be "chunked" which made the results of his tests allow people to group like items. Since code somewhat allows both (Imagine a for loop with a counter above it or a single computation line). 
- The for loop is a miller-concept, the computation line a conway concept.  6 feels extremely natural to use, as it is the midpoint between both ranges.
+The base 6 we will use from here on out is the chunkability of the lines in the code base since lines are occasionally chunkable (like a for loop with a counter increment inside) and occasionally not 
+like a single line expressing a lambda or a mathematical computation. 6's mid point feels right here.
 
 ---
 ## Maximum Conception
@@ -44,16 +47,16 @@ memorize alone = 6 things  (we already know this)
 maximum_conception = 6^6 ~ 47,000 things
 ```
 Or in other words, once we have abstracted more than 6 layers (think about zooming out 6 lines in 6 functions in 6 files in 6 folders ... ) we start to have problems storing 
-the map in our heads. At this point not only do we not have the logic in our heads, we can't even hold abstract birds-eye views in our heads.
+the map in our heads. At this point not only do we not have the logic in our heads, we struggle to hold the birds-eye-view in our heads.
 
 The one exception to this is true long term memory. In theory, someone could memorize maps of code, as maps of code are not as numerous as lines. Once comitted to long term, this eases recall. 
 So it could extend 6^6 even higher, perhaps 6^9, though I would caution that going beyond this means that even combining long term memory with short term mapping overflows the miller limit with 
-chunking.
+chunking, which maxes at 9, and that is assuming +2 error bars.
 
 Additionally, AI may aid with these windows -- my argument would be only 1 layer if you didn't want to trust it (6x), 1.5 if you balanced between reviewing and vibing (15x), 
 2 if you were willing to vibe it almost completely (36x).
 
-So it is probably fair to say that for reasonably clean code with only 1 developer, we get something like:
+So it is probably fair to say that for perfectly clean code (A+ quality) with only 1 developer, we get something like:
 
 | Layer | Solo A+ Lines | Difficulty      | Comments                         | Context
 |-------|---------------|-----------------|----------------------------------|--------------
@@ -67,13 +70,74 @@ So it is probably fair to say that for reasonably clean code with only 1 develop
 | 8     | 1,679,616     | Nigh Impossible | Progress grinds to a halt        | Chunking becomes the only way to map the code, confusion at this point is guaranteed
 | 9+    | 10,077,696    | Impossible      | Approachable only by the creator | Even chunking starts failing, nearly all context is lost, only the original creators have a chance
 
+Notice that the abstraction layers are effectively relationships (since it is code mapping). And as stated in the context, some relationships simply can't be chunked, not all relationships are 
+even close to related, which is why 9 is likely really *really* pushing way beyond where anyone should go.
 
-      
+Now we will add Quality and then Teams!
 
 
+## Including Quality
+
+To add a quality factor, we must consider what poor code quality represents. To me it is the randomness or the chaotic disorder of the code. No one truly creates bad code intentionally, so a horrific 
+quality, the worst quality one could have while randomly making all decision is Q = 0 (Quality of 0). We know that randomness with relationships is roughly:
+
+```
+items^e
+or for our purposes:
+lines^e
+```
+where e is the Eulers number
+
+Then it is not hard to conclude that higher quality code should drive e lower, all the way to 1 (for 100% quality -- which means lines^1 = lines: as from our definitions in our table above the lines are assumed to be perfectly 
+navigatable -- not highly disordered).
+
+One last concept to include is that when adding a grade, we want to invert the disorder and make it so that as order grows, the ordering grows exponentially initially and then slows as it grows. The idea 
+is that 50% ordered code is a lot more than 2x as easy to navigate as 100% ordered code when compared to 0% (absolute chaos).  Reversing e (which is probably the only true leap here -- but it follows 
+that it should be >1 and symmetry with e is logical):
+
+```
+Q = 1 + (e-1)*(100-G)^e/100^e
+where Q is Quality, G is Grade (/100, think grade-school score of the code)
+```
+
+## Including Teams
+
+There are many ways to judge inefficiency with teams, but the idea is that as teams grow, teams are more likely to step on each others feet. Most estimates put this number between 1.5-2nd root, 
+some individuals like connor even claim that more individuals can actually be less productive given the right circumstances (even on net) but these are more edge cases and not real world. 
+To simplify the math it makes sense to simply choose a number: so we will go with 1.75, the midpoint of the two estimates.
+
+```
+F (Efficiency) = 1/1.75
+W is Worker Count
+layers = (lines^Q/W^F)^(1/6) 
+
+which gives us so far:
+Q = 1 + (e-1)*(100-G)^e/100^e
+layers = (lines^Q/W^(1/1.75))^(1/6)
+```
+
+## Including Subsystems
+
+Subsystems divide out the lines^Q so decreasing quality has less impact on more subsystems, and workers can be assigned per system greatly improving W^(1/1.75): but there is an added cost, and 
+that added cost is overhead. Simply adding lines to the lines number to represent overhead of scaffolding code doesn't quite get us where we need to be, as subsystems don't really add lines that 
+need to be frequently maintained, often the scaffolding is behind the scenes or one-and-done. The problem for subsystems is that they leave behind a persistent mental drain, 
+having to consider how each change might impact independent systems, this permenantly clogs the miller-layers. My theory is that it looks something like:
+
+```
+subsystem_clogging = (related_systems^2 + unrelated_systems)/6*W
+actual_layers = subsystem_clogging + (original_layers)
+```
+The W here is workers, notice that workers divides linearly here, more workers always proportionally helps (unlike with a single complex system) the reason why is that each subsystem is able to be 
+owned by a worker and they can bare the burden of the subsystem relationships. Related systems like a site + api are not 2 subsystems, they are 2^2 = 4. The reasoning is that they very closely relate 
+and it adds complexity on both ends of the systems.  Not only 2x the overhead of thinking of each but thining about api->web and web->api.
+
+If I am correct in this then imagine a solo dev maintaining an api + website that do not share the same framework/scaffolding (2^2) and managing 32 other independent systems.  I would have a mental burden 
+of 4+32 = 36/6 = 6. So even if the projects I was managing were extremely small say 36 lines of code on average (+2) that would give my entire workload a layering of 8.  Technically possible, but way 
+beyond what is really reasonable for one person.  Simply remembering all of the projects I was in charge of would be a nightmare.  But if we had 12 employees the workload would be ludicrously light 
+the 2 would fall further due to /W and the subsystem overhead would be only 0.5. I would basically have the complexity of "hello world" to maintain.  
 
 
-## Solo Developer Framework
+## Comparing to the Realworld
 
 - Dwarf Fortress ~700,000 lines of code (Tarn Adams), possibly the highest lines of code of any solo-project
  - Admitted it was extremely messy
@@ -210,5 +274,4 @@ Q = 1.017182 < 90
 ---
 
 ## Totalling all poss
-
 
