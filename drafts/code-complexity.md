@@ -10,15 +10,15 @@ Posted: 2026-07-14
 Something I have been thinking about a lot lately is how to quantiy code complexity.
 
 A starting point I decided on was to use the Millers Number. It is a number George Miller (a psychologist) determined 
-in the 1950s and is partly why the phone number system codified 7 digits (minus the area code), the idea is:
+in the 1950s, the idea is:
 
 > The human brain can hold roughly 7 items +/- 2 (5-9) in short term recall
 
 This is something I have mentioned before, and thought quite a bit about, like 
 in my [Small and Understandable](https://nathanhoffman.me/coding/small-and-understandable) post.
 
-What got me thinking about making this post was computing from line count a "Millers Layer" score or the number 
-of abstractions the human brain has to unwind to hold the codebase in memory, the idea is:
+What got me thinking about this was computing from line count a "Millers Layer" score or the number 
+of abstractions the human brain has to unwind to hold the codebase in memory, the rough idea is:
 
 ```
 difficulty = lines_of_code^(1/6)
@@ -31,9 +31,9 @@ pi in chunks of 3 digits when I was younger (except for the very first digit whi
 I still know 100 digits to this day -- 33x3 blocks + 3.x) 6 is extremely divisible given its small size, infact its cousin 60 
 is still used for time (carried over from the days of babylon's base-60) because of how divisible it is.
 
-The second is that 7-9 is likely a bit of an over-estimate. In 2001, Nelson Cowan found it was closer to 4+/-1 (3-5 items). 
-Averaging the mid-range of both is exactly 6!  So 6 feels extremely natural to use, and a fairly safe estimate, perhaps even 
-on the higher end which is good if we are trying to quantify maximum complexity limits.
+The second is that 7-9 is likely a bit of an over-estimate. In 2001, Nelson Cowan found it was closer to 4+/-1 (3-5 items). The reason he disagreed was that Miller did not try to prevent 
+data which could be "chunked" which made the results of his tests allow people to group like items. Since code somewhat allows both (Imagine a for loop with a counter above it or a single computation line). 
+ The for loop is a miller-concept, the computation line a conway concept.  6 feels extremely natural to use, as it is the midpoint between both ranges.
 
 ---
 ## Maximum Conception
@@ -41,9 +41,63 @@ on the higher end which is good if we are trying to quantify maximum complexity 
 So if we define 6 as easy to remember, then what is the maximum possible number we can conceive of? My theory is that it is:
 ```
 memorize alone = 6 things  (we already know this)
-memorize with a screen aid = 6*6 = 36 things
 maximum_conception = 6^6 ~ 47,000 things
 ```
+Or in other words, once we have abstracted more than 6 layers (think about zooming out 6 lines in 6 functions in 6 files in 6 folders ... ) we start to have problems storing 
+the map in our heads. At this point not only do we not have the logic in our heads, we can't even hold abstract birds-eye views in our heads.
+
+The one exception to this is true long term memory. In theory, someone could memorize maps of code, as maps of code are not as numerous as lines. Once comitted to long term, this eases recall. 
+So it could extend 6^6 even higher, perhaps 6^9, though I would caution that going beyond this means that even combining long term memory with short term mapping overflows the miller limit with 
+chunking.
+
+Additionally, AI may aid with these windows -- my argument would be only 1 layer if you didn't want to trust it (6x), 1.5 if you balanced between reviewing and vibing (15x), 
+2 if you were willing to vibe it almost completely (36x).
+
+So it is probably fair to say that for reasonably clean code with only 1 developer, we get something like:
+
+| Layer | Solo A+ Lines | Difficulty      | Comments                         | Context
+|-------|---------------|-----------------|----------------------------------|--------------
+| 1     | 6             | Truly Trivial   | Hello world!                     | All code can be held within ones head without even a screen
+| 2     | 36            | Trivial         | Beginners feel comfortable       | All code can be held within ones head with a screen (as an aid)
+| 3     | 216           | Simple          | Students feel comfortable        | Within the lower bound of conway (easy memorization of relations)
+| 4     | 1,296         | Standard        | Most devs feel comfortable       | Within mid-point of conway (modest memorization of relations)
+| 5     | 7,776         | A Bit Tough     | Most devs start to see complexity| Approaching high-end of conway (hard memorization of relations)
+| 6     | 46,656        | Difficult       | All devs see complexity          | Surpassed conway, miller chunking begins, **likely the highest most codebases should dare go**
+| 7     | 279,936       | Very Difficult  | Progress starts to slow          | Chunking becomes the predominant way to map the code, starts failing as most relations are unchunkable
+| 8     | 1,679,616     | Nigh Impossible | Progress grinds to a halt        | Chunking becomes the only way to map the code, confusion at this point is guaranteed
+| 9+    | 10,077,696    | Impossible      | Approachable only by the creator | Even chunking starts failing, nearly all context is lost, only the original creators have a chance
+
+
+      
+
+
+
+
+## Solo Developer Framework
+
+- Dwarf Fortress ~700,000 lines of code (Tarn Adams), possibly the highest lines of code of any solo-project
+ - Admitted it was extremely messy
+- Stardew Valley (unknown but likely between 100k-1000k lines)
+ - Creator admitted it was getting extremely difficult to maintain and add to and it was labarinthian
+- SQLLite (~238,000 lines) 
+ - Richard Hipp admitted there were some design mistakes, but has generally maintained the project is manageable, he had extensive experience coming into it which likely helped
+- Undertale (50k-100k estimate)
+ - Described the code as a bunch of rubberbands and determination
+- 50K - Considered in some studies to be the approximate maximum at which most devs can maintain a codebase
+- htop (48k -> but has community contributions)
+    - Acknowledged he sometimes did hasty work on it, but never complained about the quality in any great degree
+- Balatro 30,000 lines
+    - Specifically commented the code wasn't great and it was "held together with hopes and dreams"
+- CP/M as published is around 20k lines, not all of which was likely original to Garys work, but most was
+    - Most of the community considers it reasonably clean code
+- Data from 
+- The Original Linux Kernel 0.01: 10,239 lines of code  (Linus Torvalds)
+    - Generally cosidered very clean and well architected
+- fd (~5,000)
+    - Less information is available, but given no one has complained and the code looks clean on git it is likely reasonable
+- Early applications on PDP One (100-10k lines, >10k was rare)
+    - Some of early pioneers code started at this size like Richard Stallman, generally prided themselves in quality
+
 
 So as established, we could memorize 6 lines of code in our heads.
 
@@ -104,7 +158,7 @@ quality = 85% (some of it is very clean -- but some driver code and other areas 
 lines = 40,000,000
 lines_per_subsys = 15,886
 
-Q = 1 + (e-1)*(100-85)^2/100^2
+Q = 1 + (e-1)*(100-85)^e/100^e
 Q = 1.034
 difficulty = (((35-1)^2+6000)/1620)^(1/6) + (35*15886^1.034/1620^(1/1.75))^(1/6)
 
@@ -139,10 +193,22 @@ Trivial: 2
 Hello-World: 1
 ```
 
+S1=5900
+S2=37200
+S3=42300
+W=4
+Q = 1.06871 < 80
+Q = 1.03866 < 85
+Q = 1.017182 < 90
+
+((3-1)/4)^(1/6) + ((4425^1.06871 + 18600^1.06871 + 31725^1.06871)/4^(1/1.75))^(1/6)
+((3-1)/4)^(1/6) + ((4425^1.01718 + 18600^1.01718 + 31725^1.01718)/4^(1/1.75))^(1/6)
+
+80%: 7.45
+90%: 6.88
+
 ---
 
 ## Totalling all poss
-
-
 
 
