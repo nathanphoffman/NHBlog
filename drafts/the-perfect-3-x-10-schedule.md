@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: The Perfect 3 x 10 Schedule — Blog of Nathan Hoffman -->
 
 # The Perfect 3 x 10 Schedule
 

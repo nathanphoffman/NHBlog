@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: The Binary Solution to a Strange Interview Question — Blog of Nathan Hoffman -->
 
 # The Binary Solution to a Strange Interview Question
 

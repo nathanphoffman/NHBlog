@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Ranking System Part III — Blog of Nathan Hoffman -->
 
 # Ranking System Part III
 

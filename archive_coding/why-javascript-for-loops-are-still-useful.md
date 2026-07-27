@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Why JavaScript for-loops are still useful — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2020-02-25 -->
 # Why JavaScript for-loops are still useful

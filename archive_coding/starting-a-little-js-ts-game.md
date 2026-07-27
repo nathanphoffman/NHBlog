@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Starting a little JS/TS game — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2026-02-19 -->
 # Starting a little JS/TS game

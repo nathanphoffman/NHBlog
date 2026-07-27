@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Entropy with AI (and Humans) in Code Systems — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2026-04-25 -->
 # Entropy with AI (and Humans) in Code Systems

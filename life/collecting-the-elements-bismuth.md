@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Collecting the Elements (Bismuth) — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2015-11-10 -->
 # Collecting the Elements (Bismuth)

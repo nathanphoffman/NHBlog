@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Astronomy Archive — Blog of Nathan Hoffman -->
 
 # **Astronomy Archive**
 

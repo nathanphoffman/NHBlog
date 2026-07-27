@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Experimenting with Mojo (and Go) — Blog of Nathan Hoffman -->
 
 # Experimenting with Mojo (and Go)
 

@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: The Seven Points — Simplifying The Development Process — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2026-07-07 -->
 # The Seven Points — Simplifying The Development Process

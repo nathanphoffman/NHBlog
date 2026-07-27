@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: What I learned in attempting to develop my first RPG System — Blog of Nathan Hoffman -->
 
 # What I learned in attempting to develop my first RPG System
 

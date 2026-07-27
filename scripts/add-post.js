@@ -10,6 +10,7 @@ const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
 const DRAFTS_DIR = join(ROOT, 'drafts');
 const KEEP_COUNT = 6;
 const DATE_RE = /<!--\s*date posted:\s*(\d{4}-\d{2}-\d{2})\s*-->/;
+const TITLE_RE = /<!--\s*title:[^>]*-->/;
 
 function findCategories() {
   const entries = readdirSync(ROOT, { withFileTypes: true });
@@ -64,6 +65,33 @@ function ensureDatePosted(content, date) {
     throw new Error('Could not find a "# " heading line to anchor the date posted comment.');
   }
   lines.splice(headingIdx, 0, `<!-- date posted: ${date} -->`);
+  return lines.join('\n');
+}
+
+function ensureBoilerplate(content) {
+  if (content.startsWith('<!-- Blog of Nathan Hoffman -->')) return content;
+  return [
+    '<!-- Blog of Nathan Hoffman -->',
+    '<!-- [Blog of Nathan Hoffman](main.md) -->',
+    '<!-- themes: glacier -->',
+    '',
+    content,
+  ].join('\n');
+}
+
+function ensureTitle(content) {
+  if (TITLE_RE.test(content)) return content;
+  const lines = content.split('\n');
+  const h1Idx = lines.findIndex((l) => /^# (.+)$/.test(l.trim()));
+  if (h1Idx === -1) {
+    throw new Error('Could not find a "# " heading line to derive the title from.');
+  }
+  const heading = lines[h1Idx].trim().replace(/^# /, '').replace(/\*\*/g, '').trim();
+  const themesIdx = lines.findIndex((l) => /^<!-- themes:/.test(l));
+  if (themesIdx === -1) {
+    throw new Error('Could not find the "<!-- themes: ... -->" line to anchor the title comment.');
+  }
+  lines.splice(themesIdx + 1, 0, `<!-- title: ${heading} — Blog of Nathan Hoffman -->`);
   return lines.join('\n');
 }
 
@@ -155,7 +183,9 @@ async function main() {
 
     const existingDate = content.match(DATE_RE)?.[1];
     const date = existingDate ?? (await askDate(rl, todayISO()));
+    content = ensureBoilerplate(content);
     content = ensureDatePosted(content, date);
+    content = ensureTitle(content);
 
     const destDir = join(ROOT, category);
     const destPath = join(destDir, draft);

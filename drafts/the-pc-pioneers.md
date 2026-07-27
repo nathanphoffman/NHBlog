@@ -1,3 +1,8 @@
+<!-- Blog of Nathan Hoffman -->
+<!-- [Blog of Nathan Hoffman](main.md) -->
+<!-- themes: glacier -->
+<!-- title: The 9 True Pioneers of the PC — Blog of Nathan Hoffman -->
+
 # The 9 True Pioneers of the PC
 We have all heard the story that Jobs and Gates are responsible for the personal computer revolution. Maybe you have even heard of Gate's partner Paul Allen or Job's partner Steve Wozniak, who arguably 
 made larger contributions (especially the former). There is no denying that without these guys, the personal computer would have been different -- but I surmise it still would exist. At the time they 

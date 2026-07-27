@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Coding Interview Questions I would Ask — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2022-06-03 -->
 # Coding Interview Questions I would Ask

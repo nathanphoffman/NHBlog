@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Apollo Series: Earth Rise — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2013-04-02 -->
 # Apollo Series: Earth Rise

@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: SpaceX is Coming Back — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2015-12-03 -->
 # SpaceX is Coming Back

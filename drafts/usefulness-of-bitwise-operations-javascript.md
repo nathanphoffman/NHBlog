@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Usefulness of Bitwise Operations (JavaScript) — Blog of Nathan Hoffman -->
 
 # Usefulness of Bitwise Operations (JavaScript)
 

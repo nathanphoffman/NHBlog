@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: I’m Back! — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2025-11-09 -->
 # I’m Back!

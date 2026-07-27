@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Ordering Items By Weights — Blog of Nathan Hoffman -->
 
 # Ordering Items By Weights
 

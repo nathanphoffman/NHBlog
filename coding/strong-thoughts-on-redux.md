@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Strong Thoughts on Redux — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2026-06-27 -->
 # Strong Thoughts on Redux

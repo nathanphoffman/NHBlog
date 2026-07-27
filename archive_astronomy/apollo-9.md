@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Apollo 9 — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2014-08-01 -->
 # Apollo 9

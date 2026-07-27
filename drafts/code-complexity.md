@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Scoring Code Complexity — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2026-07-14 -->
 # Scoring Code Complexity

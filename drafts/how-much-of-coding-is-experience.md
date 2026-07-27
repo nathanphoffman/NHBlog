@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: How much of coding is experience? — Blog of Nathan Hoffman -->
 
 # How much of coding is experience?
 

@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: An Image from Mars of Home — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2017-01-30 -->
 # An Image from Mars of Home

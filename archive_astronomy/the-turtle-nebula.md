@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: The Turtle Nebula — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2014-06-07 -->
 # The Turtle Nebula

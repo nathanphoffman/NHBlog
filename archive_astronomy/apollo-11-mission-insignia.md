@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Apollo 11 Mission Insignia — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2013-03-07 -->
 # Apollo 11 Mission Insignia

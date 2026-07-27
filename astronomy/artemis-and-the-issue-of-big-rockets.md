@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Artemis and the issue of big rockets — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2026-04-20 -->
 # Artemis and the issue of big rockets

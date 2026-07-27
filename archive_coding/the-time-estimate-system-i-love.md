@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: The Time Estimate System I Love — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2022-10-13 -->
 # The Time Estimate System I Love

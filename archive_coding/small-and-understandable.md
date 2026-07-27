@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Small and Understandable — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2025-11-13 -->
 # Small and Understandable

@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Penny4NASA — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2012-06-12 -->
 # Penny4NASA

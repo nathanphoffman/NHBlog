@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Coding Recommendations I Live By — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2017-02-26 -->
 # Coding Recommendations I Live By

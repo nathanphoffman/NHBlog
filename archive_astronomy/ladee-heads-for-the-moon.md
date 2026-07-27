@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: LADEE Heads for the Moon! — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2013-09-07 -->
 # LADEE Heads for the Moon!

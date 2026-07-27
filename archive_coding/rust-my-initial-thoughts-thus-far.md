@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Rust, my initial thoughts thus far — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2022-04-18 -->
 # Rust, my initial thoughts thus far

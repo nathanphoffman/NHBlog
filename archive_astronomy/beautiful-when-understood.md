@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Beautiful when Understood — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2013-06-23 -->
 # Beautiful when Understood

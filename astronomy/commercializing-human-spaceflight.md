@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Commercializing human spaceflight? — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2020-12-24 -->
 # Commercializing human spaceflight?

@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Programming Paradigms — A Journey Back to the Imperative — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2026-07-09 -->
 # Programming Paradigms — A Journey Back to the Imperative

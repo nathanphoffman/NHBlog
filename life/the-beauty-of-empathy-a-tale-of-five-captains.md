@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: The Beauty of Empathy & A Tale of Five Captains — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2022-11-05 -->
 # The Beauty of Empathy & A Tale of Five Captains

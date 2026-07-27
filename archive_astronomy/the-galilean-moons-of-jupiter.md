@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: The Galilean Moons of Jupiter — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2013-02-10 -->
 # The Galilean Moons of Jupiter

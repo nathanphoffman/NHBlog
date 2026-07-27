@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: The Pale Blue Dot — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2013-03-08 -->
 # The Pale Blue Dot

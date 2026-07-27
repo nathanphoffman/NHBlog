@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Astronomy 10 Must See Objects/Phenomena — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2012-11-11 -->
 # Astronomy 10 Must See Objects/Phenomena

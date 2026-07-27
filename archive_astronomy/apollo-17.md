@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Apollo 17 — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2012-06-10 -->
 # Apollo 17

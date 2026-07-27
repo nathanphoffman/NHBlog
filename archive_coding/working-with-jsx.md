@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Working with JSX — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2015-11-21 -->
 # Working with JSX

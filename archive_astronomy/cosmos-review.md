@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Cosmos Review — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2014-06-05 -->
 # Cosmos Review

@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Coronal Rain — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2013-02-21 -->
 # Coronal Rain

@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: The DataTables Plugin for JQuery — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2015-10-24 -->
 # The DataTables Plugin for JQuery

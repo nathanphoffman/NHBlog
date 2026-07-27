@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Happy Pi Day — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2013-03-14 -->
 # Happy Pi Day

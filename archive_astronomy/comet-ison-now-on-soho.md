@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Comet ISON Now on SOHO! — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2013-11-27 -->
 # Comet ISON Now on SOHO!

@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: AI is likely to make code knowledge more useful — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2026-05-05 -->
 # AI is likely to make code knowledge more useful

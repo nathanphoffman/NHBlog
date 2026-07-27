@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: 7 Exoplanets and Unlimited Hype — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2017-02-25 -->
 # 7 Exoplanets and Unlimited Hype

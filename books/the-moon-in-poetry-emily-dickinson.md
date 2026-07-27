@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: The Moon in Poetry — Emily Dickinson — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2020-02-17 -->
 # The Moon in Poetry — Emily Dickinson

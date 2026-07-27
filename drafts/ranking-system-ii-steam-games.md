@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Ranking System II: Steam Games — Blog of Nathan Hoffman -->
 
 # Ranking System II: Steam Games
 

@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Where is the edge of the Solar System? — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2015-03-15 -->
 # Where is the edge of the Solar System?

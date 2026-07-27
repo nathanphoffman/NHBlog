@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Making a Simpler Web — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2026-07-11 -->
 # Making a Simpler Web

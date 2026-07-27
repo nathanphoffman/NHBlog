@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Some thoughts of wisdom — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2026-05-26 -->
 # Some thoughts of wisdom

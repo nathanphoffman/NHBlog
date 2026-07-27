@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Tough and Competent — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2016-09-03 -->
 # Tough and Competent

@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: If Pluto was still a Planet — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2014-03-24 -->
 # If Pluto was still a Planet

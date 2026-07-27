@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Experimenting with Claude — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2026-03-31 -->
 # Experimenting with Claude

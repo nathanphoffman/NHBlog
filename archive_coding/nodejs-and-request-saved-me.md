@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: NodeJS and Request Saved Me — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2017-03-25 -->
 # NodeJS and Request Saved Me

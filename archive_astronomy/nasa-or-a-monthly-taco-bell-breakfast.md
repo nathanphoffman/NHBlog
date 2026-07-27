@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: NASA or a Monthly Taco Bell Breakfast — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2014-03-27 -->
 # NASA or a Monthly Taco Bell Breakfast

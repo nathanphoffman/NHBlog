@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: My Preference for the Silmarillion — Blog of Nathan Hoffman -->
 
 # My Preference for the Silmarillion
 

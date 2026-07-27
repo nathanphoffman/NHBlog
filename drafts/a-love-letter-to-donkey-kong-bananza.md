@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: A Love Letter to Donkey Kong Bananza — Blog of Nathan Hoffman -->
 
 # A Love Letter to Donkey Kong Bananza
 

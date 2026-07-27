@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Space Without The Space — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2014-08-22 -->
 # Space Without The Space

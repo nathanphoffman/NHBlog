@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Blog of Nathan Hoffman -->
 
 # **Nathan Hoffman** .me
 *The personal blog of **Nathan Hoffman**, a journey through code, the universe, and random thoughts.*

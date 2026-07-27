@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Apollo Series: Apollo 7 S-IVB — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2013-03-16 -->
 # Apollo Series: Apollo 7 S-IVB

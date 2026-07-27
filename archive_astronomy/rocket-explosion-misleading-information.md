@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Rocket Explosion: Misleading Information — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2014-10-30 -->
 # Rocket Explosion: Misleading Information

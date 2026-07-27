@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Stack overflow surveys, and what they say about language trends — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2022-04-26 -->
 # Stack overflow surveys, and what they say about language trends

@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: Apollo Series: Farside of The Moon — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2013-06-20 -->
 # Apollo Series: Farside of The Moon

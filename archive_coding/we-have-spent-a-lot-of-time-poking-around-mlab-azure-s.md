@@ -1,6 +1,7 @@
 <!-- Blog of Nathan Hoffman -->
 <!-- [Blog of Nathan Hoffman](main.md) -->
 <!-- themes: glacier -->
+<!-- title: We have spent a lot of time poking around: mLab, Azure’s DocumentDB/CosmosDB support for Mongo, and… — Blog of Nathan Hoffman -->
 
 <!-- date posted: 2017-05-23 -->
 # We have spent a lot of time poking around: mLab, Azure’s DocumentDB/CosmosDB support for Mongo, and…
