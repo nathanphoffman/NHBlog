@@ -9,7 +9,7 @@
 
 [Coding Astronomer](https://codingastronomer.dev)  [Medium Blog](https://medium.com/@nathanphoffman) 
 
-<!-- include: astronomy.md, books.md, coding.md, gaming.md, life.md, sort: "date posted:", sort_dir: desc, limit_to: 10 -->
+<!-- include: astronomy.md, books.md, coding.md, gaming.md, life.md, sort: "date posted:", sort_dir: desc, limit_to: 6 -->
 
 ---
 
