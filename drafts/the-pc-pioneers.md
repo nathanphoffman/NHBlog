@@ -21,9 +21,9 @@ Here we root out teams, and only list people whose *sole* contributions were vit
 ## Charles Babbage, *1820-1840*
 *The first to conceive of a general purpose machine with memory, a processor, and conditionals*
 
-Until Charles Babbage came along computers were seen as specific tools like a shovel, in otherwords, not really computers at all (in any sense of the modern word). They were hardcoded devices, driven mechanically by gears. One of the more sophisticated computers of this time was the arithmometer, invented right around the time Charles was born. It was a more sophisticated pascaline (counting device) that allowed basic arithmetic through a series of gearing, multiplication was possible through a stepping process. It all revolved around turning gears to force counters to increase. We should note here some credit belongs to Blaise Pascal (creation of the Pascaline) and Thomas de Colmar (creation of the Arithmometer) as their work (as well as Leibnitz's stepped motor) inspired Babbage.
+Until Charles Babbage came along computers were seen as specific tools like a shovel, in otherwords, not really computers at all (in any sense of the modern word). They were hardcoded devices, driven mechanically by gears. One of the more sophisticated computers of this time was the arithmometer, invented right around the time Charles was making his own innovations. The pascaline no doubt had some influence on Charles work (created by Blaise Pascal) which was invented in the 17th century, but was extremely primitive -- nothing more than a counting device.
 
-Babbage, 
+Babbage, was the first one to see computers beyond just these specific tools. He 
 
 ## Ada Lovelace, *1843*
 *The first to envision that a general purpose machine does not need to be limited to mathematics* 
