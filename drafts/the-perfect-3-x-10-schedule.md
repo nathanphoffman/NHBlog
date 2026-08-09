@@ -13,7 +13,7 @@ Why? Because you only have to work 3 days a week, and can choose the days you wo
 
 ## **The 5 day work week**
 
-The biggest issue with the 5-day work week is in the name. It requires that workers work 5-consecutive days in a row. If I was forced to do anything 5-days in a row I would grow to view it as a chore. Go to the gym 5 days in a row, eat the same great food 5-days in a row, see the same friend 5-days in a row, you name it! But what is even worse is that workers usually want the weekend off (so they are off the same days as their friends / family) than this leaves no flexibility in days worked. M-F must then be worked by definition. There are no other 5-days to work.
+The biggest issue with the 5-day work week is in the name. It requires that workers work 5-consecutive days in a row. Go to the gym 5 days in a row, eat the same great food 5-days in a row, see the same friend 5-days in a row, you name it, and you might get burned out on it. Workers usually want the weekend off (so they are off the same days as their friends / family) than this leaves no flexibility in days worked. M-F must then be worked consecutively by definition. There are no other 5-days to work.
 
 ## The 4 day work week
 
