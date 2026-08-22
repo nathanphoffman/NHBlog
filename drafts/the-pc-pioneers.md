@@ -23,7 +23,7 @@ Here we root out teams, and only list people whose *sole* contributions were vit
 
 Until Charles Babbage came along computers were seen as specific tools like a shovel, in otherwords, not really computers at all (in any sense of the modern word). They were hardcoded devices, driven mechanically by gears. One of the more sophisticated computers of this time was the arithmometer, invented right around the time Charles was making his own innovations. The pascaline no doubt had some influence on Charles work (created by Blaise Pascal) which was invented in the 17th century, but was extremely primitive -- nothing more than a counting device.
 
-Babbage, was the first one to see computers beyond just these specific tools. He realized that one could 
+Babbage, was the first one to see computers beyond just these specific tools. His "Difference Engine" was a hypothetical mechanical calculator (computer) that could compute polynomial functions. More importantly, he realized he would need a "mill" (similar to a CPU), a "store" (memory), input (in his time punch-cards which had been used for looms), and conditional branching and looping, so the computer could alter new results based on previous results. These realizations, and especially the punchcard program (which would quite literally be used many years later for computing), are what has cemented him into computing history.
 
 ## Ada Lovelace, *1843*
 *The first to envision that a general purpose machine does not need to be limited to mathematics* 
