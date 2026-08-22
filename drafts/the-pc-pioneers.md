@@ -5,7 +5,7 @@
 
 # The 9 True Pioneers of the PC
 We have all heard the story that Jobs and Gates are responsible for the personal computer revolution. Maybe you have even heard of Gate's partner Paul Allen or Job's partner Steve Wozniak, who arguably 
-made larger contributions (especially the former). There is no denying that without these guys, the personal computer would have been different -- but I surmise it still would exist. At the time they 
+made larger contributions (especially the latter). There is no denying that without these guys, the personal computer would have been different -- but I surmise it still would exist. At the time they 
 were hacking hardware and installing software, there were already dozens (if not hundreds) of hobbiests doing the same, they were not in anyway unique, they were just better business people and faster -- 
 able to get the first to market.
 
@@ -41,6 +41,12 @@ George Boole's main contribution to computing was "The Laws of Thought" in 1854,
 
 ## Alan Turing, *1936-1950*
 *The first to mathematically prove and demonstrate that a general purpose computer is possible*
+
+Alan Turing was a British mathematician who introduced the concept of the "Turing Machine" which was a theoretical model of what is needed to compute anything which is possible to compute (some are not possible like the Halting Problem, -- which he also proved unsolvable by any means). This groundwork proved once and for all the potential usefulness of a general purpose computer. This and his work to decipher German Enigma (an encryption device in WWII) made him somewhat famous. 
+
+Alan Turing was infamously prosecuted for homosexuality and castrated in 1952 -- killing himself in 1954.
+
+After WWII huge interest in the computer began, with massive investment by governments, which had already been underway during the war, not long after commercial computer efforts would also launch.
 
 ## Claude Shannon, *1937-1948*
 *Showed how bits and binary could be used to encode information -- the final pathway to electronic computers*
@@ -79,7 +85,7 @@ Ed Roberts is arguably the weakest addition on this list, he does fall a bit und
 ## Richard Stallman (1983-1992)
 *The first to champion software controlled by users (GPL/Open Source) -- and a pioneer in early software that made modern software possible*
 
-Richard Stallman, while at times somewhat controversial, is nonetheless essential to mention. Unlike his contemporaries, Stallman was content collecting a meager stipend as a research hire, developing software at MIT's AI Laboratory. He would sometimes sleep in his office, and professed that he would basically spend all day coding and living on Chinese food. He is a self-described hacker and created the GCC (the GNU Compiler Collection) which to this day is the underpinning of a huge percentage of the world's machine code and he also made EMACS (an early editor that was used to develop much of early software -- and even some to this day). By themselves, this would be impressive, perhaps even worth a mention on this list, but this is only the beginning of his legacy.
+Richard Stallman, while at times somewhat controversial, is nonetheless essential to mention. Unlike his contemporaries, Stallman was content collecting a meager stipend as a research hire, developing software at MIT's AI Laboratory. He would sometimes sleep in his office, and professed that he would basically spend all day coding and living on Chinese food. He is a self-described hacker and created the GCC (the GNU Compiler Collection) which to this day is the underpinning of a huge percentage of the world's machine code and he also made EMACS (an early editor that was used to develop much of early software -- and even some to this day). By themselves, this would be impressive, perhaps worth a mention on this list, but this is only the beginning of his legacy.
 
 Perhaps most importantly, Richard Stallman developed the GNU Project, the GNU General Public License, and the Free Software Foundation. Collectively this was effectively a moral imperative (in Stallman's view): that all software should (if the world was truly ethical) be open/free. And that coders from all over should work on making free alternatives to proprietary software (the precursor to Linux). Free here does not mean free as in price, but free as in sharing/distribution/modification. Stallman disliked the term Open Source as it was a later invention to make "free software" more appealing to businesses as that has an unsurprisngly negative connatation in the corporate world.
 
