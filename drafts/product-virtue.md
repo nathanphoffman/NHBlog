@@ -18,7 +18,7 @@ The purpose, shematics, production, and function of the product should be rigoro
 The product and its manufacture/purpose should be possible to be understood by a single individual, if it is not, it fails to be understandable.
 
 ## Control
-All users should be in control of their efforts while using a product, and they should control the product (not the other way around).
+All users should own their inputs and outputs while using a product, and they should control the product (not the other way around).
 
 ### Effort
 Users should control anything that results in their efforts using the product such as inputs, data, or labor. Example: the garden they make with a shovel, the data they input on an online forum.
