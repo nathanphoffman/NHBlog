@@ -19,4 +19,3 @@ This also led me to a few rules:
 - An intelligence can only mock the computation of the layer above through its own lower-systems (analogies in our case)
 - An intelligence can not even conceive of what would exist 2 layers above it, it can't even comprehend the mode
 
-
