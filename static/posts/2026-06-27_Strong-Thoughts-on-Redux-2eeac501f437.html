@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Strong Thoughts on Redux</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Strong Thoughts on Redux</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+When I first started using React it was quite an underground tech, and Redux was in its infancy having just been presented as Flux with…
+</section>
+<section data-field="body" class="e-content">
+<section name="a984" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="3fcb" id="3fcb" class="graf graf--h3 graf--leading graf--title">Strong Thoughts on Redux</h3><p name="2ad0" id="2ad0" class="graf graf--p graf-after--h3">When I first started using React it was quite an underground tech, and Redux was in its infancy having just been presented as Flux with some third party efforts at work to better handle state.</p><p name="977f" id="977f" class="graf graf--p graf-after--p">But ever since then I feel like for every step forward Redux makes it makes two steps backwards, having now used it at a couple of companies and a bit for fun personally I think I can honestly say that most codebases are simply better off without it.</p><p name="02e6" id="02e6" class="graf graf--p graf-after--p">As a thought experiment I asked Claude about why Redux is so great and then provided my counter arguments, here is my AI-human debate ;)</p><blockquote name="a234" id="a234" class="graf graf--blockquote graf-after--p"><strong class="markup--strong markup--blockquote-strong">1. Prop Drilling</strong> <em class="markup--em markup--blockquote-em">Passing data through many layers of components is tedious and brittle. Redux provides a global store any component can access directly, no matter how deeply nested.</em></blockquote><p name="bf0a" id="bf0a" class="graf graf--p graf-after--blockquote">This is true, but passing data through many layers of components enforces strong considerations about component structure, emphasizing encapsulation and limits cross-component noise. If for some reason you really needed to circumvent prop drilling, React also provides Context Providers which I would prefer over Redux as it is already built into native React.</p><blockquote name="29c7" id="29c7" class="graf graf--blockquote graf-after--p"><strong class="markup--strong markup--blockquote-strong">2. Shared State Between Unrelated Components</strong> <em class="markup--em markup--blockquote-em">When two components that don’t share a parent need the same data (e.g., a navbar and a sidebar), lifting state up becomes impractical. Redux gives them a common source of truth.</em></blockquote><p name="e0e2" id="e0e2" class="graf graf--p graf-after--blockquote">This for me is the only really good reason to use Redux. There are many times I have had to communicate up (mostly to communicate nav information) and been annoyed. That being said you can use a custom (or library based) event system to easily circumvent this. I find the number of times you actually need something like this is small and should be the exception not the rule — and it is hardly a reason in and of itself to add in Redux and change globally how state works.</p><blockquote name="3211" id="3211" class="graf graf--blockquote graf-after--p"><strong class="markup--strong markup--blockquote-strong">3. Predictable State Mutations</strong> Redux enforces a strict unidirectional data flow — state only changes via dispatched actions and pure reducer functions, making behavior predictable.</blockquote><p name="d928" id="d928" class="graf graf--p graf-after--blockquote">There are two things to state: its data/how it is changed, and how that data is used. While the data and how it is changed is very well organized and predictable in Redux, how the data is used is no where to be seen, which is why I think this is a moot point. It is akin to having the front desk at a restaurant handle all bills because it is a single predictable source of billing. While it may be advantageous to organize the responsibility, the person ringing up the bill still has no idea about what actually happened at the table if it isn’t the server ringing it up. So for all the upsides that a front desk gives, it comes with the downsides of not knowing what actually happened (maybe the wrong beer was charged, the seats weren’t properly recorded to split the bill, there was a service issue, etc.). To me this is one of those “its a problem either way” kind of things, I don’t see how Redux is stronger.</p><blockquote name="1d56" id="1d56" class="graf graf--blockquote graf-after--p"><strong class="markup--strong markup--blockquote-strong">4. Debugging &amp; Time-Travel</strong> Because every state change is logged as an explicit action, Redux DevTools lets you inspect the full history of state changes, replay them, or even “time-travel” backward to a previous state.</blockquote><p name="67da" id="67da" class="graf graf--p graf-after--blockquote">This is definitely a strength I can’t deny, but I would argue similarly to point 3 that since I often need to drill down to the offending component logic when I am debugging it isn’t always as useful to deal with the entire app state in its entirety.</p><blockquote name="5cec" id="5cec" class="graf graf--blockquote graf-after--p"><strong class="markup--strong markup--blockquote-strong">5. State Persistence &amp; Hydration</strong> Serializing and rehydrating state (e.g., for SSR or localStorage persistence) is straightforward since the entire app state lives in one plain JS object.</blockquote><p name="e835" id="e835" class="graf graf--p graf-after--blockquote">This I find an odd strength, on a cursory read it feels like a good take, but I am not sure how many people would need local storage persistence for this kind of thing, sounds more like an offline functionality which in our constantly connected world is unlikely to be that useful, additionally I am confused by the SSR comment here since most people server side rendering React are using Next which handles the SSR and hydration for you.</p><blockquote name="1187" id="1187" class="graf graf--blockquote graf-after--p"><strong class="markup--strong markup--blockquote-strong">6. Consistency at Scale</strong> In large teams, having a single, well-defined pattern for state management reduces bikeshedding and makes codebases easier to reason about across many contributors.</blockquote><p name="3e1f" id="3e1f" class="graf graf--p graf-after--blockquote">Ever since programming began: large scale codebases have never been a good thing. The larger codebases are the harder they are to debug, maintain, understand, etc. Additionally, AI now will consume far more tokens if codebases and modules are large than if they are small as they add more to context and thereby token cost. So both for humans an AI keeping things smaller is better, so for me having a system to help with large scales is actually in and of itself a downside as it encourages those very large scales.</p><p name="9130" id="9130" class="graf graf--p graf-after--p graf--trailing">Anyway, I am not saying Redux is horrible for everyone, it is just not my preferred way of using React if there is any chance of avoiding it.</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@nathanphoffman" class="p-author h-card">Nathan P. Hoffman</a> on <a href="https://medium.com/p/2eeac501f437"><time class="dt-published" datetime="2026-06-27T14:46:00.862Z">June 27, 2026</time></a>.</p><p><a href="https://medium.com/@nathanphoffman/strong-thoughts-on-redux-2eeac501f437" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on July 11, 2026.</p></footer></article></body></html>

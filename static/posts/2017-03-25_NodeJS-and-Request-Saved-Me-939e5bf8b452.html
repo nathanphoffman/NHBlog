@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>NodeJS and Request Saved Me</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">NodeJS and Request Saved Me</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+I had a troubling experience with REST support in C# .NET 4.6. At my company I was tasked to integrate our C# Web API service to a…
+</section>
+<section data-field="body" class="e-content">
+<section name="3036" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="4c22" id="4c22" class="graf graf--h3 graf--leading graf--title">NodeJS and Request Saved Me</h3><figure name="b21c" id="b21c" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*jIvt68aHWSFeysbb7pNdqQ.png" data-width="800" data-height="632" src="https://cdn-images-1.medium.com/max/800/1*jIvt68aHWSFeysbb7pNdqQ.png"><figcaption class="imageCaption"><strong class="markup--strong markup--figure-strong">Unrelated:</strong> We need to make the rocket turtle the official <a href="https://github.com/node-forward/discussions/issues/33" data-href="https://github.com/node-forward/discussions/issues/33" class="markup--anchor markup--figure-anchor" rel="noopener" target="_blank">Node mascot</a></figcaption></figure><p name="844b" id="844b" class="graf graf--p graf-after--figure">I had a troubling experience with REST support in C# .NET 4.6. At my company I was tasked to integrate our C# Web API service to a Multipart Form Request that sent along CSV content as if it were a file upload from a web page, but in actuality it was pulled from a database by a C# service.</p><p name="c6f5" id="c6f5" class="graf graf--p graf-after--p">This all might sound odd, why from service to service was I simulating a Multipart Form POST when we had the data in memory?</p><p name="65e4" id="65e4" class="graf graf--p graf-after--p">Well the main reason is because our vendor uses the same endpoint for file uploads, and did not feel the need to expose a second method. On its own, a multipart file transmission doesn’t seem too difficult with libraries like <a href="http://restsharp.org/" data-href="http://restsharp.org/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">RestSharp</a>, but our issue is that we were hooked into OAuth 1.0 using the <a href="https://github.com/bittercoder/DevDefined.OAuth" data-href="https://github.com/bittercoder/DevDefined.OAuth" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">DevDefined.OAuth library</a>. Since we could not do multipart page requests using devdefined, we now had to look for something else.</p><p name="9446" id="9446" class="graf graf--p graf-after--p">I must admit that I was very new to both multipart files and the intricacies of OAuth 1.0, but it seemed to me that if I used something with good REST support like RestSharp I would be unable to have the authentication strengths of the DevDefined OAuth library, without ripping it apart. So instead I either had to use RestSharp and manually compose OAuth or use DevDefined.Oauth and manually compose a multipart form request. Clearly, neither of these situations were ideal. And the one OAuth 1.0 example I could find with RestSharp was <a href="https://github.com/restsharp/RestSharp/blob/master/RestSharp.IntegrationTests/oAuth1Tests.cs" data-href="https://github.com/restsharp/RestSharp/blob/master/RestSharp.IntegrationTests/oAuth1Tests.cs" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">100s of lines long</a>.</p><p name="61b8" id="61b8" class="graf graf--p graf-after--p">After banging my head on <a href="http://stackoverflow.com/questions/6193460/how-to-use-restsharp-with-oauth" data-href="http://stackoverflow.com/questions/6193460/how-to-use-restsharp-with-oauth" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Stack Overflow articles</a>, that were not helpful and pointed to a lack of C# community support, I turned to NodeJS. Since this integration was running short on time, we needed to get something up and running. After only 5 minutes of searching, I found a JS library (Request), an example of OAuth, and a multipart file composition using that library.</p><p name="1b0a" id="1b0a" class="graf graf--p graf-after--p">The whole setup was extremely simple, simpler than anything we were doing already with OAuth 1.0 and I plugged in our key/secret and their multipart structure and immediately had success. Furthermore, I hooked up the entire service on Microsoft Azure App Services <em class="markup--em markup--p-em">(yes I know, I prefer AWS too for Node) </em>and had the whole service up and running within an hour. This is all of the code needed for the request portion:</p><figure name="1714" id="1714" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/nathanphoffman/38ba1f6bd4336e7703d12a5e65f7bf08.js"></script></figure><p name="a8c3" id="a8c3" class="graf graf--p graf-after--figure">I know many people hate the JS Community, and honestly I sometimes join in. The number of libraries can be stupid, the amount of dependencies baffling, and the disagreement over what bests what aggravating. But when push comes to shove, the strength of JS’s community is that niche scenarios like this can be resolved instantly, whereas C# ends up having you fumbling with docs, &amp; outdated libraries, and it often times leaves you nowhere to turn.</p><p name="cde2" id="cde2" class="graf graf--p graf-after--p graf--trailing">I think the most important thing when coding is simplicity. While it is possible I may have found an easier C# solution than those I came across, this NodeJS/ExpressJS/Request setup was perhaps the simplest web app I have ever setup, and took me less time to setup than it took me Googling my first steps with C#.</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@nathanphoffman" class="p-author h-card">Nathan P. Hoffman</a> on <a href="https://medium.com/p/939e5bf8b452"><time class="dt-published" datetime="2017-03-25T00:57:07.875Z">March 25, 2017</time></a>.</p><p><a href="https://medium.com/@nathanphoffman/nodejs-and-request-saved-me-939e5bf8b452" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on July 11, 2026.</p></footer></article></body></html>

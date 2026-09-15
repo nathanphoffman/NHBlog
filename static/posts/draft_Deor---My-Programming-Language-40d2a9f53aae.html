@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Deor — My Programming Language</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Deor — My Programming Language</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+I recommend going to deor.dev if you want to get started.
+</section>
+<section data-field="body" class="e-content">
+<section name="b8c4" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="9808" id="9808" class="graf graf--h3 graf--leading graf--title">Deor — My Programming Language</h3><figure name="b7e0" id="b7e0" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="0*iY8Hz-qPvcL1dS8r.png" data-width="32" data-height="34" src="https://cdn-images-1.medium.com/max/800/0*iY8Hz-qPvcL1dS8r.png"><figcaption class="imageCaption">Little Deer Mascot</figcaption></figure><p name="e1f7" id="e1f7" class="graf graf--p graf-after--figure"><em class="markup--em markup--p-em">I recommend going to </em><a href="https://deor.dev" data-href="https://deor.dev" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">deor.dev</em></a><em class="markup--em markup--p-em"> if you want to get started.</em></p><p name="cca1" id="cca1" class="graf graf--p graf-after--p">Although I have been working on a few projects over the last couple months, continuing a massive coding binge I have been on, I spent much of that time on a programming language called “<a href="http://deor.dev" data-href="http://deor.dev" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Deor,</a>” old English for deer (pronounced D-ay-or but I prefer the more familiar Dee-or). It is cheer-leaded by a simple sprite of a red deer, emblematic of: leanness (limited syntax), red-rustyness (for its red-crab Rust heritage), occasional but reserved antler power (machine-code), predictability (opinionated code patterns), yet its pleasantness (readability), and peacefulness (ease prioritized over power) — except where needed.<em class="markup--em markup--p-em"> </em></p><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="php" name="741a" id="741a" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content"><span class="hljs-comment"># A really simple example of its ease of readability</span><br /><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">ask_and_repeat</span>(<span class="hljs-params"></span>)<br />  <span class="hljs-title">print</span>(<span class="hljs-params"><span class="hljs-string">&quot;What would you like to say?&quot;</span></span>)<br />  (<span class="hljs-params">first</span>) <span class="hljs-title">in</span> <span class="hljs-title">input</span>(<span class="hljs-params"></span>)<br />  <span class="hljs-title">print</span>(<span class="hljs-params">s_join(<span class="hljs-params">[<span class="hljs-string">&quot;You said &quot;</span>, first]</span>)</span>)</span></span></pre><p name="810b" id="810b" class="graf graf--p graf-after--pre">One of the chief motivations behind Deor was to find a way to make Rust a more pleasant experience to write, a bit Python-like, with a bit of my own flare from many languages I love, while not actually creating an entirely new compiler (like Mojo), allowing use of crates and Rust code. <em class="markup--em markup--p-em">Deor clones everything by default to make it easier to work with and avoid ownership (but copy types get uncloned by the compiler since they dont need it) Ownership still exists with the move keyword.</em></p><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="python" name="39f8" id="39f8" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content"><span class="hljs-comment"># for loops are a bit reminiscent of python and other simpler languages</span><br /><span class="hljs-comment"># deconstruction is the only way to access fields deor reads like a book</span><br /><span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> collection<br />  (name) <span class="hljs-keyword">in</span> item<br />  <span class="hljs-built_in">print</span>(name)<br /><br /><span class="hljs-comment"># count from 1 to 10, but it uses the - index like other langs</span><br /><span class="hljs-keyword">for</span> idx <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">2</span>,<span class="hljs-number">11</span>)<br />  <span class="hljs-built_in">print</span>(idx)</span></pre><p name="c325" id="c325" class="graf graf--p graf-after--pre">I found myself on many occasions trying to do extremely simple patterns where I really didn’t care about performance or the ownership pattern, I wanted to opt-in when needed rather than opt-out. I also didn’t care much for the way Rust handles strings out of the box, with both String and string slices of &amp;str. I realized that if I transpiled to Rust I could still allow raw rust to be inserted into the code in rust blocks (or even wrapped in Deor functions as helpers), infact this is how Deor handles many system functionality like strings and lists to keep the transpiler lean.</p><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="php" name="c380" id="c380" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">string</span> <span class="hljs-title">s_join</span>(<span class="hljs-params">stringList parts</span>)<br /> <span class="hljs-title">rust</span><br />  <span class="hljs-title">parts</span>.<span class="hljs-title">join</span>(<span class="hljs-params"><span class="hljs-string">&quot;&quot;</span></span>)<br /><br /><span class="hljs-title">fn</span> <span class="hljs-title">string</span> <span class="hljs-title">s_to_upper</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> str</span>)<br /> <span class="hljs-title">rust</span><br />  <span class="hljs-title">str</span>.<span class="hljs-title">to_uppercase</span>(<span class="hljs-params"></span>)<br /><br /><span class="hljs-title">fn</span> <span class="hljs-title">string</span> <span class="hljs-title">s_to_lower</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> str</span>)<br /> <span class="hljs-title">rust</span><br />  <span class="hljs-title">str</span>.<span class="hljs-title">to_lowercase</span>(<span class="hljs-params"></span>)<br /></span><br /></span></pre><p name="6ae4" id="6ae4" class="graf graf--p graf-after--pre">I do want to say here that I respect rust immensely, it may be the low-level language to end all low level languages — esp. for those trying to do OS development — it recently allowed me to use an alloc library to replace the std lib for a unikernel that had no base support for heap/vectors —insane! However, these I find are the exceptions to the rule — why not have both so that you can use whichever your application demands? If Deor transpiles to Rust, why can’t they live in harmony?</p><p name="8b07" id="8b07" class="graf graf--p graf-after--p">Another one of my chief motivations was to lean HEAVILY into procedural and imperative code designs. This means this is the closest you can get to OOP is this, which is to say literally not at all ;)</p><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="csharp" name="dde8" id="dde8" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content"><span class="hljs-function"><span class="hljs-keyword">struct</span> Person<br />  <span class="hljs-built_in">string</span> first_name<br />  <span class="hljs-built_in">string</span> last_name<br />  <span class="hljs-built_in">int</span> age<br /><br />fn Person <span class="hljs-title">get_nate</span>()<br />  first_name <span class="hljs-keyword">as</span> &quot;Nate&quot;<br />  last_name <span class="hljs-keyword">as</span> &quot;Hoffman&quot;<br />  age <span class="hljs-keyword">as</span> 18              # heh heh I wish<br /><br />  Person nate</span> = (first_name, last_name, age)<br />  <span class="hljs-keyword">return</span> nate<br /><br /></span></pre><p name="12b7" id="12b7" class="graf graf--p graf-after--pre">Structs are not reference types, they are treated as values and cloned around and are fully immutable. Further rejecting OOP design — if you want to try to modify a struct you must create a new one. The good news is the “with” pattern makes this easy to construct a new struct using a base with new fields.</p><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="php" name="33f0" id="33f0" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content"><span class="hljs-function"><span class="hljs-keyword">fn</span> <span class="hljs-title">Person</span> <span class="hljs-title">change_struct_name</span>(<span class="hljs-params">Person person, <span class="hljs-keyword">string</span> first_name</span>)<br />  <span class="hljs-title">new_person</span> <span class="hljs-title">as</span> <span class="hljs-title">person</span> <span class="hljs-title">with</span> (<span class="hljs-params">first_name</span>)<br />  <span class="hljs-title">return</span> <span class="hljs-title">new_person</span><br /></span><br /></span></pre><p name="21fb" id="21fb" class="graf graf--p graf-after--pre">There are no interfaces, classes, methods, or even ways to attach functions to objects like many other more procedural languages these days (like Rust impl). It takes a hard stance, going back more towards the days of Fortran 90 and C (structs are only structure)</p><p name="498d" id="498d" class="graf graf--p graf-after--p">For funcctional patterns like lambdas, closures, etc. there is very little support by intention — as this would overcomplicate things — rust blocks exist for that! The only pattern that survives is that a declared function can be passed as a first class member if it has one in and one output, this was added to still allow use popular first-class patterns like filter() / map(), etc. — but those are still up to you to create.</p><pre data-code-block-mode="1" spellcheck="false" data-code-block-lang="csharp" name="1565" id="1565" class="graf graf--pre graf-after--p graf--preV2"><span class="pre--content"><span class="hljs-function">shape filterFn <span class="hljs-keyword">as</span> func of Employee to <span class="hljs-built_in">bool</span><br />shape employeeList <span class="hljs-keyword">as</span> list of Employee <br /><br />fn employeeList <span class="hljs-title">filter</span>(<span class="hljs-params">employeeList employees, filterFn filter_employee</span>)<br />  employeeList employee_results</span> = <span class="hljs-function">empty<br />  <span class="hljs-keyword">for</span> employee <span class="hljs-keyword">in</span> employees<br />    is_match <span class="hljs-keyword">as</span> <span class="hljs-title">filter_employee</span>(<span class="hljs-params">employee</span>)<br />    <span class="hljs-keyword">if</span> is_match<br />      employee_results at end</span> = employee<br /><br />  <span class="hljs-keyword">return</span> employee_results</span></pre><p name="2f01" id="2f01" class="graf graf--p graf-after--pre">You will notice above there are no generics in a traditional sense, only symbols which are a bit restrictive (must be explicitly defined and have only 1 param : 1 output for funcs) this is another part of the Deor philosophy: only human-language not symbol-language. Just like when reading a book you will not find {} or &lt;&gt; you will not find them in Deor either. You will also rarely see colons or semicolons, same thing in Deor (actually they don’t exist at all). Paranthesis are used mainly to break up the world flow and are probably more common than both : and semicolons in texts — though the jury is out on that one — but it is such standard programming convention removing it would <em class="markup--em markup--p-em">decrease readability</em> — a cardinal sin in Deor.</p><p name="f0ad" id="f0ad" class="graf graf--p graf-after--p">All of this sounds highly limiting until you realize how much code is just this simple, and when it is more complex or in need of power — break out those rust blocks! </p><p name="90fe" id="90fe" class="graf graf--p graf--empty graf-after--p"><br></p><p name="9584" id="9584" class="graf graf--p graf--empty graf-after--p graf--trailing"><br></p></div></div></section>
+</section>
+<footer><p><a href="https://medium.com/p/40d2a9f53aae">View original.</a></p><p>Exported from <a href="https://medium.com">Medium</a> on July 11, 2026.</p></footer></article></body></html>

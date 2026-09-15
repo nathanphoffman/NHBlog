@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Programming Paradigms — A Journey Back to the Imperative</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Programming Paradigms — A Journey Back to the Imperative</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Recently I have been interested in older programming languages, and in the process of discovering more imperative and procedural styles — I…
+</section>
+<section data-field="body" class="e-content">
+<section name="854c" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="6e88" id="6e88" class="graf graf--h3 graf--leading graf--title">Programming Paradigms — A Journey Back to the Imperative</h3><figure name="baf4" id="baf4" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="1*BTFTiskn2oKbIOuEaY58uw.png" data-width="719" data-height="650" src="https://cdn-images-1.medium.com/max/800/1*BTFTiskn2oKbIOuEaY58uw.png"><figcaption class="imageCaption">A Rexx Pi Generator, an older language which is very procedural</figcaption></figure><p name="5cf5" id="5cf5" class="graf graf--p graf-after--figure">Recently I have been interested in older programming languages, and in the process of discovering more imperative and procedural styles — I have discovered that there are so many definitions to these terms I think one needs a better way to define them. Some define them by “control flow” or the way the code flows from one point to another, and while this works, I think the easiest way to define each is to ask this question: “How are functions handled in these languages?” Which captures much of the same flow philosophy but is simpler to explain.</p><h3 name="9aba" id="9aba" class="graf graf--h3 graf-after--p">Paradigm Definitions</h3><p name="970b" id="970b" class="graf graf--p graf-after--h3"><strong class="markup--strong markup--p-strong">Imperative</strong>: [Functions take a back seat]: they are either very large or don’t exist. The code is more script-like with long running blocks: GOTO and macros are used to organize code and flow. Examples: Assembly, BASIC, Cobol, Fortran (though Fortran was on the edge of Procedural).</p><p name="e4b3" id="e4b3" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Procedural</strong>: [Functions are used to organize the code]. GOTO’s and macros might exist, but they take a back seat to function-first organization. Procedure was the old term for function in many languages, and this is the older functional style, hence why this is <em class="markup--em markup--p-em">not </em>called “Functional.” Examples: C, Go, Algo, Mojo, Pascal, and Rust (to some extent).</p><p name="c075" id="c075" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Functional</strong>: [The functions are the code]<em class="markup--em markup--p-em">.</em> They are thrown around as first-class members, closures can store data, they themselves can be stored in variables, they can be piped and chained. They go far beyond organization to expressing very detailed minutia of the code. Examples: Lisp, Haskell, F#, Clojure.</p><p name="524c" id="524c" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Object-Oriented</strong>: [Functions are attached to data-structures] and frequently operate exclusively or partially on those data-structures. Examples: Simula, C#, Java, and to a lesser extend C++ (which still shows some procedural ancestry).</p><p name="92c3" id="92c3" class="graf graf--p graf-after--p">There are also a few others like Declarative and Relational, and of course MANY multi-paradigm languages, some of which above might technically fall under those terms as well, but the top 4 general classifications likely can catalog 90% or more of programming language DNA that is out there now (provided you don’t quantify HTML, XML, and SQL as languages)</p><h3 name="f59c" id="f59c" class="graf graf--h3 graf-after--p">A Journey Back to the Imperative</h3><p name="3ebf" id="3ebf" class="graf graf--p graf-after--h3">When I first started programming I used BASIC, JS, C and C++. I pretty much wrote them all the same way in a BASIC imperative flow style. It wasn’t until I started working professionally in C# as a Jr. Developer (coming from a Desktop Support role) that I truly understood what objects were while learning C# (a concept I seriously struggled with on C++). It took me forever to understand that an Apple having colors does not mean you need to be able to apply real world logic to structure. As soon as I figured that out, and realized that objects could be abstract, it all clicked and I was hooked, I ate up every detail on OOP in C# I could find.</p><p name="abbc" id="abbc" class="graf graf--p graf-after--p">As functional styles were also unlocked for me and tinkering with Clojure and F# grabbed hold of my imagination, I began to write clever, and probably not “good” code where I was using self-executing anonymous functions everywhere, wrapping everything with chains, etc. In JS I passed around lambdas and self-executing anon-functions like there was no tomorrow, abstracting everything I could with OOP and functional designs. At my peak of absurd abstractions I decided to overload the XOR operator (^) in C# to .ToString(), I greatly apologize to the developer who found those few instances ;) Some programmers have called this the “Astronaut Coder” phase, where the ideas and creativity are grand, but you lose sight of the codebase.</p><p name="f243" id="f243" class="graf graf--p graf-after--p">Now that I am approaching my 40s, I have had a chance to reflect on my 25-ish years of programming since my middle school days, and I find myself more and more embracing procedural and well named predictable functions. Not heavy abstraction, basically the code I was writing when I was 13, just a lot cleaner and well intentioned.</p><h4 name="e187" id="e187" class="graf graf--h4 graf-after--p">A Blast From the Past</h4><p name="e9a3" id="e9a3" class="graf graf--p graf-after--h4">What inspired this article was when I encountered Fortran and Rexx (Rexx is shown above) in a bit of a historical trek through programming languages. I found them extremely easy to understand despite being so old, and while Fortran I would say is slightly odder than Rexx with slightly strange conventions — some of which I like, like enforced type definitions at the top of each subroutine —they both are charming in their own way.</p><p name="df52" id="df52" class="graf graf--p graf-after--p">Infact, and this is what I wanted to talk about — they might be <em class="markup--em markup--p-em">more</em> readable than many languages of today. It is why I am falling in love with Imperative design (and to a lesser extent its Procedural child). There is a reason we all begin coding long scripts when we first start: it is the easiest to understand. There is also a reason machine-code literally flows over a single string of binary (and uses actual gotos) — it is more efficient for it. And there is a reason AI is good at great at imperative-flows because<em class="markup--em markup--p-em"> AI is</em> both a computer and (somewhat) a digital brain — meaning it is also once again more important for us to use.</p><h4 name="e7e2" id="e7e2" class="graf graf--h4 graf-after--p">Conclusion</h4><p name="aef4" id="aef4" class="graf graf--p graf-after--h4">So is imperative better than the others? Well imperative and procedural are family members, technically procedural code is a form of imperative code even if many people (like me) define them separately. I would say the only real difference (since I hear no one championing 100,000 line files or gotos) is if you think macros is a good way to organize large blocks of code or would rather use functions with more boilerplate but at an improvement to scope transparency.</p><p name="1826" id="1826" class="graf graf--p graf-after--p">We have also seen an explosion of languages that, while not ditching objects and functional code, don’t necessary encourage rampant use of it: I would say history is starting to show that Imperative (and thereby Procedural) is winning out: Rusts structs (requiring an outside impl for methods), a lot of people using Python as a more imperative script syntax (over its objects), Mojo arising as a popular more procedural-leaning language, the enduring legacy of C (perhaps the grandfather of procedure), the continued strength of C++ (which while more OOP is more procedural than most OOP langs) and the continued persistence of Fortran in scientific circles (truly imperative), the behemeth that is rising that is Go (maybe the most procedural / imperative of all of these), and even Rust resurrecting macros (an extremely imperative paradigm we have not seen encouraged in most recent languages).</p><p name="a188" id="a188" class="graf graf--p graf-after--p">Not only this, it doesn’t seem to me that pure functional or OOP paradigms have ever done well (except for one burst of OOP’s success with JAVA). People might have heard of LISP, maybe even Clojure, F#, R, Simula. But has anyone seriously used them for a large Enterprise application? And how about C#? While it isn’t collapsing, it also isn’t exactly growing — and yet Java <em class="markup--em markup--p-em">has </em>been collapsing, and most languages that have any OOP presence these days are either perfectly multi-paradigm or more procedural in nature — even C# seems like it is pulling the plug a bit on pure OOP design now allowing root-level code instead of classes. I would say things are headed to a 20/40/15/15 split of imperative : procedural : func : oop - ratio, which I am happy to see even if I am more a 50/35/5/10 ratio myself.</p><p name="b3ff" id="b3ff" class="graf graf--p graf-after--p graf--trailing">The future will be interesting, and it is interesting to me to see the old times return — as has happened in so many fields. From streaming-&gt;vinyl, phone cameras -&gt; film cameras, from SQL -&gt; Blob -&gt; SQL Again — the old is coming back. Maybe before long the imperative will get even more love and we will see even heavier macro use, and although (not entirely my thing), it would be hilarious to see GOTO make a return after all these years — even if it makes us hate each other — boy oh boy do I look at those little `label` and `goto` guys — a sort of “your cute” … but “ugly” kind of love. ❤</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@nathanphoffman" class="p-author h-card">Nathan P. Hoffman</a> on <a href="https://medium.com/p/95615e4c689d"><time class="dt-published" datetime="2026-07-09T19:21:00.842Z">July 9, 2026</time></a>.</p><p><a href="https://medium.com/@nathanphoffman/programming-paradigms-a-journey-back-to-the-imperative-95615e4c689d" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on July 11, 2026.</p></footer></article></body></html>

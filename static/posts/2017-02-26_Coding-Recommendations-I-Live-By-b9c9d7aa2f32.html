@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Coding Recommendations I Live By</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Coding Recommendations I Live By</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Use camelCase for variables/arguments and parameters.
+</section>
+<section data-field="body" class="e-content">
+<section name="9293" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="bfb8" id="bfb8" class="graf graf--h3 graf--leading graf--title">Coding Recommendations I Live By</h3><ul class="postList"><li name="03ce" id="03ce" class="graf graf--li graf-after--h3">Use camelCase for variables/arguments and parameters.</li><li name="9873" id="9873" class="graf graf--li graf-after--li">Use Pascal casing for Class Names, Functions, Properties/Fields/Members (generally following: <a href="https://msdn.microsoft.com/en-us/library/x2dbyw72%28v=vs.71%29.aspx%29" data-href="https://msdn.microsoft.com/en-us/library/x2dbyw72(v=vs.71).aspx)" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">https://msdn.microsoft.com/en-us/library/x2dbyw72(v=vs.71).aspx)</a></li><li name="f38c" id="f38c" class="graf graf--li graf-after--li">Anonymous Functions/Lambdas should not exceed ~20 lines of code unless there is a specific use case for this. You may what to use a named inline function or traditional definition instead.</li><li name="6798" id="6798" class="graf graf--li graf-after--li">One line of code should not be greater than approximately 1000 width at 10pt font. (this is about 100–150 chars depending on your monitor)</li><li name="c060" id="c060" class="graf graf--li graf-after--li">Ternary operators should never extend more than two lines. One level of ternary nesting is ok if it can be read easily and there is good reason, otherwise do not use nesting at all.</li><li name="5b66" id="5b66" class="graf graf--li graf-after--li">Utility functionality like logging and emailing should be wrapped in another function in the event they change so the change only needs to be made in one place.</li><li name="9f7a" id="9f7a" class="graf graf--li graf-after--li">For troubleshooting purposes only one function can be nested once within another function when executing a function return to pass in as an argument to another function. As an example: fn(fn()) is ok, fn(fn(),fn()) is ok but fn(fn(fn())) is not ok.</li><li name="7f49" id="7f49" class="graf graf--li graf-after--li">Regular expressions should be used for simple tasks only or broken out into multiple simpler regular expression statements. One giant RegEx string should be avoided.</li><li name="1525" id="1525" class="graf graf--li graf-after--li">_ should be used to indicate private in languages that do not otherwise have a private functionality, otherwise this character should be avoided entirely.</li><li name="d47f" id="d47f" class="graf graf--li graf-after--li">As a general rule, a single file should never exceed 500 lines of code with a goal of 20–200 lines. If the file is less than 20 lines, and it can go someplace else, you might want to consider moving it. Otherwise, do not feel you can’t have a file that small if it seems to be totally unrelated to everything else.</li><li name="a3f7" id="a3f7" class="graf graf--li graf-after--li">Tabs/spacing within a single file should never exceed 5 indent levels unless dealing with inline data structures, and even then, you might consider putting the structure in another file.</li><li name="815e" id="815e" class="graf graf--li graf-after--li">Regions, if available in a language, should be avoided. If they are needed for code organization, than the code should be broken out into multiple files and organized as such.</li><li name="3634" id="3634" class="graf graf--li graf-after--li">Comments should either: A) Give reasoning as to why you did something strange or B) Explain a very complicated code block. It should never explain a straightforward block of code which is simple to understand. You should also never write obvious things. As an example: “//Function which has a foreach loop that builds employees” and only if you need the comments per A and B rename it to “//Builds employee objects”</li><li name="08e9" id="08e9" class="graf graf--li graf-after--li">Always put the comment on the line before what it is describing, putting it next to a line of code can cause formatting woes later on.</li><li name="c0bd" id="c0bd" class="graf graf--li graf-after--li">Always name methods and properties descriptively. Good code with the exceptions listed in the point above should not need many comments.</li><li name="9eca" id="9eca" class="graf graf--li graf-after--li">Avoid the use of leading type prefixes like intMyNumber. The only time this might make sense is where variable name collisions might occur between something like an enumerated type and a variable of that type. In cases like these, always prefix the least common variable or type. In other words, for an enum I might do enEmployeeType and EmployeeType as my variable name.</li><li name="0434" id="0434" class="graf graf--li graf-after--li">If at all possible, never duplicate code. Two use-cases is enough to justify generalization (like a general method), but you really should generalize your code if you have 3+ use cases of the same functionality.</li><li name="f1d6" id="f1d6" class="graf graf--li graf-after--li">Brevity is great, Readability is good. In other words, it is better to shorten your code and make it slightly less readable than it is to have long sprawling code which is readable. However, replacing a huge amount of code with a one line nested mess is also not ideal. In other words, lean towards brevity over readability, but be careful not to lean too far or else you might create an unreadable, unbuggable, disaster.</li><li name="d72b" id="d72b" class="graf graf--li graf-after--li">In languages like C# that support compiler based interpretation of variable types, like var, always type out the data type unless it is very long. Use cases for var would be generics or unwieldy namespaces.</li><li name="3723" id="3723" class="graf graf--li graf-after--li">Avoid dynamics/usage of weak types in languages that support strong types unless a very particular use-case requires it. There is really only one case I have encountered: When you are pulling in data you do not know the structure of, perhaps it is a web service that returns three different types of structures and in that structure is information you can use to deduce it. In this case you have to keep it dynamic, find the structure, then compose a strongly typed structure afterwards.</li><li name="9bba" id="9bba" class="graf graf--li graf-after--li graf--trailing">In languages like JavaScript where there are multiple ways of doing one thing, try and stick with one variation. As an example, if you use class in JavaScript, stay with class and try to avoid using functions as classes.</li></ul></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@nathanphoffman" class="p-author h-card">Nathan P. Hoffman</a> on <a href="https://medium.com/p/b9c9d7aa2f32"><time class="dt-published" datetime="2017-02-26T15:23:21.532Z">February 26, 2017</time></a>.</p><p><a href="https://medium.com/@nathanphoffman/coding-recommendations-i-live-by-b9c9d7aa2f32" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on July 11, 2026.</p></footer></article></body></html>
