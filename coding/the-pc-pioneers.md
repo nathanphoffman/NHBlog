@@ -117,3 +117,5 @@ Linus Torvalds, as many likely know, developed the Linux Kernel in 1991. There i
 Something else many people forget is that Linus also developed GIT, a hugely popular version management system for source code to this very day -- which directly impacts personal computers as most software developed uses GIT as part of the development process.
 
 Linus still remains active, which is insane given how long he has been at it, however \* the date mentioned above (2012) is when he mostly stopped writing new code and transitioned into more of an oversight role doing merging and managing.
+
+>https://nathanhoffman.me/coding/the-pc-pioneers

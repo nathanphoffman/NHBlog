@@ -95,6 +95,12 @@ function ensureTitle(content) {
   return lines.join('\n');
 }
 
+function ensureSelfLink(content, category, slug) {
+  const url = `https://nathanhoffman.me/${category}/${slug}`;
+  if (content.includes(url)) return content;
+  return `${content.replace(/\n*$/, '')}\n\n>${url}\n`;
+}
+
 function datePostedOf(filePath) {
   const content = readFileSync(filePath, 'utf8');
   const match = content.match(DATE_RE);
@@ -186,6 +192,7 @@ async function main() {
     content = ensureBoilerplate(content);
     content = ensureDatePosted(content, date);
     content = ensureTitle(content);
+    content = ensureSelfLink(content, category, draft.slice(0, -3));
 
     const destDir = join(ROOT, category);
     const destPath = join(destDir, draft);
