@@ -1,5 +1,11 @@
+<!-- Blog of Nathan Hoffman -->
+<!-- [Blog of Nathan Hoffman](main.md) -->
+<!-- themes: glacier -->
+<!-- title: What makes AI different from us? — Blog of Nathan Hoffman -->
+
+<!-- date posted: 2026-09-23 -->
 # What makes AI different from us?
-Something I was musing about a few days ago was the news that we had achieved "AGI" or that Swarm Agents would somehow become sentient or that these frontier models were somehow going to become the new Skynet. Aside from the fact that modern frontier models are just doing the same thing all AI has done for years which is matrix weighing and multi-dimensional signals (predicting what to say based on training data), I was wondering what really defines "human-like" intelligence and more so what kinds of intelligence is there?
+A week or two back I was immersed in thought as to why everyone was saying we had achieved "AGI" or why Swarm Agents were somehow sentient or that these frontier models were somehow going to become the new Skynet. Aside from the fact that modern frontier models are just doing the same thing all AI has done for years which is matrix weighing and multi-dimensional signals (predicting what to say based on training data), I was wondering what really defines "human-like" intelligence and more so what kinds of intelligence is there?
 
 I started to think about the problem more philosophically and came up with this as the scale:
 1) **Mechanical** (Programs: Classical computation and Calculators)
@@ -16,18 +22,18 @@ d) An intelligence is always exponentially slower (power for power) when operati
 e) An intelligence can only fake the representation of the layer above through its own lower-systems, it can't fully understand it
 f) An intelligence can not even conceive of what would exist 2 layers above it (eg. mechanical systems can't even be coded to fake intuition)
 
-## AI vs Humans
+## AI vs humans
 My hypothesis is that no matter how smart AI becomes it is locked inside of the "pattern matching" layer, layer #2. This means it will never fully be able to achieve true-intuition as in the ability to discover true novel information, understand "gut feeling", and "emotion," and contextualize it. This is the layer native to humans. This is why a human can see a face or a tree, or smell and instanteously *feel* an incredibly complex set of variables. We know when things feel wrong, we make judgements based on that feeling. Infact, arguably, emotion and feeling is the language of pure-intuition, something AI entirely lacks. This is why AI can say something that is absurdly wrong, when a human would immediately know the answer doesn't *feel* right. To try and emulate this feeling, AI needs to try and reach up a layer (per rule E), and doing so requires near-exponential computational power (per rule D), additive computation upon computation, new matrixes, etc in an attempt to fake it asymptotically. This is why even today AI still sometimes struggles with obvious things in AI art (five fingers, gravity, etc.). It is also why very often humans can see AI art and somehow know it feels wrong, even if they can't explain it -- it is their intuition and judgement which comes instantly and naturally.
 
-## A Fish vs Frontier Models
+## A fish vs frontier models
 An interesting derivative that follows from this theory (especially rule C) suggests that even a fish could be better than cutting edge frontier models, as it operates natively within intuition from learned experience, at least the limited amount that falls within its domain. It may recognize something as wrong underwater, a predator appearence or something strange, that AI would struggle to identify or "feel." This is almost a provable fact as a fish can navigate an incredibly complex water system effortlessly while AI cars still struggle with the latest models to navigate basic road systems.
 
-## Humans vs Fish (Are they the same then?)
+## Humans vs fish (What makes us different?)
 While humans and fish both think with inutition, the biggest difference is that the human has enormous added processing power, leagues more, in our cerebral cortex. This allows us to build on our intuition and extend it through analogy into the abstract layer. This is most apparent in cutting edge physics such as astrophysics and quantum mechanics, where often to explain it you need analogies: Einstein himself used MANY analogies not just in his attempt to explain relativity, but in his attempt to understand it. What these analogies show is our human brains imperfect attempt to represent pure-abstraction (relation between unrelated things) through the things we understand (intuition related relations and reasoning). So we can't imagine time slowing down and speeding up, but we have all ridden trains, so imagining a light-beam bouncing vertically in a train allows us to apply other experiences such as viewing trains from outside, and seeing that lightbeam move upwards. Then when we are told the lightbeam doesn't actually slant from an apparent viewers perspective like a thrown ball might, we are blown away because that is way beyond our experience, the light to us would effectively stand still as we saw it move upwards. The fact it falls outside of any sense of learned experience or reality is what makes it difficult for us to natively see those connections, but using analogy and othe real world observation, we can slowly unravel the abstraction that underlies some of these complex ideas -- realizing time on this train is changing relative to the speed of light. A native abstract being (like a God) would instantly pick up on this in the same way we can immediately feel intuition with no need for analogy or great thought.
 
 It also explains something really important: when we try to explain things that don't have concrete representations within the physical world, we are guaranteed to get it at least subtly wrong (so long as my theory holds true) our brain model quite literally can't think in abstraction, so any attempt to represent it is simply a model or arrow that ponts in the direction of it, but is likely prone to error. Nothing is better seen than this than in our attempts to understand the universe, every observation and theoretical model seems to create new models needed to fix the previous models.
 
-## Analogy of Representation in Lower Layers
+## Analogy of representation in lower layers
 This representation analogy extends to every layer below us as well. The mechanical layer can theoretically attempt to emulate modern AI, infact people used to do this and even call it "AI." In the 80 and 90s many companies created decision-trees basically enormous if/else trees and branching logic manually coded to try and recognize anything a user might ask, of course doing so is highly inefficient and brute force, and frankly impossible to perfect, that it wouldn't take long for someone asking such a piece of software questions to pretty quickly figure out it isn't real AI in the pattern-matching sense.
 
 Likewise, pattern-matching like AI of today would seriously struggle to express human intuition (as discussed). An even more interesting thought is that AI likely then can-never "feel" so long as it is stuck in the pattern-matching layer. It should be noted that all other attempts to use something other than pattern-matching / models and weighing the way AI currently works has proven far less successful.
@@ -66,16 +72,4 @@ There is something reassuring about the idea that it is unlikely humans are even
 
 Will AI go down in history as useful? Absolutely. Incredibly so, up there with the internet, smartphone, or even computers as a whole, but it isn't going to harm us unless we instruct it to. It isn't AI I don't trust, I find it incredibly great as a tool, it is humans who drive it, as with any technology; this is not a new phenomenon. Gun powder can make a pretty firework shows or kill millions powering rifle bullets. Genetic manipulation can create crops capable of preventing billions from starving or create horrid bio-weapons. Bronze created some of the earliest great civilizations, but it also created some of the first swords soaked in blood. None of these technologies were self-aware, none needed to be or could be. It was the humans behind them that were the self-aware ones deciding if the technology would benefit or destroy their civilizations.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+>https://nathanhoffman.me/coding/what-makes-ai-different
