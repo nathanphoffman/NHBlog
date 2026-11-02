@@ -1,6 +1,5 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-
 import { escapeHtml, parseIncludeDirective, splitIntoEntries, toRootRelative } from "../include_helpers.js";
 
 test("toRootRelative keeps absolute paths and URLs, and roots relative ones", () => {
