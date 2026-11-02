@@ -1,7 +1,9 @@
 // Pure helpers for the markdown include pipeline. They live apart from build-static.js
 // because that script does file work as soon as it loads, which makes it untestable.
 
+// matches paths that begin with "http:", "https:" or "data:"
 const ABSOLUTE_URL_PATTERN = /^(https?:|data:)/;
+// the three patterns below match a directive key at the start of a token, then optional spaces and a colon
 const SORT_DIR_PATTERN = /^sort_dir\s*:/i;
 const SORT_PATTERN = /^sort\s*:/i;
 const LIMIT_TO_PATTERN = /^limit_to\s*:/i;
