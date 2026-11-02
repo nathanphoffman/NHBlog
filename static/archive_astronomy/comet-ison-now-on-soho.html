@@ -2748,6 +2748,7 @@
       class="nw-loaded"
     ><!-- Blog of Nathan Hoffman -->
       <!-- Blog of Nathan Hoffman -->
+      <!-- Blog of Nathan Hoffman -->
       <!-- [Blog of Nathan Hoffman](main.md) -->
       <!-- themes: glacier -->
       <!-- title: Comet ISON Now on SOHO! — Blog of Nathan Hoffman -->
@@ -2764,15 +2765,16 @@
       </p>
       <p>
         Comet ISON began entering the field of SOHO’s
-        <a href="http://sohowww.nascom.nasa.gov/data/realtime/c3/512/">LASCO C3</a> imager last night! It will continue
-        to stay in the field for a few days and should appear on the “more zoomed-in”
-        <a href="http://sohowww.nascom.nasa.gov/data/realtime/c2/512/">LASCO C2</a> imager in time for Thanksgiving.
-        Scientists and amateur astronomers alike are hoping the comet can withstand the extreme temperatures and
-        gravitational stress the comet will undergo as it comes within 724,000 miles of the Sun (about 50 times closer
-        than Mercury). If the comet is able to withstand temperatures hot enough to melt iron, there is a good chance it
-        will be a naked-eye object with a somewhat reasonable chance it could become bright enough to be considered a
-        “Great Comet” It should be noted, however, that comets are notoriously unpredictable so ISON’s brightness (even
-        if it does survive) could be wildly different than predicted.
+        <a href="http://sohowww.nascom.nasa.gov/data/realtime/c3/512/">LASCO C3</a>
+        imager last night! It will continue to stay in the field for a few days and should appear on the “more
+        zoomed-in”
+        <a href="http://sohowww.nascom.nasa.gov/data/realtime/c2/512/">LASCO C2</a>
+        imager in time for Thanksgiving. Scientists and amateur astronomers alike are hoping the comet can withstand the
+        extreme temperatures and gravitational stress the comet will undergo as it comes within 724,000 miles of the Sun
+        (about 50 times closer than Mercury). If the comet is able to withstand temperatures hot enough to melt iron,
+        there is a good chance it will be a naked-eye object with a somewhat reasonable chance it could become bright
+        enough to be considered a “Great Comet” It should be noted, however, that comets are notoriously unpredictable
+        so ISON’s brightness (even if it does survive) could be wildly different than predicted.
       </p>
       <p>
         <a href="http://sohowww.nascom.nasa.gov/">SOHO</a>, the Solar Dynamics Observatory, is a NASA space-telescope.
@@ -3549,7 +3551,7 @@
                         k < 0 && (k += A.length),
                         (k = Math.max(0, Math.min(k, A.length))),
                         (u = A.slice(h, k).join(`
-`)),
+    `)),
                         b.hasAttribute("data-start") || b.setAttribute("data-start", String(h + 1));
                     }
                     (y.textContent = u), f.highlightElement(y);
@@ -4482,7 +4484,7 @@
     }
     function In(e, t) {
       const n = e.split(`
-`),
+    `),
         i = t === "#",
         a = [];
       return (
@@ -4509,7 +4511,7 @@
             text: n
               .slice(r.index, c)
               .join(`
-`)
+    `)
               .trim(),
           };
         })
@@ -4535,7 +4537,7 @@
         if (!m.sortMarker)
           return v.join(`
 
-`);
+    `);
         const w = v.flatMap((x) => In(x, m.sortMarker));
         return (
           w.sort((x, b) => x.key.localeCompare(b.key)),
@@ -4544,7 +4546,7 @@
             .map((x) => x.text)
             .join(`
 
-`)
+    `)
         );
       });
     }
@@ -4573,7 +4575,7 @@
           return v
             .map((E) => He(w, typeof E == "object" && E !== null ? E : {}))
             .join(`
-`);
+    `);
         })
       );
     }
@@ -4641,7 +4643,7 @@
       if (n) {
         const a = `> _This page requires data to display._ [Load now](wasm:${n})
 
-`;
+    `;
         await Z(await Oe(a + i, {}));
       } else await Z(i);
     }
@@ -4672,13 +4674,13 @@
       let i = 3,
         a = R(
           `### Leaving site
-${
-  t
-    ? `_${t}_
+    ${
+      t
+        ? `_${t}_
 
-`
-    : ""
-}Navigating to \`${e}\` in <span id="nw-countdown">${i}</span>s\u2026`,
+    `
+        : ""
+    }Navigating to \`${e}\` in <span id="nw-countdown">${i}</span>s\u2026`,
           "Cancel Redirect",
         ),
         r = () => a.querySelector("#nw-countdown"),
@@ -4750,7 +4752,7 @@ This data exists only for your current browser session \u2014 it is cleared when
 
 ---
 
-${e.length ? "```\n" + JSON.stringify(Object.fromEntries(e), null, 2) + "\n```" : "_No data stored yet._"}
+    ${e.length ? "```\n" + JSON.stringify(Object.fromEntries(e), null, 2) + "\n```" : "_No data stored yet._"}
 
 [Clear all data](nw:cleardata)`;
     }
@@ -4760,7 +4762,7 @@ ${e.length ? "```\n" + JSON.stringify(Object.fromEntries(e), null, 2) + "\n```" 
     function Ht(e, t) {
       const n = e.trim()
           ? `### Why this script?
-${e}`
+    ${e}`
           : `### \u26A0 No description provided
 The author of this page did not explain why this script needs to run.`,
         i = t.length

@@ -2748,6 +2748,7 @@
       class="nw-loaded"
     ><!-- Blog of Nathan Hoffman -->
       <!-- Blog of Nathan Hoffman -->
+      <!-- Blog of Nathan Hoffman -->
       <!-- [Blog of Nathan Hoffman](main.md) -->
       <!-- themes: glacier -->
       <!-- title: The Seven Points — Simplifying The Development Process — Blog of Nathan Hoffman -->
@@ -2758,10 +2759,11 @@
         I have always considered whether we over-architect pipelines or under-architect them. I have seen small
         companies do far far more than they should and larger companies far far less. From where I stand, I feel like it
         is worthwhile and take a step back and consider “how much testing, QA, PR, ticketing is really needed for
-        <em>our</em> project” Not <em>a project.</em> You wouldn’t hire 1000 skyscraper engineers to design a shed, so
-        don’t do it for your apps — but you also wouldn’t have one person, who never built a skyscraper before, building
-        the next Burj Khalifa. So here is the idea, first (in any order) consider how many items are satisfied.
-        (Disclaimer: this is very subjective so I know it will be contentious!):
+        <em>our</em>
+        project” Not <em>a project.</em> You wouldn’t hire 1000 skyscraper engineers to design a shed, so don’t do it
+        for your apps — but you also wouldn’t have one person, who never built a skyscraper before, building the next
+        Burj Khalifa. So here is the idea, first (in any order) consider how many items are satisfied. (Disclaimer: this
+        is very subjective so I know it will be contentious!):
       </p>
       <ol>
         <li>
@@ -3554,7 +3556,7 @@
                         k < 0 && (k += A.length),
                         (k = Math.max(0, Math.min(k, A.length))),
                         (u = A.slice(h, k).join(`
-`)),
+    `)),
                         b.hasAttribute("data-start") || b.setAttribute("data-start", String(h + 1));
                     }
                     (y.textContent = u), f.highlightElement(y);
@@ -4487,7 +4489,7 @@
     }
     function In(e, t) {
       const n = e.split(`
-`),
+    `),
         i = t === "#",
         a = [];
       return (
@@ -4514,7 +4516,7 @@
             text: n
               .slice(r.index, c)
               .join(`
-`)
+    `)
               .trim(),
           };
         })
@@ -4540,7 +4542,7 @@
         if (!m.sortMarker)
           return v.join(`
 
-`);
+    `);
         const w = v.flatMap((x) => In(x, m.sortMarker));
         return (
           w.sort((x, b) => x.key.localeCompare(b.key)),
@@ -4549,7 +4551,7 @@
             .map((x) => x.text)
             .join(`
 
-`)
+    `)
         );
       });
     }
@@ -4578,7 +4580,7 @@
           return v
             .map((E) => He(w, typeof E == "object" && E !== null ? E : {}))
             .join(`
-`);
+    `);
         })
       );
     }
@@ -4646,7 +4648,7 @@
       if (n) {
         const a = `> _This page requires data to display._ [Load now](wasm:${n})
 
-`;
+    `;
         await Z(await Oe(a + i, {}));
       } else await Z(i);
     }
@@ -4677,13 +4679,13 @@
       let i = 3,
         a = R(
           `### Leaving site
-${
-  t
-    ? `_${t}_
+    ${
+      t
+        ? `_${t}_
 
-`
-    : ""
-}Navigating to \`${e}\` in <span id="nw-countdown">${i}</span>s\u2026`,
+    `
+        : ""
+    }Navigating to \`${e}\` in <span id="nw-countdown">${i}</span>s\u2026`,
           "Cancel Redirect",
         ),
         r = () => a.querySelector("#nw-countdown"),
@@ -4755,7 +4757,7 @@ This data exists only for your current browser session \u2014 it is cleared when
 
 ---
 
-${e.length ? "```\n" + JSON.stringify(Object.fromEntries(e), null, 2) + "\n```" : "_No data stored yet._"}
+    ${e.length ? "```\n" + JSON.stringify(Object.fromEntries(e), null, 2) + "\n```" : "_No data stored yet._"}
 
 [Clear all data](nw:cleardata)`;
     }
@@ -4765,7 +4767,7 @@ ${e.length ? "```\n" + JSON.stringify(Object.fromEntries(e), null, 2) + "\n```" 
     function Ht(e, t) {
       const n = e.trim()
           ? `### Why this script?
-${e}`
+    ${e}`
           : `### \u26A0 No description provided
 The author of this page did not explain why this script needs to run.`,
         i = t.length

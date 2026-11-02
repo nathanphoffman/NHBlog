@@ -2744,6 +2744,7 @@
 
     <div id="content" data-nw-ssg-path="/archive_coding" class="nw-loaded"><!-- Blog of Nathan Hoffman -->
       <!-- Blog of Nathan Hoffman -->
+      <!-- Blog of Nathan Hoffman -->
       <!-- [Blog of Nathan Hoffman](main.md) -->
       <!-- themes: glacier -->
       <!-- title: Coding Archive — Blog of Nathan Hoffman -->
@@ -3051,11 +3052,11 @@ function computeQuality({samples = 1000, ...params}) {
       </p>
       <p>
         Just a few weeks back I started to put the code into a
-        <a href="https://github.com/nathanphoffman/WeatherSite">NextJS web app</a> so I could see the weather from
-        anywhere on a personal site, and I realized it might be a good project to try out Claude which I have been
-        hearing about pretty much everywhere. It was an interesting experiment as I also had less knowledge of Next but
-        have plenty of knowledge of Typescript and some React experience so it was a way to both see how useful AI could
-        be as a teaching tool but also how good it was at the things I knew well.
+        <a href="https://github.com/nathanphoffman/WeatherSite">NextJS web app</a>
+        so I could see the weather from anywhere on a personal site, and I realized it might be a good project to try
+        out Claude which I have been hearing about pretty much everywhere. It was an interesting experiment as I also
+        had less knowledge of Next but have plenty of knowledge of Typescript and some React experience so it was a way
+        to both see how useful AI could be as a teaching tool but also how good it was at the things I knew well.
       </p>
       <p>You can find the current site here <a href="http://weather.nathanhoffman.me">weather.nathanhoffman.me</a></p>
       <p>
@@ -3329,9 +3330,10 @@ export function selectEvent&lt;T extends object&gt;(eventName: EventName) {
         as a single time; a number that is likely about 7x7 or 49. This is because we can imagine 7 groups of things
         easily (Millers number) and perhaps 7 things in those 7 groups, but it is doubtful we could go much further than
         that. So if your code base has say more than 49 files (and this is assuming each file has
-        <strong>one highly focused</strong> easy to understand purpose) it will likely start to become something that is
-        difficult for newcomers to even understand what the heck the project does without serious documentation,
-        hand-holding, or years of work on the project.
+        <strong>one highly focused</strong>
+        easy to understand purpose) it will likely start to become something that is difficult for newcomers to even
+        understand what the heck the project does without serious documentation, hand-holding, or years of work on the
+        project.
       </p>
       <h2>Understandable</h2>
       <p>
@@ -3786,8 +3788,9 @@ println!("{}", myNum)
         However, as many developers are aware, it is all too common when developers make things mutable that don’t need
         to be. This can cause unintended side-effects and encourages the use of impure functions, so the principle of
         making immutability default has precedence, but it seems that there would still be a lot of use cases where
-        <strong>mut</strong> would need to be applied. What if the developer needed to simply reset a variable, such as
-        a timestamp in a request being retried? There is a solution to this with <strong>Shadowing</strong>.
+        <strong>mut</strong>
+        would need to be applied. What if the developer needed to simply reset a variable, such as a timestamp in a
+        request being retried? There is a solution to this with <strong>Shadowing</strong>.
       </p>
       <h3>Feature 2: Variable Shadowing</h3>
       <p>
@@ -5506,7 +5509,7 @@ m(comp,{prop:'the prop I am setting'})
                         k < 0 && (k += A.length),
                         (k = Math.max(0, Math.min(k, A.length))),
                         (u = A.slice(h, k).join(`
-`)),
+    `)),
                         b.hasAttribute("data-start") || b.setAttribute("data-start", String(h + 1));
                     }
                     (y.textContent = u), f.highlightElement(y);
@@ -6439,7 +6442,7 @@ m(comp,{prop:'the prop I am setting'})
     }
     function In(e, t) {
       const n = e.split(`
-`),
+    `),
         i = t === "#",
         a = [];
       return (
@@ -6466,7 +6469,7 @@ m(comp,{prop:'the prop I am setting'})
             text: n
               .slice(r.index, c)
               .join(`
-`)
+    `)
               .trim(),
           };
         })
@@ -6492,7 +6495,7 @@ m(comp,{prop:'the prop I am setting'})
         if (!m.sortMarker)
           return v.join(`
 
-`);
+    `);
         const w = v.flatMap((x) => In(x, m.sortMarker));
         return (
           w.sort((x, b) => x.key.localeCompare(b.key)),
@@ -6501,7 +6504,7 @@ m(comp,{prop:'the prop I am setting'})
             .map((x) => x.text)
             .join(`
 
-`)
+    `)
         );
       });
     }
@@ -6530,7 +6533,7 @@ m(comp,{prop:'the prop I am setting'})
           return v
             .map((E) => He(w, typeof E == "object" && E !== null ? E : {}))
             .join(`
-`);
+    `);
         })
       );
     }
@@ -6598,7 +6601,7 @@ m(comp,{prop:'the prop I am setting'})
       if (n) {
         const a = `> _This page requires data to display._ [Load now](wasm:${n})
 
-`;
+    `;
         await Z(await Oe(a + i, {}));
       } else await Z(i);
     }
@@ -6629,13 +6632,13 @@ m(comp,{prop:'the prop I am setting'})
       let i = 3,
         a = R(
           `### Leaving site
-${
-  t
-    ? `_${t}_
+    ${
+      t
+        ? `_${t}_
 
-`
-    : ""
-}Navigating to \`${e}\` in <span id="nw-countdown">${i}</span>s\u2026`,
+    `
+        : ""
+    }Navigating to \`${e}\` in <span id="nw-countdown">${i}</span>s\u2026`,
           "Cancel Redirect",
         ),
         r = () => a.querySelector("#nw-countdown"),
@@ -6707,7 +6710,7 @@ This data exists only for your current browser session \u2014 it is cleared when
 
 ---
 
-${e.length ? "```\n" + JSON.stringify(Object.fromEntries(e), null, 2) + "\n```" : "_No data stored yet._"}
+    ${e.length ? "```\n" + JSON.stringify(Object.fromEntries(e), null, 2) + "\n```" : "_No data stored yet._"}
 
 [Clear all data](nw:cleardata)`;
     }
@@ -6717,7 +6720,7 @@ ${e.length ? "```\n" + JSON.stringify(Object.fromEntries(e), null, 2) + "\n```" 
     function Ht(e, t) {
       const n = e.trim()
           ? `### Why this script?
-${e}`
+    ${e}`
           : `### \u26A0 No description provided
 The author of this page did not explain why this script needs to run.`,
         i = t.length

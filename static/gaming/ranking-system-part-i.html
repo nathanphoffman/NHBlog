@@ -2744,6 +2744,7 @@
 
     <div id="content" data-nw-ssg-path="/gaming/ranking-system-part-i" class="nw-loaded"><!-- Blog of Nathan Hoffman -->
       <!-- Blog of Nathan Hoffman -->
+      <!-- Blog of Nathan Hoffman -->
       <!-- [Blog of Nathan Hoffman](main.md) -->
       <!-- themes: glacier -->
       <!-- title: Ranking System Part I — Blog of Nathan Hoffman -->
@@ -3613,7 +3614,7 @@ let more_popular = Math.pow(0.98,2) * Math.log10(1000) // = 2.88
                         k < 0 && (k += A.length),
                         (k = Math.max(0, Math.min(k, A.length))),
                         (u = A.slice(h, k).join(`
-`)),
+    `)),
                         b.hasAttribute("data-start") || b.setAttribute("data-start", String(h + 1));
                     }
                     (y.textContent = u), f.highlightElement(y);
@@ -4546,7 +4547,7 @@ let more_popular = Math.pow(0.98,2) * Math.log10(1000) // = 2.88
     }
     function In(e, t) {
       const n = e.split(`
-`),
+    `),
         i = t === "#",
         a = [];
       return (
@@ -4573,7 +4574,7 @@ let more_popular = Math.pow(0.98,2) * Math.log10(1000) // = 2.88
             text: n
               .slice(r.index, c)
               .join(`
-`)
+    `)
               .trim(),
           };
         })
@@ -4599,7 +4600,7 @@ let more_popular = Math.pow(0.98,2) * Math.log10(1000) // = 2.88
         if (!m.sortMarker)
           return v.join(`
 
-`);
+    `);
         const w = v.flatMap((x) => In(x, m.sortMarker));
         return (
           w.sort((x, b) => x.key.localeCompare(b.key)),
@@ -4608,7 +4609,7 @@ let more_popular = Math.pow(0.98,2) * Math.log10(1000) // = 2.88
             .map((x) => x.text)
             .join(`
 
-`)
+    `)
         );
       });
     }
@@ -4637,7 +4638,7 @@ let more_popular = Math.pow(0.98,2) * Math.log10(1000) // = 2.88
           return v
             .map((E) => He(w, typeof E == "object" && E !== null ? E : {}))
             .join(`
-`);
+    `);
         })
       );
     }
@@ -4705,7 +4706,7 @@ let more_popular = Math.pow(0.98,2) * Math.log10(1000) // = 2.88
       if (n) {
         const a = `> _This page requires data to display._ [Load now](wasm:${n})
 
-`;
+    `;
         await Z(await Oe(a + i, {}));
       } else await Z(i);
     }
@@ -4736,13 +4737,13 @@ let more_popular = Math.pow(0.98,2) * Math.log10(1000) // = 2.88
       let i = 3,
         a = R(
           `### Leaving site
-${
-  t
-    ? `_${t}_
+    ${
+      t
+        ? `_${t}_
 
-`
-    : ""
-}Navigating to \`${e}\` in <span id="nw-countdown">${i}</span>s\u2026`,
+    `
+        : ""
+    }Navigating to \`${e}\` in <span id="nw-countdown">${i}</span>s\u2026`,
           "Cancel Redirect",
         ),
         r = () => a.querySelector("#nw-countdown"),
@@ -4814,7 +4815,7 @@ This data exists only for your current browser session \u2014 it is cleared when
 
 ---
 
-${e.length ? "```\n" + JSON.stringify(Object.fromEntries(e), null, 2) + "\n```" : "_No data stored yet._"}
+    ${e.length ? "```\n" + JSON.stringify(Object.fromEntries(e), null, 2) + "\n```" : "_No data stored yet._"}
 
 [Clear all data](nw:cleardata)`;
     }
@@ -4824,7 +4825,7 @@ ${e.length ? "```\n" + JSON.stringify(Object.fromEntries(e), null, 2) + "\n```" 
     function Ht(e, t) {
       const n = e.trim()
           ? `### Why this script?
-${e}`
+    ${e}`
           : `### \u26A0 No description provided
 The author of this page did not explain why this script needs to run.`,
         i = t.length

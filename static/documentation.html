@@ -2744,6 +2744,7 @@
 
     <div id="content" data-nw-ssg-path="/documentation" class="nw-loaded"><!-- Blog of Nathan Hoffman -->
       <!-- Blog of Nathan Hoffman -->
+      <!-- Blog of Nathan Hoffman -->
       <!-- [Blog of Nathan Hoffman](main.md) -->
       <!-- themes: glacier -->
       <!-- title: NewWeb Documentation — Blog of Nathan Hoffman -->
@@ -2757,8 +2758,9 @@
       <p>Get started: <code>npx degit .../setup my-site</code>. Includes the viewer, themes, and WASM scripting.</p>
       <p>
         Runs with <code>npm start</code> → <code>http://localhost:8080</code>. Requires
-        <a href="https://bun.sh">Bun</a> — the dev server uses it to rewrite pretty page URLs (e.g. <code>/about</code>)
-        to <code>index.html</code> so direct navigation and refresh work without a hash.
+        <a href="https://bun.sh">Bun</a>
+        — the dev server uses it to rewrite pretty page URLs (e.g. <code>/about</code>) to <code>index.html</code> so
+        direct navigation and refresh work without a hash.
       </p>
       <p>
         Required files: <code>index.html</code>, <code>engine/build/pkg/engine_bg.wasm</code>, <code>.md</code> files.
@@ -2795,9 +2797,12 @@
       <p>
         <code>aurora</code>
         · <code>beach</code> · <code>blackboard</code> · <code>blueprint</code> · <code>carbon</code> ·
-        <code>cats</code> · <code>chromatic</code> · <code>crt</code> · <code>cyber</code> · <code>dusk</code> ·
-        <code>glacier</code> · <code>moss</code> · <code>quill</code> · <code>sakura</code> · <code>scribe</code> ·
-        <code>slate</code> · <code>space</code> · <code>storm</code> · <code>terminal</code>
+        <code>cats</code>
+        · <code>chromatic</code> · <code>crt</code> · <code>cyber</code> · <code>dusk</code> ·
+        <code>glacier</code>
+        · <code>moss</code> · <code>quill</code> · <code>sakura</code> · <code>scribe</code> ·
+        <code>slate</code>
+        · <code>space</code> · <code>storm</code> · <code>terminal</code>
       </p>
       <p><strong>Theme picker</strong> is in the nav bar. Preference is saved to <code>localStorage</code>.</p>
       <p><strong>Page-suggested theme</strong> — add to any <code>.md</code> file:</p>
@@ -2884,7 +2889,8 @@
       <h3>Form fields</h3>
       <p>
         Declare HTML comment blocks before the link to collect user input before the script runs. Each
-        <code>&lt;!-- fields: --&gt;</code> comment becomes one section of the form.
+        <code>&lt;!-- fields: --&gt;</code>
+        comment becomes one section of the form.
       </p>
       <pre><code class="language-markdown">&lt;!-- fields: firstName:text, lastName:text --&gt;
 &lt;!-- fields: email:email, phone:tel:15 --&gt;
@@ -2893,7 +2899,8 @@
 </code></pre>
       <p>
         Field syntax: <code>key:type</code> or <code>key:type:maxlength</code> or
-        <code>key:option1|option2|...</code> (select). Supported types: <code>text</code>, <code>email</code>,
+        <code>key:option1|option2|...</code>
+        (select). Supported types: <code>text</code>, <code>email</code>,
         <code>tel</code>, <code>password</code>, <code>number</code>, and any <code>|</code>-delimited list (renders as
         a <code>&lt;select&gt;</code>).
       </p>
@@ -3779,7 +3786,7 @@ npm run typecheck          # TypeScript only
                         k < 0 && (k += A.length),
                         (k = Math.max(0, Math.min(k, A.length))),
                         (u = A.slice(h, k).join(`
-`)),
+    `)),
                         b.hasAttribute("data-start") || b.setAttribute("data-start", String(h + 1));
                     }
                     (y.textContent = u), f.highlightElement(y);
@@ -4712,7 +4719,7 @@ npm run typecheck          # TypeScript only
     }
     function In(e, t) {
       const n = e.split(`
-`),
+    `),
         i = t === "#",
         a = [];
       return (
@@ -4739,7 +4746,7 @@ npm run typecheck          # TypeScript only
             text: n
               .slice(r.index, c)
               .join(`
-`)
+    `)
               .trim(),
           };
         })
@@ -4765,7 +4772,7 @@ npm run typecheck          # TypeScript only
         if (!m.sortMarker)
           return v.join(`
 
-`);
+    `);
         const w = v.flatMap((x) => In(x, m.sortMarker));
         return (
           w.sort((x, b) => x.key.localeCompare(b.key)),
@@ -4774,7 +4781,7 @@ npm run typecheck          # TypeScript only
             .map((x) => x.text)
             .join(`
 
-`)
+    `)
         );
       });
     }
@@ -4803,7 +4810,7 @@ npm run typecheck          # TypeScript only
           return v
             .map((E) => He(w, typeof E == "object" && E !== null ? E : {}))
             .join(`
-`);
+    `);
         })
       );
     }
@@ -4871,7 +4878,7 @@ npm run typecheck          # TypeScript only
       if (n) {
         const a = `> _This page requires data to display._ [Load now](wasm:${n})
 
-`;
+    `;
         await Z(await Oe(a + i, {}));
       } else await Z(i);
     }
@@ -4902,13 +4909,13 @@ npm run typecheck          # TypeScript only
       let i = 3,
         a = R(
           `### Leaving site
-${
-  t
-    ? `_${t}_
+    ${
+      t
+        ? `_${t}_
 
-`
-    : ""
-}Navigating to \`${e}\` in <span id="nw-countdown">${i}</span>s\u2026`,
+    `
+        : ""
+    }Navigating to \`${e}\` in <span id="nw-countdown">${i}</span>s\u2026`,
           "Cancel Redirect",
         ),
         r = () => a.querySelector("#nw-countdown"),
@@ -4980,7 +4987,7 @@ This data exists only for your current browser session \u2014 it is cleared when
 
 ---
 
-${e.length ? "```\n" + JSON.stringify(Object.fromEntries(e), null, 2) + "\n```" : "_No data stored yet._"}
+    ${e.length ? "```\n" + JSON.stringify(Object.fromEntries(e), null, 2) + "\n```" : "_No data stored yet._"}
 
 [Clear all data](nw:cleardata)`;
     }
@@ -4990,7 +4997,7 @@ ${e.length ? "```\n" + JSON.stringify(Object.fromEntries(e), null, 2) + "\n```" 
     function Ht(e, t) {
       const n = e.trim()
           ? `### Why this script?
-${e}`
+    ${e}`
           : `### \u26A0 No description provided
 The author of this page did not explain why this script needs to run.`,
         i = t.length

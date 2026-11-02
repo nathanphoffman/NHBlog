@@ -2744,6 +2744,7 @@
 
     <div id="content" data-nw-ssg-path="/coding/making-a-simpler-web" class="nw-loaded"><!-- Blog of Nathan Hoffman -->
       <!-- Blog of Nathan Hoffman -->
+      <!-- Blog of Nathan Hoffman -->
       <!-- [Blog of Nathan Hoffman](main.md) -->
       <!-- themes: glacier -->
       <!-- title: Making a Simpler Web — Blog of Nathan Hoffman -->
@@ -2760,11 +2761,12 @@
       <p><em>A real early version of my prototype (the bar at the top is the “browser in a browser” settings)</em></p>
       <p>
         I have always been intrigued by people like Richard Stallman who make
-        <a href="https://stallman.org/">entire websites</a> using nothing but html (no JS). In his case, it is freedom
-        respecting, and while I respect Stallman tremendously I feel like my own frustration with the web is less the
-        language being freedom respecting, even less the language being hard to write — I after-all love web
-        programming. No, it is far more implementations on the web being frustrating to use, way overthought, and far
-        too over-engineered — or as the old adage goes, sometimes a cigar is just a cigar.
+        <a href="https://stallman.org/">entire websites</a>
+        using nothing but html (no JS). In his case, it is freedom respecting, and while I respect Stallman tremendously
+        I feel like my own frustration with the web is less the language being freedom respecting, even less the
+        language being hard to write — I after-all love web programming. No, it is far more implementations on the web
+        being frustrating to use, way overthought, and far too over-engineered — or as the old adage goes, sometimes a
+        cigar is just a cigar.
       </p>
       <p>
         I got to thinking if you were to re-architect the web to make it simpler, would you go back to the 90s and form
@@ -3658,7 +3660,7 @@
                         k < 0 && (k += A.length),
                         (k = Math.max(0, Math.min(k, A.length))),
                         (u = A.slice(h, k).join(`
-`)),
+    `)),
                         b.hasAttribute("data-start") || b.setAttribute("data-start", String(h + 1));
                     }
                     (y.textContent = u), f.highlightElement(y);
@@ -4591,7 +4593,7 @@
     }
     function In(e, t) {
       const n = e.split(`
-`),
+    `),
         i = t === "#",
         a = [];
       return (
@@ -4618,7 +4620,7 @@
             text: n
               .slice(r.index, c)
               .join(`
-`)
+    `)
               .trim(),
           };
         })
@@ -4644,7 +4646,7 @@
         if (!m.sortMarker)
           return v.join(`
 
-`);
+    `);
         const w = v.flatMap((x) => In(x, m.sortMarker));
         return (
           w.sort((x, b) => x.key.localeCompare(b.key)),
@@ -4653,7 +4655,7 @@
             .map((x) => x.text)
             .join(`
 
-`)
+    `)
         );
       });
     }
@@ -4682,7 +4684,7 @@
           return v
             .map((E) => He(w, typeof E == "object" && E !== null ? E : {}))
             .join(`
-`);
+    `);
         })
       );
     }
@@ -4750,7 +4752,7 @@
       if (n) {
         const a = `> _This page requires data to display._ [Load now](wasm:${n})
 
-`;
+    `;
         await Z(await Oe(a + i, {}));
       } else await Z(i);
     }
@@ -4781,13 +4783,13 @@
       let i = 3,
         a = R(
           `### Leaving site
-${
-  t
-    ? `_${t}_
+    ${
+      t
+        ? `_${t}_
 
-`
-    : ""
-}Navigating to \`${e}\` in <span id="nw-countdown">${i}</span>s\u2026`,
+    `
+        : ""
+    }Navigating to \`${e}\` in <span id="nw-countdown">${i}</span>s\u2026`,
           "Cancel Redirect",
         ),
         r = () => a.querySelector("#nw-countdown"),
@@ -4859,7 +4861,7 @@ This data exists only for your current browser session \u2014 it is cleared when
 
 ---
 
-${e.length ? "```\n" + JSON.stringify(Object.fromEntries(e), null, 2) + "\n```" : "_No data stored yet._"}
+    ${e.length ? "```\n" + JSON.stringify(Object.fromEntries(e), null, 2) + "\n```" : "_No data stored yet._"}
 
 [Clear all data](nw:cleardata)`;
     }
@@ -4869,7 +4871,7 @@ ${e.length ? "```\n" + JSON.stringify(Object.fromEntries(e), null, 2) + "\n```" 
     function Ht(e, t) {
       const n = e.trim()
           ? `### Why this script?
-${e}`
+    ${e}`
           : `### \u26A0 No description provided
 The author of this page did not explain why this script needs to run.`,
         i = t.length

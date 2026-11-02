@@ -2744,6 +2744,7 @@
 
     <div id="content" data-nw-ssg-path="/drafts/code-complexity" class="nw-loaded"><!-- Blog of Nathan Hoffman -->
       <!-- Blog of Nathan Hoffman -->
+      <!-- Blog of Nathan Hoffman -->
       <!-- [Blog of Nathan Hoffman](main.md) -->
       <!-- themes: glacier -->
       <!-- title: Scoring Code Complexity — Blog of Nathan Hoffman -->
@@ -2760,7 +2761,8 @@
       </blockquote>
       <p>
         This is something I have mentioned before, and thought quite a bit about, like in my
-        <a href="https://nathanhoffman.me/coding/small-and-understandable">Small and Understandable</a> post.
+        <a href="https://nathanhoffman.me/coding/small-and-understandable">Small and Understandable</a>
+        post.
       </p>
       <p>
         What got me thinking about this was computing from line count a “Millers Layer” score or the number of
@@ -3907,7 +3909,7 @@ Hello-World: 1
                         k < 0 && (k += A.length),
                         (k = Math.max(0, Math.min(k, A.length))),
                         (u = A.slice(h, k).join(`
-`)),
+    `)),
                         b.hasAttribute("data-start") || b.setAttribute("data-start", String(h + 1));
                     }
                     (y.textContent = u), f.highlightElement(y);
@@ -4840,7 +4842,7 @@ Hello-World: 1
     }
     function In(e, t) {
       const n = e.split(`
-`),
+    `),
         i = t === "#",
         a = [];
       return (
@@ -4867,7 +4869,7 @@ Hello-World: 1
             text: n
               .slice(r.index, c)
               .join(`
-`)
+    `)
               .trim(),
           };
         })
@@ -4893,7 +4895,7 @@ Hello-World: 1
         if (!m.sortMarker)
           return v.join(`
 
-`);
+    `);
         const w = v.flatMap((x) => In(x, m.sortMarker));
         return (
           w.sort((x, b) => x.key.localeCompare(b.key)),
@@ -4902,7 +4904,7 @@ Hello-World: 1
             .map((x) => x.text)
             .join(`
 
-`)
+    `)
         );
       });
     }
@@ -4931,7 +4933,7 @@ Hello-World: 1
           return v
             .map((E) => He(w, typeof E == "object" && E !== null ? E : {}))
             .join(`
-`);
+    `);
         })
       );
     }
@@ -4999,7 +5001,7 @@ Hello-World: 1
       if (n) {
         const a = `> _This page requires data to display._ [Load now](wasm:${n})
 
-`;
+    `;
         await Z(await Oe(a + i, {}));
       } else await Z(i);
     }
@@ -5030,13 +5032,13 @@ Hello-World: 1
       let i = 3,
         a = R(
           `### Leaving site
-${
-  t
-    ? `_${t}_
+    ${
+      t
+        ? `_${t}_
 
-`
-    : ""
-}Navigating to \`${e}\` in <span id="nw-countdown">${i}</span>s\u2026`,
+    `
+        : ""
+    }Navigating to \`${e}\` in <span id="nw-countdown">${i}</span>s\u2026`,
           "Cancel Redirect",
         ),
         r = () => a.querySelector("#nw-countdown"),
@@ -5108,7 +5110,7 @@ This data exists only for your current browser session \u2014 it is cleared when
 
 ---
 
-${e.length ? "```\n" + JSON.stringify(Object.fromEntries(e), null, 2) + "\n```" : "_No data stored yet._"}
+    ${e.length ? "```\n" + JSON.stringify(Object.fromEntries(e), null, 2) + "\n```" : "_No data stored yet._"}
 
 [Clear all data](nw:cleardata)`;
     }
@@ -5118,7 +5120,7 @@ ${e.length ? "```\n" + JSON.stringify(Object.fromEntries(e), null, 2) + "\n```" 
     function Ht(e, t) {
       const n = e.trim()
           ? `### Why this script?
-${e}`
+    ${e}`
           : `### \u26A0 No description provided
 The author of this page did not explain why this script needs to run.`,
         i = t.length

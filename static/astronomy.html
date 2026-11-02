@@ -2744,6 +2744,7 @@
 
     <div id="content" data-nw-ssg-path="/astronomy" class="nw-loaded"><!-- Blog of Nathan Hoffman -->
       <!-- Blog of Nathan Hoffman -->
+      <!-- Blog of Nathan Hoffman -->
       <!-- [Blog of Nathan Hoffman](main.md) -->
       <!-- themes: glacier -->
       <!-- title: Astronomy — Blog of Nathan Hoffman -->
@@ -2795,7 +2796,8 @@
           toilet, food warmers, better power systems and solar arrays, 60% increase in physical space in the capsule —
           even more per person) they aren’t good enough for most people since they didn’t land on the Moon— so infact it
           needs to be substantially better and more impressive. And of course substantially better and bigger means
-          <strong>a lot</strong> more weight, and a larger rocket.
+          <strong>a lot</strong>
+          more weight, and a larger rocket.
         </li>
         <li>
           <strong>It needs to be done within the tenuous political and financial landscape.</strong>
@@ -3304,11 +3306,12 @@
       <p>
         Sometimes news in the astronomy world boggles my mind. When Curiosity landed for the first time, literally an
         advanced car with an extremely
-        <a href="https://www.youtube.com/watch?v=Ki_Af_o9Q9s">sophisticated landing system</a> on another planet,
-        perhaps one of the greatest space accomplishments in my lifetime, it seemed to be somewhat ignored. When we
-        visited Vesta, the <a href="https://en.wikipedia.org/wiki/4_Vesta">second largest asteroid</a> in the asteroid
-        belt it went completely ignored. Even when we visited a comet with a lander in tow, the only reason anyone
-        talked about it was because of
+        <a href="https://www.youtube.com/watch?v=Ki_Af_o9Q9s">sophisticated landing system</a>
+        on another planet, perhaps one of the greatest space accomplishments in my lifetime, it seemed to be somewhat
+        ignored. When we visited Vesta, the
+        <a href="https://en.wikipedia.org/wiki/4_Vesta">second largest asteroid</a> in the asteroid belt it went
+        completely ignored. Even when we visited a comet with a lander in tow, the only reason anyone talked about it
+        was because of
         <a href="https://www.youtube.com/watch?v=trljrwTbr4w&amp;list=PLbyvawxScNbui_Ncl9uQ_fXLOjS4sNSd8"
           >cute videos</a
         >
@@ -3330,8 +3333,8 @@
       <ol>
         <li>
           We discover exoplanets ALL THE TIME,
-          <a href="https://en.wikipedia.org/wiki/List_of_exoplanets">there are so many of them</a> now. Literally
-          thousands. Just like we see A LOT of people all the time.
+          <a href="https://en.wikipedia.org/wiki/List_of_exoplanets">there are so many of them</a>
+          now. Literally thousands. Just like we see A LOT of people all the time.
         </li>
         <li>
           The list of potentially habitable exoplanets
@@ -3347,7 +3350,8 @@
       <p>
         It is not surprising at all that there are “potentially habitable” exoplanets. The definition of potentially
         habitable planet just means it happens to be a certain distance from its star where liquid water
-        <em>could</em> exist, it doesn’t even mean it does exist!
+        <em>could</em>
+        exist, it doesn’t even mean it does exist!
       </p>
       <p>
         This means a habitable planet might just be a rock in space like The Moon. I would not call the Moon habitable,
@@ -4133,7 +4137,7 @@
                         k < 0 && (k += A.length),
                         (k = Math.max(0, Math.min(k, A.length))),
                         (u = A.slice(h, k).join(`
-`)),
+    `)),
                         b.hasAttribute("data-start") || b.setAttribute("data-start", String(h + 1));
                     }
                     (y.textContent = u), f.highlightElement(y);
@@ -5066,7 +5070,7 @@
     }
     function In(e, t) {
       const n = e.split(`
-`),
+    `),
         i = t === "#",
         a = [];
       return (
@@ -5093,7 +5097,7 @@
             text: n
               .slice(r.index, c)
               .join(`
-`)
+    `)
               .trim(),
           };
         })
@@ -5119,7 +5123,7 @@
         if (!m.sortMarker)
           return v.join(`
 
-`);
+    `);
         const w = v.flatMap((x) => In(x, m.sortMarker));
         return (
           w.sort((x, b) => x.key.localeCompare(b.key)),
@@ -5128,7 +5132,7 @@
             .map((x) => x.text)
             .join(`
 
-`)
+    `)
         );
       });
     }
@@ -5157,7 +5161,7 @@
           return v
             .map((E) => He(w, typeof E == "object" && E !== null ? E : {}))
             .join(`
-`);
+    `);
         })
       );
     }
@@ -5225,7 +5229,7 @@
       if (n) {
         const a = `> _This page requires data to display._ [Load now](wasm:${n})
 
-`;
+    `;
         await Z(await Oe(a + i, {}));
       } else await Z(i);
     }
@@ -5256,13 +5260,13 @@
       let i = 3,
         a = R(
           `### Leaving site
-${
-  t
-    ? `_${t}_
+    ${
+      t
+        ? `_${t}_
 
-`
-    : ""
-}Navigating to \`${e}\` in <span id="nw-countdown">${i}</span>s\u2026`,
+    `
+        : ""
+    }Navigating to \`${e}\` in <span id="nw-countdown">${i}</span>s\u2026`,
           "Cancel Redirect",
         ),
         r = () => a.querySelector("#nw-countdown"),
@@ -5334,7 +5338,7 @@ This data exists only for your current browser session \u2014 it is cleared when
 
 ---
 
-${e.length ? "```\n" + JSON.stringify(Object.fromEntries(e), null, 2) + "\n```" : "_No data stored yet._"}
+    ${e.length ? "```\n" + JSON.stringify(Object.fromEntries(e), null, 2) + "\n```" : "_No data stored yet._"}
 
 [Clear all data](nw:cleardata)`;
     }
@@ -5344,7 +5348,7 @@ ${e.length ? "```\n" + JSON.stringify(Object.fromEntries(e), null, 2) + "\n```" 
     function Ht(e, t) {
       const n = e.trim()
           ? `### Why this script?
-${e}`
+    ${e}`
           : `### \u26A0 No description provided
 The author of this page did not explain why this script needs to run.`,
         i = t.length

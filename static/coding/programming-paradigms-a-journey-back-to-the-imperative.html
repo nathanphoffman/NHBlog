@@ -2748,6 +2748,7 @@
       class="nw-loaded"
     ><!-- Blog of Nathan Hoffman -->
       <!-- Blog of Nathan Hoffman -->
+      <!-- Blog of Nathan Hoffman -->
       <!-- [Blog of Nathan Hoffman](main.md) -->
       <!-- themes: glacier -->
       <!-- title: Programming Paradigms — A Journey Back to the Imperative — Blog of Nathan Hoffman -->
@@ -2872,7 +2873,8 @@
         the old is coming back. Maybe before long the imperative will get even more love and we will see even heavier
         macro use, and although (not entirely my thing), it would be hilarious to see GOTO make a return after all these
         years — even if it makes us hate each other — boy oh boy do I look at those little <code>label</code> and
-        <code>goto</code> guys — a sort of “your cute” … but “ugly” kind of love. ❤
+        <code>goto</code>
+        guys — a sort of “your cute” … but “ugly” kind of love. ❤
       </p>
       <blockquote>
         <p>https://nathanhoffman.me/coding/programming-paradigms-a-journey-back-to-the-imperative</p>
@@ -3643,7 +3645,7 @@
                         k < 0 && (k += A.length),
                         (k = Math.max(0, Math.min(k, A.length))),
                         (u = A.slice(h, k).join(`
-`)),
+    `)),
                         b.hasAttribute("data-start") || b.setAttribute("data-start", String(h + 1));
                     }
                     (y.textContent = u), f.highlightElement(y);
@@ -4576,7 +4578,7 @@
     }
     function In(e, t) {
       const n = e.split(`
-`),
+    `),
         i = t === "#",
         a = [];
       return (
@@ -4603,7 +4605,7 @@
             text: n
               .slice(r.index, c)
               .join(`
-`)
+    `)
               .trim(),
           };
         })
@@ -4629,7 +4631,7 @@
         if (!m.sortMarker)
           return v.join(`
 
-`);
+    `);
         const w = v.flatMap((x) => In(x, m.sortMarker));
         return (
           w.sort((x, b) => x.key.localeCompare(b.key)),
@@ -4638,7 +4640,7 @@
             .map((x) => x.text)
             .join(`
 
-`)
+    `)
         );
       });
     }
@@ -4667,7 +4669,7 @@
           return v
             .map((E) => He(w, typeof E == "object" && E !== null ? E : {}))
             .join(`
-`);
+    `);
         })
       );
     }
@@ -4735,7 +4737,7 @@
       if (n) {
         const a = `> _This page requires data to display._ [Load now](wasm:${n})
 
-`;
+    `;
         await Z(await Oe(a + i, {}));
       } else await Z(i);
     }
@@ -4766,13 +4768,13 @@
       let i = 3,
         a = R(
           `### Leaving site
-${
-  t
-    ? `_${t}_
+    ${
+      t
+        ? `_${t}_
 
-`
-    : ""
-}Navigating to \`${e}\` in <span id="nw-countdown">${i}</span>s\u2026`,
+    `
+        : ""
+    }Navigating to \`${e}\` in <span id="nw-countdown">${i}</span>s\u2026`,
           "Cancel Redirect",
         ),
         r = () => a.querySelector("#nw-countdown"),
@@ -4844,7 +4846,7 @@ This data exists only for your current browser session \u2014 it is cleared when
 
 ---
 
-${e.length ? "```\n" + JSON.stringify(Object.fromEntries(e), null, 2) + "\n```" : "_No data stored yet._"}
+    ${e.length ? "```\n" + JSON.stringify(Object.fromEntries(e), null, 2) + "\n```" : "_No data stored yet._"}
 
 [Clear all data](nw:cleardata)`;
     }
@@ -4854,7 +4856,7 @@ ${e.length ? "```\n" + JSON.stringify(Object.fromEntries(e), null, 2) + "\n```" 
     function Ht(e, t) {
       const n = e.trim()
           ? `### Why this script?
-${e}`
+    ${e}`
           : `### \u26A0 No description provided
 The author of this page did not explain why this script needs to run.`,
         i = t.length
