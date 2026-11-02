@@ -6,6 +6,7 @@
   "scripts": {
     "start": "bun server.js",
     "update": "node update.js",
-    "add-post": "node scripts/add-post.js"
+    "add-post": "node scripts/add-post.js",
+    "test": "node --test tests/"
   }
 }

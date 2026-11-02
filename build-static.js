@@ -8,6 +8,7 @@
 import { cpSync, existsSync, mkdirSync, readdirSync, readFileSync, rmSync, statSync, writeFileSync } from "fs";
 import { dirname, extname, join, relative, sep } from "path";
 import { pathToFileURL } from "url";
+import { escapeHtml, parseIncludeDirective, splitIntoEntries, toRootRelative } from "./include_helpers.js";
 
 const projectRoot = process.cwd();
 const OUT_DIR = join(projectRoot, "static");
@@ -42,12 +43,6 @@ const defaultTitle = (shell.match(/<title>([^<]*)<\/title>/) ?? [, "NewWeb"])[1]
 // directive/rewrite rules here must stay in sync with those files by hand, since this
 // script runs outside the browser and can't import browser-targeted TS directly) ----
 
-function toRootRelative(path) {
-  if (path.startsWith("/") || /^(https?:|data:)/.test(path)) return path;
-
-  return `/${path}`;
-}
-
 // mirrors fetch()'s behavior of resolving (not throwing) on a missing file, so a stale/example
 // include reference degrades the same way here as it does for the client's own fetch-based include
 function readMd(rootRelativeUrl) {
@@ -60,68 +55,6 @@ function readMd(rootRelativeUrl) {
 
     return "";
   }
-}
-
-function parseIncludeDirective(body) {
-  const files = [];
-  let sortMarker = null,
-    sortDir = "asc",
-    limitTo = null;
-
-  for (const part of body.split(",")) {
-    const token = part.trim();
-
-    if (/^sort_dir\s*:/i.test(token)) {
-      if (
-        token
-          .replace(/^sort_dir\s*:/i, "")
-          .trim()
-          .toLowerCase() === "desc"
-      )
-
-        sortDir = "desc";
-    } else if (/^sort\s*:/i.test(token)) {
-      sortMarker = token
-        .replace(/^sort\s*:/i, "")
-        .trim()
-        .replace(/^["']|["']$/g, "");
-    } else if (/^limit_to\s*:/i.test(token)) {
-      const n = parseInt(token.replace(/^limit_to\s*:/i, "").trim(), 10);
-
-      if (!isNaN(n)) limitTo = n;
-    } else if (token) {
-      files.push(token);
-    }
-  }
-
-  return { files, sortMarker, sortDir, limitTo };
-}
-
-function splitIntoEntries(content, marker) {
-  const lines = content.split("\n");
-  const isHeadingMarker = marker === "#";
-  const boundaries = [];
-  lines.forEach((line, i) => {
-    if (isHeadingMarker) {
-      const m = line.match(/^#(?!#)\s+(.+)$/);
-
-      if (m) boundaries.push({ index: i, key: m[1].trim() });
-    } else {
-      const stripped = line
-        .trim()
-        .replace(/^<!--\s*/, "")
-        .replace(/\s*-->$/, "")
-        .trim();
-
-      if (stripped.startsWith(marker)) boundaries.push({ index: i, key: stripped.slice(marker.length).trim() });
-    }
-  });
-
-  return boundaries.map((b, i) => {
-    const end = i + 1 < boundaries.length ? boundaries[i + 1].index : lines.length;
-
-    return { key: b.key, text: lines.slice(b.index, end).join("\n").trim() };
-  });
 }
 
 function processIncludes(raw, depth = 0) {
@@ -184,10 +117,6 @@ function capImageSize(html) {
   const style = `max-width:${STATIC_IMG_MAX_PX}px;max-height:${STATIC_IMG_MAX_PX}px;width:auto;height:auto;object-fit:contain;display:block`;
 
   return html.replace(/<img\b/gi, `<img style="${style}"`);
-}
-
-function escapeHtml(s) {
-  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 }
 
 // mdPath: root-relative path to the .md file, e.g. "/blog/post.md"
