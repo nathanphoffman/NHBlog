@@ -138,7 +138,7 @@ fn set_squarefeet(int user_sqft)
       else
           return 0
 
-
 ```
+avow is used as a human-first syntax for Rusts "unwrap" which sounds more technical than human, it uses Rust's unwrap under the hood to return the value or throw an exception (thus the strongness of avow being "I really for sure know this is valid") and is almost always to be used with a check on validity using the "valid" keyword in Deor.
 
-
+For closer types to an Option type and true null, there is a rust wrapper provided in the default libs called ""
