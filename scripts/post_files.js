@@ -79,45 +79,56 @@ export function replaceIncludeLine(content, newLine) {
   return content.replace(includeRe, newLine);
 }
 
-export function regenerateCategoryFile(category) {
+// Every post stays in <category>/ forever so its URL never changes. Only the include
+// lists move: <category>.md shows the newest KEEP_COUNT posts, archive_<category>.md the rest.
+function splitNewestFromOlder(category) {
   const dir = join(ROOT, category);
   const files = sortByDateDesc(dir, listMarkdown(dir));
-  const mdPath = join(ROOT, `${category}.md`);
-  const content = readFileSync(mdPath, "utf8");
-  const updated = replaceIncludeLine(content, buildIncludeLine(category, files));
-  writeFileSync(mdPath, updated);
+
+  return { newest: files.slice(0, KEEP_COUNT), older: files.slice(KEEP_COUNT) };
 }
 
-export function regenerateArchiveFile(category) {
-  const archiveDir = join(ROOT, `archive_${category}`);
-  const archiveMdPath = join(ROOT, `archive_${category}.md`);
-  const files = sortByDateDesc(archiveDir, listMarkdown(archiveDir));
-  const includeLine = buildIncludeLine(`archive_${category}`, files);
+export function regenerateCategoryFile(category) {
+  const mdPath = join(ROOT, `${category}.md`);
+  const content = readFileSync(mdPath, "utf8");
+  const { newest } = splitNewestFromOlder(category);
 
-  if (!existsSync(archiveMdPath)) {
-    const template = [
-      "<!-- Blog of Nathan Hoffman -->",
-      "<!-- [Blog of Nathan Hoffman](main.md) -->",
-      "<!-- themes: glacier -->",
-      "",
-      `# **${titleCase(category)} Archive**`,
-      "",
-      includeLine,
-      "",
-    ].join("\n");
+  writeFileSync(mdPath, replaceIncludeLine(content, buildIncludeLine(category, newest)));
+}
 
-    writeFileSync(archiveMdPath, template);
-  } else {
-    const content = readFileSync(archiveMdPath, "utf8");
-    writeFileSync(archiveMdPath, replaceIncludeLine(content, includeLine));
-  }
+function archiveTemplate(category, includeLine) {
+  return [
+    "<!-- Blog of Nathan Hoffman -->",
+    "<!-- [Blog of Nathan Hoffman](main.md) -->",
+    "<!-- themes: glacier -->",
+    "",
+    `# **${titleCase(category)} Archive**`,
+    "",
+    includeLine,
+    "",
+  ].join("\n");
+}
 
+function ensureArchiveLink(category) {
   const categoryMdPath = join(ROOT, `${category}.md`);
-  const categoryContent = readFileSync(categoryMdPath, "utf8");
-  const archiveLinkRe = new RegExp(`archive_${category}\\.md`);
+  const content = readFileSync(categoryMdPath, "utf8");
 
-  if (!archiveLinkRe.test(categoryContent)) {
-    const footer = `\n---\n\n[See Older Posts](archive_${category}.md)\n`;
-    writeFileSync(categoryMdPath, categoryContent.replace(/\n*$/, "") + "\n" + footer);
-  }
+  if (content.includes(`archive_${category}.md`)) return;
+
+  const footer = `\n---\n\n[See Older Posts](archive_${category}.md)\n`;
+  writeFileSync(categoryMdPath, content.replace(/\n*$/, "") + "\n" + footer);
+}
+
+// does nothing for a category with no older posts and no archive page yet
+export function regenerateArchiveFile(category) {
+  const archiveMdPath = join(ROOT, `archive_${category}.md`);
+  const { older } = splitNewestFromOlder(category);
+
+  if (older.length === 0 && !existsSync(archiveMdPath)) return;
+
+  const includeLine = buildIncludeLine(category, older);
+  const content = existsSync(archiveMdPath) ? replaceIncludeLine(readFileSync(archiveMdPath, "utf8"), includeLine) : archiveTemplate(category, includeLine);
+
+  writeFileSync(archiveMdPath, content);
+  ensureArchiveLink(category);
 }

@@ -4,6 +4,7 @@ import { mkdirSync, readFileSync, writeFileSync } from "fs";
 import { join } from "path";
 import { pathToFileURL } from "url";
 import { createInterface } from "readline/promises";
+import { replaceTablesWithImages } from "./table_images.js";
 import { ROOT, datePostedOf, findCategories, listMarkdown, pickFromList } from "./post_files.js";
 
 const OUT_DIR = join(ROOT, "medium");
@@ -70,8 +71,11 @@ async function main() {
     const html = makeLinksAbsolute(simplifyHeadings(render(markdown)));
 
     mkdirSync(OUT_DIR, { recursive: true });
-    const outPath = join(OUT_DIR, post.label.split("/")[1].replace(/\.md$/, ".html"));
-    writeFileSync(outPath, pageAround(html));
+    const baseName = post.label.split("/")[1].replace(/\.md$/, "");
+    const withImages = replaceTablesWithImages(html, OUT_DIR, baseName);
+    const outPath = join(OUT_DIR, `${baseName}.html`);
+    writeFileSync(outPath, pageAround(withImages.html));
+    withImages.pngPaths.forEach((png) => console.log(`Table image: ${png}`));
     console.log(`\nTitle (paste into Medium's title box): ${title}`);
     console.log(`Wrote ${outPath}\nOpen it in a browser, Ctrl+A, Ctrl+C, then paste into the Medium body.`);
   } finally {

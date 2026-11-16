@@ -7,7 +7,7 @@
 # Computing Code Complexity (n-Factor)
 
 ## What makes code complex?
-The idea behind this post began as I was thinking about Miller's Number and whether it could limit the amount of code one would want to write (even if AI allows for an infinite amount of it someday to be generated) I discussed this number and concept in [Small and Understandable](https://nathanhoffman.me/coding/small-and-understandable) where a psychologist in the 1950s named George Miller determined that:
+The idea behind this post began as I was thinking about Miller's Number and whether it could limit the amount of code that is feasible to maintain (even if AI allows for an infinite amount of it someday to be generated) I discussed this number and concept in [Small and Understandable](https://nathanhoffman.me/coding/small-and-understandable) where a psychologist in the 1950s named George Miller determined that:
 
 > The human brain can hold roughly 7 items +/- 2 (5-9) in short term recall
 
@@ -80,7 +80,7 @@ At 0.5 layers it is a bit more feasible you likely still know perhaps the main c
 
 
 ### The Ideal Solo-Dev Codebase
-What is interesting is that 6-6.5 is likely the range for most experienced non-AI devs are comfortable with and thus adding +0.5n to that limit for AI use gets us 6.5-7. Meaning most devs both with or without AI likely should find a responsible ceiling somewhere between n=6 and n=7, and even in a world of AI an n of 6.5 (~200k) lines remains a good suggestion for most solo-coders to start putting on the brakes once they surpass it. Below is the tables we discussed merged for a general scale:
+What is interesting is that 6-6.5 is likely the range for most experienced non-AI devs are comfortable with and thus adding +0.5n to that limit for AI use gets us 6.5-7. Meaning most devs both with or without AI likely should find a responsible ceiling somewhere between n=6 and n=7, and even in a world of AI an n of 6.5 (~200k) lines remains a good suggestion for most solo-coders to start putting on the brakes once they surpass it. Below are the tables we discussed merged for a general scale:
 
 | n | Lines | Programmer tier | Real World Pre-AI Examples | Sr. Dev without AI | Sr. Dev with AI |
 |---|---|---|---|---|---|

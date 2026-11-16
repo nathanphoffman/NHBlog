@@ -1,20 +1,17 @@
-// Moves a draft from /drafts into a category, then keeps each category's
-// category.md capped at KEEP_COUNT posts by archiving the oldest overflow
-// into archive_<category>/ + archive_<category>.md.
-import { existsSync, mkdirSync, readFileSync, renameSync, unlinkSync, writeFileSync } from "fs";
+// Moves a draft from /drafts into a category. The post keeps that URL forever; the
+// category page lists the newest posts and archive_<category>.md lists the older ones.
+import { existsSync, readFileSync, unlinkSync, writeFileSync } from "fs";
 import { join } from "path";
 import { createInterface } from "readline/promises";
 import {
   DATE_RE,
   DRAFTS_DIR,
-  KEEP_COUNT,
   ROOT,
   findCategories,
   listMarkdown,
   pickFromList,
   regenerateArchiveFile,
   regenerateCategoryFile,
-  sortByDateDesc,
 } from "./post_files.js";
 
 const TITLE_RE = /<!--\s*title:[^>]*-->/;
@@ -133,25 +130,9 @@ async function main() {
     unlinkSync(draftPath);
     console.log(`\nMoved drafts/${draft} -> ${category}/${draft} (date posted: ${date})`);
 
-    const files = sortByDateDesc(destDir, listMarkdown(destDir));
-    const keep = files.slice(0, KEEP_COUNT);
-    const overflow = files.slice(KEEP_COUNT);
-
-    if (overflow.length > 0) {
-      const archiveDir = join(ROOT, `archive_${category}`);
-
-      if (!existsSync(archiveDir)) mkdirSync(archiveDir);
-
-      for (const f of overflow) {
-        renameSync(join(destDir, f), join(archiveDir, f));
-        console.log(`Archived ${category}/${f} -> archive_${category}/${f}`);
-      }
-
-      regenerateArchiveFile(category);
-    }
-
     regenerateCategoryFile(category);
-    console.log(`\nUpdated ${category}.md${overflow.length ? ` and archive_${category}.md` : ""}.`);
+    regenerateArchiveFile(category);
+    console.log(`\nUpdated ${category}.md and archive_${category}.md (posts never change URL; only the lists do).`);
     console.log("Nothing has been committed — review with `git status` / `git diff` and commit when ready.");
   } finally {
     rl.close();

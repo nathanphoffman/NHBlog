@@ -1,31 +1,17 @@
-// The reverse of add-post.js: moves a published post from a category back into /drafts,
-// then pulls the newest archived post up into the category if there is room for it.
+// The reverse of add-post.js: moves a published post from a category back into /drafts
+// and updates the category and archive lists.
 import { existsSync, renameSync } from "fs";
 import { join } from "path";
 import { createInterface } from "readline/promises";
 import {
   DRAFTS_DIR,
-  KEEP_COUNT,
   ROOT,
   findCategories,
   listMarkdown,
   pickFromList,
   regenerateArchiveFile,
   regenerateCategoryFile,
-  sortByDateDesc,
 } from "./post_files.js";
-
-// refills the category from its archive so it keeps showing KEEP_COUNT posts; returns the file moved, if any
-function pullNewestFromArchive(category) {
-  const archiveDir = join(ROOT, `archive_${category}`);
-  const archived = sortByDateDesc(archiveDir, listMarkdown(archiveDir));
-
-  if (archived.length === 0) return null;
-
-  renameSync(join(archiveDir, archived[0]), join(ROOT, category, archived[0]));
-
-  return archived[0];
-}
 
 async function main() {
   const categories = findCategories().filter((name) => listMarkdown(join(ROOT, name)).length > 0);
@@ -46,14 +32,8 @@ async function main() {
     renameSync(join(categoryDir, post), draftPath);
     console.log(`\nMoved ${category}/${post} -> drafts/${post}`);
 
-    const promoted = listMarkdown(categoryDir).length < KEEP_COUNT ? pullNewestFromArchive(category) : null;
-
-    if (promoted) {
-      regenerateArchiveFile(category);
-      console.log(`Moved archive_${category}/${promoted} -> ${category}/${promoted}`);
-    }
-
     regenerateCategoryFile(category);
+    regenerateArchiveFile(category);
     console.log("Nothing has been committed — review with `git status` / `git diff` and commit when ready.");
   } finally {
     rl.close();
