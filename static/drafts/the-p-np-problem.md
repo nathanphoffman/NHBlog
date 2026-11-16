@@ -11,7 +11,7 @@ I had always shared a strong love of programming as well, likely because I could
 
 Something that crosses both boundaries is the P vs NP problem.
 
-I considered that the problem should be rephrased as:
+While trying to wrap my head around it, I considered that the problem should be rephrased as:
 
 NP() = P1()+P2()+P3()… and that P() roughly P-1() or the time to guess a solution has a proportional (polynomial) comparison to the time to check a solution, its just that the guess is usually wrong, the check is always right.
 

@@ -9,10 +9,10 @@ In my journey through computer history I continue to admire Richard Stallman's p
 The "Three Cs" of Product Virtue
 
 ## Comprehension
-All users should know exactly how a product functions and how it was created.
+All users should know exactly how a product functions and what it does.
 
 ### Documentation
-The purpose, shematics, production, and function of the product should be rigorously documented (or be made open source). This is to provide maximum transparency to the consumer.
+The purpose, schematics, production, and function of the product should be rigorously documented (or be made open source). This is to provide maximum transparency to the consumer.
 
 ### Understandability
 The product and its manufacture/purpose should be possible to be understood by a single individual, if it is not, it fails to be understandable.
@@ -32,5 +32,5 @@ Products should maintain their original function and not be purposefully made wo
 ### Support
 The product should continue to be supported and run both through historical precedent and future promises.
 
-### "Enshittification"
+### No-"Enshittification"
 No product should become less useful, it should maintain its general function and purpose, if features are added, older features should not be removed or made more annoying to use.  If a product needs a sizable change, a new product should be created, rather than transforming an existing one into the new product.
