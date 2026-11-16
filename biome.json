@@ -11,6 +11,7 @@
       "**/*.jsx",
       "**/*.css",
       "**/*.html",
+      "!index.html",
       "**/*.vue",
       "!**/dist",
       "!**/node_modules"
