@@ -37,11 +37,40 @@ fn ask_and_repeat()
 
 ```
 
-Here input() is takes in console input, you can use first, second, third,and arguments which contains a full array/vector of arguments passed.
+Here input() takes in console input, you can specify first, second, and third as shortcuts for those positions and args contains a full array/vector of arguments passed.
 
-One of the chief motivations behind Deor was to find a way to make Rust a more pleasant experience to write, a bit Python-like, with a bit of my own flare from many languages I love, while not actually creating an entirely new compiler (like Mojo), by transpiling directly to rust it gains the power of rust’s compiler and allows use of crates and raw Rust code in blocks. 
+## Imports
+Import paths are relative to the root no matter what file is calling them. Deor works a bit like C where all items are hoisted into the same shared namespace, so all functions, structs, etc. throughout the application must named differently (which enforces wordy and good human naming -- a deor principle) and if you import the same file in multiple files the transpiler will only import it once at the first site it was called (so multi-imports are ignored). As a result import ordering can matter, and so it is recommended to not have to keep track of nested file ordering, to simply import everything in your main file or have your main file import an import file: standard convention is an imports.deor. This allows you to track the load order of all the imports in a single place instead of having to guess how imports are loaded in.
 
-Because I transpiled to Rust there was little reason to reinvent basic helpers and system functions, so both above and below you will notice the use of s_join this is a string join function, it is a valid Deor library that just has a rust wrapper that calls rust's string join logic.  Internally the two libraries look something like this is and is something you could easily define yourself
+Importing uses the convention import "path" there is also a "generic" form where the import performs a T-substitution specifically to address the lack of generics in deor, some built-in libs in deor even use this like lists.
+
+```deor
+# standard import
+import "src/hello_world.deor"
+
+# a lost of integers
+import "lib/list.deor" where T = int
+
+fn int_things()
+      intList nums = [10, 20, 30]
+
+      int first_val = l_int_first(nums)
+      print(first_val)
+
+      needle as 20
+      bool has_20 = l_int_contains(nums, needle)
+      print(has_20)
+
+      ninety as 90
+      intList pushed = l_int_push(nums, ninety)
+      print(len(pushed))
+
+```
+
+## Rust Interop and Libs
+One of the chief motivations behind deor was to find a way to make Rust a more pleasant experience to write, a bit Python-like, with a bit of my own flare from many languages I love, while not actually creating an entirely new compiler (like Mojo), by transpiling directly to rust it gains the power of rust’s compiler and allows use of crates and raw Rust code in blocks. 
+
+Because deor transpiles to rust there is little reason to reinvent basic helpers and system functions, so you likely noticed the use of s_join and c_int_to_string from the libs imported at the top, these are just deor files that wrap a rust block to prevent deor from having to reinvent the wheel or contaminating the transpiler with more system built-ins.  Internally the two libraries look something like this is and is something you could easily define yourself using a 'rust' block -- all items in a rust block are just passed through as rust when the code is transpiled so it inserts exactly as you wrote it (minus the rust keyword).
 
 **lib/string**:
 ```deor
@@ -78,27 +107,12 @@ fn string s_to_lower(string str)
 
 ```
 
-But for convenience Deor includes some lib helpers so you don't need to wrap the basics.
+The convention for libraries like this is that they go in the /lib folder (the deor installation puts a handful of basic ones there for you including these). It is recommended to lead all lib functions with a single letter, the reason for this is because Deor encourages spelling things out to at least 3 letters (all variables must be 3 letter names) so a single letter is a bit unusual, and it is meant to stand-out as a bit less-human to catch your intention and understand it is standard-deor (the machinery) not human (as in you) written.
 
-*Deor clones everything by default to make it easier to work with and avoid ownership (but copy types get uncloned by the compiler since they dont need it) Ownership still exists with the move keyword.*
+If you are writing a third party library we encourage an x before the first letter so if I was creating a time library of my own choosing it would be xt_ (my external time library) t_ suggests it is a Deor-specific one.
 
-```deor
-# for loops are a bit reminiscent of python and other simpler languages
-# deconstruction is the only way to access fields to make Deor read like a book
-for item in collection
-      (name) in item
-      print(name)
 
-# count from 1 to 10, --it uses half-open ranging per rust convention
-for idx in range(1,11)
-      print(idx)
-
-# non-copy ownership as mentioned can be restored with the move keyword
-process_employees(move employee_records)
-
-```
-
-## Procedural not OOP or Functional
+## Structs: Procedural not OOP
 
 Another one of my chief motivations was to lean HEAVILY into procedural and imperative code designs. This means this is the closest you can get to OOP is this, which is to say literally not at all ;)
 
@@ -128,33 +142,64 @@ fn Person change_struct_name(Person person, string first_name)
 
 There are no interfaces, classes, methods, or even ways to attach functions to objects like many other more procedural languages these days (like Rust impl). It takes a hard stance, going back more towards the days of Fortran 90 and C (structs are only structure)
 
-
-## Rust Blocks
-
-I found myself on many occasions trying to do extremely simple patterns where I really didn’t care about performance or the ownership pattern, I wanted to opt-in when needed rather than opt-out. I also didn’t care much for the way Rust handles strings out of the box, with both String and string slices of &str. I realized that if I transpiled to Rust I could still allow raw rust to be inserted into the code in rust blocks (or even wrapped in Deor functions as helpers), infact this is how Deor handles much of its functionality like strings and lists to keep the transpiler lean.
+## Ownership and Loops
+If you know anything about Rust you know that ownership is a big concept, for those of you who are not aware: rust is very opinionated and will pass in ownership of a variable into a function (for instance) making it totally unavailable without special modifiers applied like borrowing (&). To avoid the hassle of ownership and lean into ease that deor professes, all values are cloned nothing is ever shared, so if you pass a variable to a function (no matter what it is -- even a huge list of big structs) it will get cloned by default, this can be particularly problematic in a loop these two concerns: loops and ownership is something to keep very much in mind while using deor as it is its two largest pitfalls which can be avoided with  more performant deor approaches (sometimes macros can help), the move keyword, and simply just using rust blocks or wrappers to do it the proper rustaceon way.
 
 
+```deor
+# for loops are a bit reminiscent of python and other simpler languages
+# deconstruction is the only way to access fields to make Deor read like a book
+for item in collection
+      (name) in item
+      print(name)
 
-Deor takes a strong stance of "try Deor first -- if that doesn't work for performance or other limitations, breakout rust blocks."
+# count from 1 to 10, --it uses half-open ranging per rust convention
+for idx in range(1,11)
+      print(idx)
 
-*I do want to say here that I respect rust immensely, it may be the low-level language to end all low level languages — esp. for those trying to do OS development — for example, it recently allowed me to use an alloc library to replace the std lib for a unikernel that had no base support for heap/vectors —insane! This is why I wanted to support rust blocks natively!*
+# this move keyword (as mentioned above) restores rust ownership and moves the record to the function
+process_employees(move employee_records)
+# employee_records blows up if used here
+
+# without move this works just fine, but keep in mind that employee_records is cloned here a 2nd time:
+process_employees(employee_records)
+log_employees(employee_records)
+
+```
+
+Deor is easy-by-default and then harder if you want to gain optimal-performance which is the way it should be, get the code written and then clean up where needed. There is no reason to be typing in astrophysics equations when u just want to do some amateur astronomy, but it is good to know you have that astrophysics book in your back pocket!
 
 
 ## First Class Functions
 For functional patterns like lambdas, closures, etc. there is very little by intention — as this would overcomplicate things — rust blocks exist for that! The only pattern that survives is that a declared function can be passed as a first class member if it has one in and one output, this was added to still allow use popular first-class patterns like filter() / map(), etc. — but those are still up to you to create.
 
 ```deor
-shape filterFn as func of Employee to bool
-shape employeeList as list of Employee
+shape filterFn = func of Employee to bool
+shape employeeList = list of Employee
 
 fn employeeList filter(employeeList employees, filterFn filter_employee)
-      employeeList employee_results = empty
-      for employee in employees
-            is_match as filter_employee(employee)
-            if is_match
-                  employee_results at end = employee
+    employeeList employee_results = empty
+    for employee in employees
+        is_match as filter_employee(employee)
+        if is_match
+            employee_results at end = employee
 
-  return employee_results
+
+      return employee_results
+
+# Usage of the above
+fn bool look_for_john(Employee employee)
+    const JOHN as "John"
+    (first_name) in employee
+    is_john as first_name is JOHN
+    return is_john
+
+fn employeeList get_john_matches(employeeList employees)
+    john_matches = filter(employees, look_for_john)
+    return john_matches
+
+
+
 ```
 
 ## Human Readabiliy
