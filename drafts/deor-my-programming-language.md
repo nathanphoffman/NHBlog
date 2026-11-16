@@ -21,18 +21,18 @@ import "lib/convert.deor"
 import "lib/string.deor"
 
 # A really simple example of its ease of readability
-fn ask_and_repeat()
+fn void ask_and_repeat()
       print("What would you like to say?")
-      (first, args) in input()
+      (first, input_list) in input()
 
       const string EMPTY = ""
 
       if first is not EMPTY
             print(first)
       else
-            print("all args are empty")
+            print("all input is empty")
 
-      int total_args = len(args)
+      int total_args = len(input_list)
       print(s_join["total args were ", c_int_to_string(total_args)])
 
 ```
