@@ -13,3 +13,7 @@ remove:
 # Rebuild the pre-rendered pages in static/
 html:
     node build-static.js
+
+# Make a Medium-ready HTML file from a recent post
+medium:
+    node scripts/medium-post.js
