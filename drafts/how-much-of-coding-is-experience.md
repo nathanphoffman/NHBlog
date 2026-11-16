@@ -3,6 +3,7 @@
 <!-- themes: glacier -->
 <!-- title: How much of coding is experience? — Blog of Nathan Hoffman -->
 
+<!-- date posted: 2026-11-16 -->
 # How much of coding is experience?
 
 Something I always wanted to do was improve myself, to constantly reach for the stars, but in the process of doing so I have also discovered conflicting views on best practices, some folks going back to their roots “don’t fix what aint broke” and I myself have gone from loving ultra short clever array manipulations to sometimes just wanting things spelled out for simplicity. I remember at one of my jobs a fellow senior developer telling me not to use declarative function syntax in JavaScript because “that is not the new way of doing it” he was referring to named const-lambda functions vs declarative functions. He did not provide me with any real justification such as hoisting vs non-hoisting. In truth, even the debate is a bit silly as either works in 99% of cases. His approach was that different/newer is better.
@@ -28,3 +29,5 @@ I think programming comes down to really just 8 things:
 The problem is none of this is clear cut, much of it is subjective, and not all of it is an a strength of being a more senior dev. Arguably wisdom based metrics like weighing time and performance is probably better served by someone with seniority, but oddly, some of these senior devs struggle even more than junior devs with some items like keeping things simple.
 
 At the end of the day I think we need to acknowledge there is a blurred line between seniority. What is seniority is usually perception and vibes more than it is actual truth, even if there are some things that seniority can truly help with (like wisdom and experience).
+
+>https://nathanhoffman.me/coding/how-much-of-coding-is-experience

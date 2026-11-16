@@ -3,6 +3,7 @@
 <!-- themes: glacier -->
 <!-- title: Scoring Code Complexity — Blog of Nathan Hoffman -->
 
+<!-- date posted: 2026-11-16 -->
 # Computing Code Complexity (n-Factor)
 
 ## What makes code complex?
@@ -113,3 +114,5 @@ If you want to play around with some of this math I have a [utility here](https:
 
 ## Final Thoughts
 The n-factor is interesting because it can be thought as a scale from 1-100 dn or deci-n.  With 100 being a humanity level effort, and <=10 being a random person off the street seeing code for the first time. It is a pretty convenient scale to judge code quality and comprehension. There are other factors such as how dense a language is since some languages are wordier than others while others support heavy functional approaches on single lines or can do the whole game of life in one line (like APL), but in general I think the general magnitude of the scale holds. I do have ideas on how to adjust for language density though and it will be in a forthcoming post!
+
+>https://nathanhoffman.me/coding/code-complexity
