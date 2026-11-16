@@ -9,42 +9,43 @@
 
 *Little Deer Mascot*
 
-*I recommend [deor.dev](https://deor.dev) if to get started, there is a pi-calculator there to as an example.*
+*I recommend [deor.dev](https://deor.dev) if to get started, there is a pi-calculator there as an example.*
 
-Although I have been working on quite a few projects, continuing a massive coding binge I have been on, I spent much of that time on a programming language called "Deor" old English for deer (technically pronounced D-ay-or but I prefer the more familiar Dee-or). It is cheer-leaded by a simple sprite of a red deer, emblematic of: leanness (limited syntax), red-rustyness (for its red-crab Rust heritage), occasional but reserved antler power (machine-code), predictability (opinionated code patterns), yet its pleasantness (readability), and peacefulness (ease prioritized over power) — except where needed.
+Although I have been working on quite a few projects, continuing a massive coding binge I have been on, I spent a good chunk of that time on a programming language called "Deor" old English for deer (technically pronounced D-ay-or but I prefer the more familiar Dee-or). It is cheer-leaded by a simple sprite of a red deer, emblematic of: leanness (limited syntax), red-rustyness (for its red-crab Rust heritage), occasional but reserved antler power (machine-code), predictability (opinionated code patterns), yet its pleasantness (readability), and peacefulness (ease prioritized over power) — except where needed.
 
 ## Basic Usage
 ```deor
+
+# included libraries: in this case convert for c_* libs (c_int_to_string) and string: s_* s_join
+import "lib/convert.deor"
+import "lib/string.deor"
+
 # A really simple example of its ease of readability
 fn ask_and_repeat()
-print("What would you like to say?")
-(first) in input()
-print(s_join(["You said ", first]))
-```
+      print("What would you like to say?")
+      (first, args) in input()
 
-One of the chief motivations behind Deor was to find a way to make Rust a more pleasant experience to write, a bit Python-like, with a bit of my own flare from many languages I love, while not actually creating an entirely new compiler (like Mojo), by transpiling directly to rust it gains the power of rust’s compiler and allows use of crates and raw Rust code in blocks. *Deor clones everything by default to make it easier to work with and avoid ownership (but copy types get uncloned by the compiler since they dont need it) Ownership still exists with the move keyword.*
+      const string EMPTY = ""
 
-```deor
-# for loops are a bit reminiscent of python and other simpler languages
-# deconstruction is the only way to access fields deor reads like a book
-for item in collection
-      (name) in item
-      print(name)
+      if first is not EMPTY
+            print(first)
+      else
+            print("all args are empty")
 
-# count from 1 to 10, --it uses half-open ranging per rust convention
-for idx in range(1,11)
-      print(idx)
-
-# non-copy owneship as mentioned can be restored with the move keyword
-process_employees(move employee_records)
+      int total_args = len(args)
+      print(s_join["total args were ", c_int_to_string(total_args)])
 
 ```
 
-## Rust Blocks
+Here input() is takes in console input, you can use first, second, third,and arguments which contains a full array/vector of arguments passed.
 
-I found myself on many occasions trying to do extremely simple patterns where I really didn’t care about performance or the ownership pattern, I wanted to opt-in when needed rather than opt-out. I also didn’t care much for the way Rust handles strings out of the box, with both String and string slices of &str. I realized that if I transpiled to Rust I could still allow raw rust to be inserted into the code in rust blocks (or even wrapped in Deor functions as helpers), infact this is how Deor handles much of its functionality like strings and lists to keep the transpiler lean.
+One of the chief motivations behind Deor was to find a way to make Rust a more pleasant experience to write, a bit Python-like, with a bit of my own flare from many languages I love, while not actually creating an entirely new compiler (like Mojo), by transpiling directly to rust it gains the power of rust’s compiler and allows use of crates and raw Rust code in blocks. 
 
+Because I transpiled to Rust there was little reason to reinvent basic helpers and system functions, so both above and below you will notice the use of s_join this is a string join function, it is a valid Deor library that just has a rust wrapper that calls rust's string join logic.  Internally the two libraries look something like this is and is something you could easily define yourself
+
+**lib/string**:
 ```deor
+
 fn string s_join(stringList parts)
     rust
         parts.join("")
@@ -58,9 +59,44 @@ fn string s_to_lower(string str)
         str.to_lowercase()
 ```
 
-Deor takes a strong stance of "try Deor first -- if that doesn't work for performance or other limitations, breakout rust blocks."
+**lib/convert**:
+```deor
 
-*I do want to say here that I respect rust immensely, it may be the low-level language to end all low level languages — esp. for those trying to do OS development — for example, it recently allowed me to use an alloc library to replace the std lib for a unikernel that had no base support for heap/vectors —insane! This is why I wanted to support rust blocks natively!*
+fn string s_join(stringList parts)
+    rust
+        parts.join("")
+
+fn string s_to_upper(string str)
+    rust
+        str.to_uppercase()
+
+fn string s_to_lower(string str)
+    rust
+        str.to_lowercase()
+
+# ... (cut for brevity)
+
+```
+
+But for convenience Deor includes some lib helpers so you don't need to wrap the basics.
+
+*Deor clones everything by default to make it easier to work with and avoid ownership (but copy types get uncloned by the compiler since they dont need it) Ownership still exists with the move keyword.*
+
+```deor
+# for loops are a bit reminiscent of python and other simpler languages
+# deconstruction is the only way to access fields to make Deor read like a book
+for item in collection
+      (name) in item
+      print(name)
+
+# count from 1 to 10, --it uses half-open ranging per rust convention
+for idx in range(1,11)
+      print(idx)
+
+# non-copy ownership as mentioned can be restored with the move keyword
+process_employees(move employee_records)
+
+```
 
 ## Procedural not OOP or Functional
 
@@ -81,6 +117,7 @@ fn Person get_nate()
       return nate
 ```
 
+
 Structs are not reference types, they are treated as values: cloned, and are fully immutable. Furthermore, if you want to try to modify a struct you must create a new one. The good news is the “with” pattern makes this easy to construct a new struct using a base with new fields.
 
 ```deor
@@ -91,6 +128,19 @@ fn Person change_struct_name(Person person, string first_name)
 
 There are no interfaces, classes, methods, or even ways to attach functions to objects like many other more procedural languages these days (like Rust impl). It takes a hard stance, going back more towards the days of Fortran 90 and C (structs are only structure)
 
+
+## Rust Blocks
+
+I found myself on many occasions trying to do extremely simple patterns where I really didn’t care about performance or the ownership pattern, I wanted to opt-in when needed rather than opt-out. I also didn’t care much for the way Rust handles strings out of the box, with both String and string slices of &str. I realized that if I transpiled to Rust I could still allow raw rust to be inserted into the code in rust blocks (or even wrapped in Deor functions as helpers), infact this is how Deor handles much of its functionality like strings and lists to keep the transpiler lean.
+
+
+
+Deor takes a strong stance of "try Deor first -- if that doesn't work for performance or other limitations, breakout rust blocks."
+
+*I do want to say here that I respect rust immensely, it may be the low-level language to end all low level languages — esp. for those trying to do OS development — for example, it recently allowed me to use an alloc library to replace the std lib for a unikernel that had no base support for heap/vectors —insane! This is why I wanted to support rust blocks natively!*
+
+
+## First Class Functions
 For functional patterns like lambdas, closures, etc. there is very little by intention — as this would overcomplicate things — rust blocks exist for that! The only pattern that survives is that a declared function can be passed as a first class member if it has one in and one output, this was added to still allow use popular first-class patterns like filter() / map(), etc. — but those are still up to you to create.
 
 ```deor
